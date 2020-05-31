@@ -306,6 +306,7 @@ Aşağıdaki QR kodu telefonunuzdan okutunuz.</string>
      <string>Dosya</string>
     </property>
     <addaction name="actionDosya_A"/>
+    <addaction name="actionAyarla"/>
     <addaction name="actionKapat"/>
    </widget>
    <addaction name="menuDosya"/>
@@ -325,6 +326,11 @@ Aşağıdaki QR kodu telefonunuzdan okutunuz.</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAyarla">
+   <property name="text">
+    <string>Ayarlar</string>
    </property>
   </action>
  </widget>

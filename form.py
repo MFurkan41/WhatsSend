@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QFileDialog
+from PyQt5.QtWidgets import QFileDialog,QDialog
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -145,9 +145,12 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.actionDosya_A = QtWidgets.QAction(MainWindow)
         self.actionDosya_A.setObjectName("actionDosya_A")
+        self.actionSettings = QtWidgets.QAction(MainWindow)
+        self.actionSettings.setObjectName("actionSettings")
         self.actionKapat = QtWidgets.QAction(MainWindow)
         self.actionKapat.setObjectName("actionKapat")
         self.menuDosya.addAction(self.actionDosya_A)
+        self.menuDosya.addAction(self.actionSettings)
         self.menuDosya.addAction(self.actionKapat)
         self.menubar.addAction(self.menuDosya.menuAction())
 
@@ -184,8 +187,11 @@ class Ui_MainWindow(object):
         self.menuDosya.setTitle(_translate("MainWindow", "Dosya"))
         self.actionDosya_A.setText(_translate("MainWindow", "Dosya Aç..."))
         self.actionDosya_A.setShortcut(_translate("MainWindow", "Ctrl+O"))
+        self.actionSettings.setText(_translate("MainWindow", "Anahtar Giriniz..."))
+        self.actionSettings.setShortcut(_translate("MainWindow", "Ctrl+Shift+A"))
         self.actionKapat.setText(_translate("MainWindow", "Kapat"))
         self.actionKapat.setShortcut(_translate("MainWindow", "Ctrl+Q"))
+        
 import icons
 
 if __name__ == '__main__':
