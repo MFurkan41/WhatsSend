@@ -37,64 +37,19 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QTableWidget" name="tableWidget">
+      <widget class="QTableView" name="tableView">
        <property name="minimumSize">
         <size>
          <width>550</width>
          <height>0</height>
         </size>
        </property>
+       <property name="whatsThis">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;asd&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
        <property name="horizontalScrollBarPolicy">
         <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
-       <attribute name="horizontalHeaderDefaultSectionSize">
-        <number>180</number>
-       </attribute>
-       <row>
-        <property name="text">
-         <string>1</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>2</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>3</string>
-        </property>
-       </row>
-       <column>
-        <property name="text">
-         <string>İsim</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Telefon No (Örn 9053xx..)</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Mesaj Durumu</string>
-        </property>
-       </column>
-       <item row="0" column="0">
-        <property name="text">
-         <string>Example_name1</string>
-        </property>
-       </item>
-       <item row="1" column="0">
-        <property name="text">
-         <string>Example_name2</string>
-        </property>
-       </item>
-       <item row="2" column="0">
-        <property name="text">
-         <string>Example_name3</string>
-        </property>
-       </item>
       </widget>
      </item>
      <item>

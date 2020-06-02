@@ -8,23 +8,30 @@ from getexcel import GetExcel
 import os
 from passlib.hash import sha256_crypt
 from htmlrequest import *
+from requests.exceptions import ConnectionError
 
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
 
 image_path = os.getcwd() + "\\qrcode.png"
 
+
 class WPApp(Ui_MainWindow):
     def __init__(self, window):
         self.setupUi(window)
         self.text= None
+        # Menu Button Settings
         self.actionDosya_A.triggered.connect(self.openFile)
-        self.actionSettings.triggered.connect(self.openSecondDialog)
+        self.actionAyarla.triggered.connect(self.openSecondDialog)
         self.actionKapat.triggered.connect(QtCore.QCoreApplication.instance().quit)
-        #self.actionSettings.triggered.connect(exec("print('Merhaba')"))
+        # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
+         ##self.pushButton_2.clicked.connect(self.)
+        # Create Table and Model
+        self.model = CustomerTableModel()
+        self.tableView.setModel(self.model)
+        self.tableView.resizeRowsToContents()
 
     def openFile(self):
-
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
         fileName, _ = QFileDialog.getOpenFileName(MainWindow,"Excel Dosyası Aç", "","Excel Files (*.xlsx)", options=options)
@@ -41,17 +48,29 @@ class WPApp(Ui_MainWindow):
         self.label_6.setPixmap(QtGui.QPixmap("qrcode.png"))
     
     def sendwp(self):
-        if(self.text is None):
-                _translate = QtCore.QCoreApplication.translate
-                self.pushButton.setText(_translate("MainWindow", "Lütfen Anahtarınızı Giriniz."))
-                QtGui.QGuiApplication.processEvents()
-                self.pushButton.setText(_translate("MainWindow", "Başlat"))
-                bekle(2)  
-                QtGui.QGuiApplication.processEvents()
+        if(self.text is None or self.text == ""):
+            _translate = QtCore.QCoreApplication.translate
+            self.pushButton.setText(_translate("MainWindow", "Lütfen Anahtarınızı Giriniz."))
+            QtGui.QGuiApplication.processEvents()
+            self.pushButton.setText(_translate("MainWindow", "Başlat"))
+            bekle(2)  
+            QtGui.QGuiApplication.processEvents()
+            try:
                 self.openSecondDialog()
+            except ConnectionError:
+                self.pushButton.setText(_translate("MainWindow", "TEKNİK ARIZA (Code : 001)"))
+                self.pushButton.setEnabled(False)
+
         elif(self.spinBox.text() == "0"):
             _translate = QtCore.QCoreApplication.translate
             self.pushButton.setText(_translate("MainWindow", "Hiç numara eklenmemiş..."))
+            QtGui.QGuiApplication.processEvents()
+            self.pushButton.setText(_translate("MainWindow", "Başlat"))
+            bekle(2)  
+            QtGui.QGuiApplication.processEvents()
+        elif(self.lineEdit.text() == ""):
+            _translate = QtCore.QCoreApplication.translate
+            self.pushButton.setText(_translate("MainWindow", "Lütfen mesaj giriniz."))
             QtGui.QGuiApplication.processEvents()
             self.pushButton.setText(_translate("MainWindow", "Başlat"))
             bekle(2)  
@@ -127,40 +146,9 @@ class WPApp(Ui_MainWindow):
         self.CreateTable(self.numaralar)
            
     def CreateTable(self,fromlist):
+        for i in range(0,len(fromlist)):
+            self.model.addCustomer(Customer(fromlist[i][0],fromlist[i][1],fromlist[i][2]))
 
-        #Table Widget'a Yazdırma
-        _translate = QtCore.QCoreApplication.translate
-        self.tableWidget.setRowCount(len(fromlist))
-        
-        for i in range(len(fromlist)):
-            # Vertical Header Create
-            item = QtWidgets.QTableWidgetItem()
-            self.tableWidget.setVerticalHeaderItem(i, item)
-            # Vertical Header Translate
-            item = self.tableWidget.verticalHeaderItem(i)
-            item.setText(_translate("MainWindow", str(i+1)))
-                
-            ### Settings
-            __sortingEnabled = self.tableWidget.isSortingEnabled()
-            self.tableWidget.setSortingEnabled(False)    
-
-            # Items Create
-            item = QtWidgets.QTableWidgetItem()
-            self.tableWidget.setItem(i, 0, item)
-            item = QtWidgets.QTableWidgetItem()
-            self.tableWidget.setItem(i, 1, item)
-            item = QtWidgets.QTableWidgetItem()
-            self.tableWidget.setItem(i, 2, item)
-            # Items Translate
-            item = self.tableWidget.item(i, 0)
-            item.setText(_translate("MainWindow", fromlist[i][0]))
-            item = self.tableWidget.item(i, 1)
-            item.setText(_translate("MainWindow", fromlist[i][1]))
-            item = self.tableWidget.item(i, 2)
-            item.setText(_translate("MainWindow", fromlist[i][2]))
-
-            ### Settings
-            self.tableWidget.setSortingEnabled(__sortingEnabled)
     def openSecondDialog(self):
         self.text, okPressed = QtWidgets.QInputDialog.getText(MainWindow,"Api Key Control","Anahtarınız:", QtWidgets.QLineEdit.Normal, "")
         if okPressed and self.text != '':
@@ -174,12 +162,18 @@ class WPApp(Ui_MainWindow):
                 bekle(5)  
                 QtGui.QGuiApplication.processEvents()
                 self.openSecondDialog()
-            self.spinBox_4.setValue(self.info["mcount"])
-            if(self.info["mcount"] == 0):
-                _translate = QtCore.QCoreApplication.translate
-                self.pushButton.setText(_translate("MainWindow", "Mesaj Hakkınız Yok"))
-                QtGui.QGuiApplication.processEvents()
-                self.pushButton.setEnabled(False)
+
+            try:
+                print(self.info)
+            except AttributeError:
+                self.spinBox_4.setValue(0)
+            else:
+                self.spinBox_4.setValue(self.info['mcount'])
+                if(self.info["mcount"] == 0):
+                    _translate = QtCore.QCoreApplication.translate
+                    self.pushButton.setText(_translate("MainWindow", "Mesaj Hakkınız Yok"))
+                    QtGui.QGuiApplication.processEvents()
+                    self.pushButton.setEnabled(False)
 
 # Start App
 app = QtWidgets.QApplication(sys.argv)

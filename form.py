@@ -3,6 +3,74 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QDialog
 
+class Customer(object):
+    def __init__(self,name,number,status):
+        self.name = name
+        self.number = number
+        self.status = status
+
+class CustomerTableModel(QtCore.QAbstractTableModel):
+
+    ROW_BATCH_COUNT = 15
+
+    def __init__(self):
+        super(CustomerTableModel,self).__init__()
+        self.headers = ['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']
+        self.customers  = []
+        self.rowsLoaded = CustomerTableModel.ROW_BATCH_COUNT
+ 
+    def rowCount(self,index=QtCore.QModelIndex()):
+        if not self.customers:
+            return 0
+ 
+        if len(self.customers) <= self.rowsLoaded:
+            return len(self.customers)
+        else:
+            return self.rowsLoaded
+
+    def canFetchMore(self,index=QtCore.QModelIndex()):
+        if len(self.customers) > self.rowsLoaded:
+            return True
+        else:
+            return False
+ 
+    def fetchMore(self,index=QtCore.QModelIndex()):
+        reminder = len(self.customers) - self.rowsLoaded
+        itemsToFetch = min(reminder,CustomerTableModel.ROW_BATCH_COUNT)
+        self.beginInsertRows(QtCore.QModelIndex(),self.rowsLoaded,self.rowsLoaded+itemsToFetch-1)
+        self.rowsLoaded += itemsToFetch
+        self.endInsertRows() 
+
+
+
+    def addCustomer(self,customer):
+        self.beginResetModel()
+        self.customers.append(customer)
+        self.endResetModel()
+ 
+    def columnCount(self,index=QtCore.QModelIndex()):
+        return len(self.headers)
+ 
+    def data(self,index,role=QtCore.Qt.DisplayRole):
+        col = index.column()
+        customer = self.customers[index.row()]
+        if role == QtCore.Qt.DisplayRole:
+            if col == 0:
+                return QtCore.QVariant(customer.name)
+            elif col == 1:
+                return QtCore.QVariant(customer.number)
+            elif col == 2:
+                return QtCore.QVariant(customer.status)
+            return QtCore.QVariant()
+ 
+    def headerData(self,section,orientation,role=QtCore.Qt.DisplayRole):
+        if role != QtCore.Qt.DisplayRole:
+            return QtCore.QVariant()
+ 
+        if orientation == QtCore.Qt.Horizontal:
+            return QtCore.QVariant(self.headers[section])
+        return QtCore.QVariant(int(section + 1))
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -17,21 +85,13 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.tableWidget = QtWidgets.QTableWidget(self.horizontalLayoutWidget)
-        self.tableWidget.setMinimumSize(QtCore.QSize(550, 0))
-        self.tableWidget.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
-        self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(3)
 
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(2, item)
+        self.tableView = QtWidgets.QTableView(self.horizontalLayoutWidget)
+        self.tableView.setMinimumSize(QtCore.QSize(550, 0))
+        self.tableView.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableView.setObjectName("tableView")
+        self.horizontalLayout.addWidget(self.tableView)
 
-        self.tableWidget.horizontalHeader().setDefaultSectionSize(180)
-        self.horizontalLayout.addWidget(self.tableWidget)
         self.line = QtWidgets.QFrame(self.horizontalLayoutWidget)
         self.line.setFrameShape(QtWidgets.QFrame.VLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -145,12 +205,12 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.actionDosya_A = QtWidgets.QAction(MainWindow)
         self.actionDosya_A.setObjectName("actionDosya_A")
-        self.actionSettings = QtWidgets.QAction(MainWindow)
-        self.actionSettings.setObjectName("actionSettings")
         self.actionKapat = QtWidgets.QAction(MainWindow)
         self.actionKapat.setObjectName("actionKapat")
+        self.actionAyarla = QtWidgets.QAction(MainWindow)
+        self.actionAyarla.setObjectName("actionAyarla")
         self.menuDosya.addAction(self.actionDosya_A)
-        self.menuDosya.addAction(self.actionSettings)
+        self.menuDosya.addAction(self.actionAyarla)
         self.menuDosya.addAction(self.actionKapat)
         self.menubar.addAction(self.menuDosya.menuAction())
 
@@ -160,14 +220,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-
-        item = self.tableWidget.horizontalHeaderItem(0)
-        item.setText(_translate("MainWindow", "İsim"))
-        item = self.tableWidget.horizontalHeaderItem(1)
-        item.setText(_translate("MainWindow", "Telefon No (Örn 9053xx..)"))
-        item = self.tableWidget.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "Mesaj Durumu"))
-
         self.pushButton.setText(_translate("MainWindow", "Başlat"))
         self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
@@ -183,15 +235,13 @@ class Ui_MainWindow(object):
 " istiyorsanız, mesajınızda isim\n"
 " olmasını istediğiniz yere {}\n"
 " işaretlerini koyunuz."))
-        self.label_6.setText(_translate("MainWindow","<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
+        self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
         self.menuDosya.setTitle(_translate("MainWindow", "Dosya"))
         self.actionDosya_A.setText(_translate("MainWindow", "Dosya Aç..."))
         self.actionDosya_A.setShortcut(_translate("MainWindow", "Ctrl+O"))
-        self.actionSettings.setText(_translate("MainWindow", "Anahtar Giriniz..."))
-        self.actionSettings.setShortcut(_translate("MainWindow", "Ctrl+Shift+A"))
         self.actionKapat.setText(_translate("MainWindow", "Kapat"))
         self.actionKapat.setShortcut(_translate("MainWindow", "Ctrl+Q"))
-        
+        self.actionAyarla.setText(_translate("MainWindow", "Ayarlar"))
 import icons
 
 if __name__ == '__main__':
@@ -202,3 +252,4 @@ if __name__ == '__main__':
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_()) 
+
