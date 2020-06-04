@@ -11,11 +11,11 @@ class Customer(object):
 
 class CustomerTableModel(QtCore.QAbstractTableModel):
 
-    ROW_BATCH_COUNT = 15
+    ROW_BATCH_COUNT = 10
 
     def __init__(self):
         super(CustomerTableModel,self).__init__()
-        self.headers = ['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']
+        self.headers = ['             İsim             ','  Telefon No (Örn 9053xx..)  ','   Mesaj Durumu   ']
         self.customers  = []
         self.rowsLoaded = CustomerTableModel.ROW_BATCH_COUNT
  
@@ -41,8 +41,6 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
         self.rowsLoaded += itemsToFetch
         self.endInsertRows() 
 
-
-
     def addCustomer(self,customer):
         self.beginResetModel()
         self.customers.append(customer)
@@ -62,7 +60,9 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
             elif col == 2:
                 return QtCore.QVariant(customer.status)
             return QtCore.QVariant()
- 
+        elif role == QtCore.Qt.TextAlignmentRole:
+            return QtCore.Qt.AlignCenter
+
     def headerData(self,section,orientation,role=QtCore.Qt.DisplayRole):
         if role != QtCore.Qt.DisplayRole:
             return QtCore.QVariant()

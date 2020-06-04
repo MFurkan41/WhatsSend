@@ -25,11 +25,13 @@ class WPApp(Ui_MainWindow):
         self.actionKapat.triggered.connect(QtCore.QCoreApplication.instance().quit)
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
-         ##self.pushButton_2.clicked.connect(self.)
+         ##self.pushButton_2.clicked.connect(self.a)
         # Create Table and Model
+        self.dbModel()
+    def dbModel(self):
         self.model = CustomerTableModel()
         self.tableView.setModel(self.model)
-        self.tableView.resizeRowsToContents()
+        self.tableView.resizeColumnsToContents()
 
     def openFile(self):
         options = QFileDialog.Options()
@@ -38,8 +40,8 @@ class WPApp(Ui_MainWindow):
         if fileName:
             excel = GetExcel()
             excel.createList(fileName)
+            self.dbModel()
             self.numaralar = excel.getList()
-            #print(self.numaralar)
             self.CreateTable(self.numaralar)
             self.spinBox.setValue(len(self.numaralar))
             self.spinBox_3.setValue(len(self.numaralar))
