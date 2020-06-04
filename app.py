@@ -34,9 +34,9 @@ class WPApp(Ui_MainWindow):
         self.tableView.resizeColumnsToContents()
 
     def openFile(self):
-        options = QFileDialog.Options()
-        options |= QFileDialog.DontUseNativeDialog
-        fileName, _ = QFileDialog.getOpenFileName(MainWindow,"Excel Dosyası Aç", "","Excel Files (*.xlsx)", options=options)
+        #options = QFileDialog.Options()
+        #options |= QFileDialog.DontUseNativeDialog
+        fileName, _ = QFileDialog.getOpenFileName(MainWindow,"Excel Dosyası Aç",os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'),"Excel Dosyası (*.xlsx)")
         if fileName:
             excel = GetExcel()
             excel.createList(fileName)

@@ -13,7 +13,7 @@ class GetExcel():
         numaralar = []
         workbook = load_workbook(filename=path, read_only=True)
         worksheet = workbook.active
-        start_time = time.time()
+        #start_time = time.time()
         i = 0
         for row in worksheet.rows:
             for cell in row:

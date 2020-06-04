@@ -176,11 +176,13 @@ class Ui_MainWindow(object):
         self.verticalLayout.addLayout(self.horizontalLayout_6)
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
-        self.lineEdit = QtWidgets.QLineEdit(self.horizontalLayoutWidget)
-        self.lineEdit.setMinimumSize(QtCore.QSize(0, 380))
-        self.lineEdit.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
-        self.lineEdit.setObjectName("lineEdit")
-        self.horizontalLayout_7.addWidget(self.lineEdit)
+
+        self.plain = QtWidgets.QPlainTextEdit(self.horizontalLayoutWidget)
+        self.plain.setMinimumSize(QtCore.QSize(0, 380))
+        #self.plain.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.plain.setObjectName("plain")
+        self.horizontalLayout_7.addWidget(self.plain)
+
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.label_5 = QtWidgets.QLabel(self.horizontalLayoutWidget)
@@ -226,7 +228,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
         self.label_3.setText(_translate("MainWindow", "Atılmamış Mesaj Sayısı :"))
         self.label_4.setText(_translate("MainWindow", "Kalan Mesaj Hakkınız :"))
-        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Mesajınız..."))
+        self.plain.setPlaceholderText(_translate("MainWindow", "Mesajınız..."))
         self.label_5.setText(_translate("MainWindow", "  MESAJINIZI YAZARKEN\n"
 "  BUNA DİKKAT EDİNİZ.\n"
 "\n"
