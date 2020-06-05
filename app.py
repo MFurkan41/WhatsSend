@@ -1,13 +1,20 @@
-from selenium import webdriver
-from time import sleep as bekle
-from selenium.webdriver.firefox.options import Options
 import sys
+import os
+from time import sleep as bekle
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException
+from selenium.webdriver.firefox.options import Options
+
 from whatsqr import save_qr
 from form import *
 from getexcel import GetExcel
-import os
-from passlib.hash import sha256_crypt
 from htmlrequest import *
+
+from passlib.hash import sha256_crypt
 from requests.exceptions import ConnectionError
 
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
@@ -25,9 +32,14 @@ class WPApp(Ui_MainWindow):
         self.actionKapat.triggered.connect(QtCore.QCoreApplication.instance().quit)
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
-         ##self.pushButton_2.clicked.connect(self.a)
+        self.pushButton_2.clicked.connect(self.a)
         # Create Table and Model
         self.dbModel()
+    
+    def a(self):
+        print(self.plain.toPlainText())
+
+
     def dbModel(self):
         self.model = CustomerTableModel()
         self.tableView.setModel(self.model)
@@ -36,7 +48,7 @@ class WPApp(Ui_MainWindow):
     def openFile(self):
         #options = QFileDialog.Options()
         #options |= QFileDialog.DontUseNativeDialog
-        fileName, _ = QFileDialog.getOpenFileName(MainWindow,"Excel Dosyası Aç",os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'),"Excel Dosyası (*.xlsx)")
+        fileName, _ = QFileDialog.getOpenFileName(MainWindow, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
         if fileName:
             excel = GetExcel()
             excel.createList(fileName)
@@ -70,7 +82,7 @@ class WPApp(Ui_MainWindow):
             self.pushButton.setText(_translate("MainWindow", "Başlat"))
             bekle(2)  
             QtGui.QGuiApplication.processEvents()
-        elif(self.lineEdit.text() == ""):
+        elif(self.plain.toPlainText() == ""):
             _translate = QtCore.QCoreApplication.translate
             self.pushButton.setText(_translate("MainWindow", "Lütfen mesaj giriniz."))
             QtGui.QGuiApplication.processEvents()
@@ -91,7 +103,6 @@ class WPApp(Ui_MainWindow):
     "Aşağıdaki QR kodu telefonunuzdan okutunuz."))
 
             QtGui.QGuiApplication.processEvents()
-
             options = Options()
             options.headless = True
             browser = webdriver.Firefox(options=options,executable_path="C:\\Drivers\\geckodriver.exe")
@@ -99,29 +110,32 @@ class WPApp(Ui_MainWindow):
             bekle(5)
             save_qr(browser)
             self.refreshimage()
-            #bekle(20)
-            #browser.close()
-            #browser.set_window_size(1, 1)
             QtGui.QGuiApplication.processEvents()
             bekle(10)
-            for i in range(0,len(self.numaralar)):
-                mesaj = str(self.lineEdit.text())
-                mesaj = mesaj.format(self.numaralar[i][0])
-                url = "https://web.whatsapp.com/send?phone="
-                url += str(self.numaralar[i][1])
-                url += "&text="
-                url += mesaj
-                browser.get(url)
-                bekle(5)
-                try:
-                    browser.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[3]/button").click()
-                except:
-                    print("NO MESSAGE INPUT")
+            for i in range(0, len(self.numaralar)):
+                while True:
+                    mesaj = str(self.plain.toPlainText())
+                    mesaj = mesaj.format(self.numaralar[i][0])
+                    url = "https://web.whatsapp.com/send?phone="
+                    url += str(self.numaralar[i][1])
+                    url += "&text="
+                    url += mesaj
+                    browser.get(url)
+                
+                    try:
+                        bekle(3)
+                        button = WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='main']/footer/div[1]/div[3]/button")))
+                        button.click()
+
+                        #inputBox = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='main']/footer/div[1]/div[2]/div/div[2]")))
+                        #inputBox.send_keys(mesaj)
+                    except (TimeoutException, ElementClickInterceptedException):
+                        continue
                     break
-                    ### Pop-Up For No Message Input
+
                 self.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
                 self.spinBox_3.setValue(int(self.spinBox_3.text()) - 1)
-                res = HtmlRequest(self.text,False)
+                res = HtmlRequest(self.text ,False)
                 if(res["message"] != "no_message_count"):
                     
                     self.spinBox_4.setValue(res["mcount"])
@@ -138,24 +152,26 @@ class WPApp(Ui_MainWindow):
             self.pushButton.setText(_translate("MainWindow", "İşlem Tamamlandı"))
             QtGui.QGuiApplication.processEvents()
             self.pushButton.setText(_translate("MainWindow", "Başlat"))
-            bekle(2)  
+            bekle(2)
             QtGui.QGuiApplication.processEvents()
 
             browser.close()
 
-    def changeTableItem(self,x):
+    def changeTableItem(self, x):
+        self.dbModel()
         self.numaralar[x][2] = "✅"
         self.CreateTable(self.numaralar)
            
-    def CreateTable(self,fromlist):
-        for i in range(0,len(fromlist)):
-            self.model.addCustomer(Customer(fromlist[i][0],fromlist[i][1],fromlist[i][2]))
+    def CreateTable(self, fromlist):
+        for i in range(0, len(fromlist)):
+            self.model.addCustomer(Customer(fromlist[i][0], fromlist[i][1], fromlist[i][2]))
+        QtGui.QGuiApplication.processEvents()
 
     def openSecondDialog(self):
-        self.text, okPressed = QtWidgets.QInputDialog.getText(MainWindow,"Api Key Control","Anahtarınız:", QtWidgets.QLineEdit.Normal, "")
+        self.text, okPressed = QtWidgets.QInputDialog.getText(MainWindow, "Api Key Control", "Anahtarınız:", QtWidgets.QLineEdit.Normal, "")
         if okPressed and self.text != '':
             try:
-                self.info = HtmlRequest(self.text,True)
+                self.info = HtmlRequest(self.text, True)
             except SyntaxError:
                 _translate = QtCore.QCoreApplication.translate
                 self.pushButton.setText(_translate("MainWindow", "HATALI ANAHTAR"))
@@ -171,7 +187,7 @@ class WPApp(Ui_MainWindow):
                 self.spinBox_4.setValue(0)
             else:
                 self.spinBox_4.setValue(self.info['mcount'])
-                if(self.info["mcount"] == 0):
+                if self.info["mcount"] == 0:
                     _translate = QtCore.QCoreApplication.translate
                     self.pushButton.setText(_translate("MainWindow", "Mesaj Hakkınız Yok"))
                     QtGui.QGuiApplication.processEvents()

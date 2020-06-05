@@ -661,3 +661,1035 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1591096699549	Marionette	INFO	Listening on port 57051
 1591096699970	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591305268020	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.2oySPkw0jJ50"
+*** You are running in headless mode.
+1591305271349	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591305271580	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591305271580	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591305271580	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591305271580	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591305277078	Marionette	INFO	Listening on port 49841
+1591305278596	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591305320992	Marionette	INFO	Stopped listening on port 49841
+1591305587797	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.WfjA73XrT6W8"
+*** You are running in headless mode.
+1591305588546	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591305588651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591305588652	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591305588652	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591305588652	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591305590769	Marionette	INFO	Listening on port 49933
+1591305590907	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1591305619569	Marionette	INFO	Stopped listening on port 49933
+1591305707109	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.jwyyj5P7rxhl"
+1591305707767	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591305707851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591305707852	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591305707852	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591305707852	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591305711001	Marionette	INFO	Listening on port 50017
+1591305711220	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591305741285	Marionette	INFO	Stopped listening on port 50017
+JavaScript error: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1591306059003	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.mgpQbWIljERg"
+*** You are running in headless mode.
+1591306059661	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591306059745	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591306059745	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591306059745	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591306059745	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591306062154	Marionette	INFO	Listening on port 50147
+1591306062614	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591306368294	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.5FZXggjKgm27"
+*** You are running in headless mode.
+1591306368827	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591306368910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591306368911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591306368911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591306368911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591306371307	Marionette	INFO	Listening on port 50263
+1591306371405	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591306754911	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.M5nNwSXFz137"
+*** You are running in headless mode.
+1591306755483	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591306755595	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591306755595	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591306755595	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591306755595	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591306757333	Marionette	INFO	Listening on port 50390
+1591306757569	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591306848872	Marionette	INFO	Stopped listening on port 50390
+1591307324211	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.hgOWKEfuAWnY"
+*** You are running in headless mode.
+1591307324750	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591307324868	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591307324868	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591307324868	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591307324868	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591307326748	Marionette	INFO	Listening on port 50557
+1591307326822	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: chrome://marionette/content/proxy.js, line 222: TypeError: this.browser.driver.dialogObserver is null
+1591341359526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.FrHDnMlFJbTy"
+*** You are running in headless mode.
+1591341361987	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591341362176	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591341362176	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591341362176	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591341362176	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591341367540	Marionette	INFO	Listening on port 52831
+1591341369144	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591341510932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.bLJ2lsq9uGRW"
+*** You are running in headless mode.
+1591341511766	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591341511916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591341511916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591341511916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591341511916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591341514413	Marionette	INFO	Listening on port 52953
+1591341514545	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591341595476	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.I87bJc3BjUYG"
+1591341596207	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591341596311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591341596311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591341596311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591341596311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591341600169	Marionette	INFO	Listening on port 53042
+1591341600190	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591341621602	Marionette	INFO	Stopped listening on port 53042
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1591341665790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.W45F69hJmAl6"
+*** You are running in headless mode.
+1591341667294	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591341667380	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591341667380	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591341667380	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591341667381	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591341669506	Marionette	INFO	Listening on port 53122
+1591341669904	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591341838609	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.didQvYfDBnEm"
+*** You are running in headless mode.
+1591341841294	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591341841711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591341841711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591341841711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591341841711	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591341843908	Marionette	INFO	Listening on port 53284
+1591341844320	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591341908490	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.xA61oC0vTsZY"
+*** You are running in headless mode.
+1591341909323	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591341909487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591341909487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591341909487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591341909487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591341912119	Marionette	INFO	Listening on port 53359
+1591341912603	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591342039608	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.Iq7DxbraMMhl"
+1591342042561	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591342042741	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591342042741	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591342042741	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591342042741	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591342052813	Marionette	INFO	Listening on port 53484
+1591342053241	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+[Parent 20812, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+JavaScript error: resource://gre/modules/UpdateTimerManager.jsm, line 352: TypeError: setting getter-only property "gLogEnabled"
+JavaScript error: resource://gre/modules/ModulesPing.jsm, line 70: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "setting getter-only property "gLogEnabled"" {file: "resource://gre/modules/UpdateTimerManager.jsm" line: 352}]'[JavaScript Error: "setting getter-only property "gLogEnabled"" {file: "resource://gre/modules/UpdateTimerManager.jsm" line: 352}]' when calling method: [nsIUpdateTimerManager::registerTimer]
+1591342103942	Marionette	INFO	Stopped listening on port 53484
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1591342133197	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.Mwugv6aYQq80"
+1591342140346	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591342140467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591342140467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591342140467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591342140467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591342144494	Marionette	INFO	Listening on port 53584
+1591342144984	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591342409029	Marionette	INFO	Stopped listening on port 53584
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1591342680566	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.RqNDcMRGdxlt"
+1591342684497	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591342684651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591342684651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591342684651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591342684651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591342688340	Marionette	INFO	Listening on port 53948
+1591342688432	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591342697408	Marionette	INFO	Stopped listening on port 53948
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1591342833902	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.6zkjtgkj1zTe"
+*** You are running in headless mode.
+1591342834703	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591342834786	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591342834787	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591342834787	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591342834787	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591342837144	Marionette	INFO	Listening on port 54005
+1591342837513	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591345516938	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.sGWfXUixbhTG"
+*** You are running in headless mode.
+1591345519145	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591345519269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591345519269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591345519269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591345519269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591345523149	Marionette	INFO	Listening on port 54303
+1591345523153	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591345628066	Marionette	INFO	Stopped listening on port 54303
+1591345677786	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.XcaNlX5wiSWH"
+*** You are running in headless mode.
+1591345679898	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591345679984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591345679984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591345679984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591345679984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591345682688	Marionette	INFO	Listening on port 54370
+1591345683002	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591345998551	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.nF8JEO1QN1nl"
+*** You are running in headless mode.
+1591345999996	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591346000079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591346000079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591346000079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591346000079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591346002741	Marionette	INFO	Listening on port 54469
+1591346002764	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591346587619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.GKFRSb77ewzz"
+*** You are running in headless mode.
+1591346589183	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591346589345	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591346589345	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591346589345	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591346589345	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591346592669	Marionette	INFO	Listening on port 54609
+1591346592833	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591346955809	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.sxmRbPEYRUO7"
+*** You are running in headless mode.
+1591346958928	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591346959114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591346959114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591346959114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591346959114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591346963534	Marionette	INFO	Listening on port 54732
+1591346963631	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591347169238	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591347465747	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1591347476387	Marionette	INFO	Stopped listening on port 54732
+[Parent 19676, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[Parent 19676, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1579288126/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 507
+[Parent 19676, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160

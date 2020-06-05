@@ -11,7 +11,7 @@ class Customer(object):
 
 class CustomerTableModel(QtCore.QAbstractTableModel):
 
-    ROW_BATCH_COUNT = 10
+    ROW_BATCH_COUNT = 1000
 
     def __init__(self):
         super(CustomerTableModel,self).__init__()
