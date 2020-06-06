@@ -1,76 +1,32 @@
 # -*- coding: utf-8 -*-
 
+# Form implementation generated from reading ui file 'untitled.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout
-from win32api import GetSystemMetrics
 
-class Customer(object):
-    def __init__(self,name,number,status):
-        self.name = name
-        self.number = number
-        self.status = status
-
-class CustomerTableModel(QtCore.QAbstractTableModel):
-
-    def __init__(self):
-        super(CustomerTableModel,self).__init__()
-        self.headers = ['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']
-        self.customers  = []
- 
-    def rowCount(self,index=QtCore.QModelIndex()):
-        return len(self.customers)
-
-
-    def addCustomer(self,customer):
-        self.beginResetModel()
-        self.customers.append(customer)
-        self.endResetModel()
- 
-    def columnCount(self,index=QtCore.QModelIndex()):
-        return len(self.headers)
- 
-    def data(self,index,role=QtCore.Qt.DisplayRole):
-        col = index.column()
-        customer = self.customers[index.row()]
-        if role == QtCore.Qt.DisplayRole:
-            if col == 0:
-                return QtCore.QVariant(customer.name)
-            elif col == 1:
-                return QtCore.QVariant(customer.number)
-            elif col == 2:
-                return QtCore.QVariant(customer.status)
-            return QtCore.QVariant()
-        elif role == QtCore.Qt.TextAlignmentRole:
-            return QtCore.Qt.AlignCenter
-
-    def headerData(self,section,orientation,role=QtCore.Qt.DisplayRole):
-        if role != QtCore.Qt.DisplayRole:
-            return QtCore.QVariant()
- 
-        if orientation == QtCore.Qt.Horizontal:
-            return QtCore.QVariant(self.headers[section])
-        return QtCore.QVariant(int(section + 1))
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1100, 700)
-        self.sizePolicy = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
         MainWindow.setMinimumSize(QtCore.QSize(1100, 700))
-        MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700))
+        MainWindow.setMaximumSize(QtCore.QSize(1100, 700))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
-
         self.tableView = QtWidgets.QTableView(self.centralwidget)
         self.tableView.setMinimumSize(QtCore.QSize(550, 0))
         self.tableView.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
         self.tableView.setObjectName("tableView")
         self.horizontalLayout.addWidget(self.tableView)
-
         self.line = QtWidgets.QFrame(self.centralwidget)
         self.line.setFrameShape(QtWidgets.QFrame.VLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -155,13 +111,11 @@ class Ui_MainWindow(object):
         self.verticalLayout.addLayout(self.horizontalLayout_6)
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
-
-        self.plain = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plain.setMinimumSize(QtCore.QSize(0, 380))
-        #self.plain.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
-        self.plain.setObjectName("plain")
-        self.horizontalLayout_7.addWidget(self.plain)
-
+        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit.setMinimumSize(QtCore.QSize(0, 380))
+        self.lineEdit.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.lineEdit.setObjectName("lineEdit")
+        self.horizontalLayout_7.addWidget(self.lineEdit)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
@@ -174,7 +128,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.addLayout(self.verticalLayout_2)
         self.verticalLayout.addLayout(self.horizontalLayout_7)
         self.horizontalLayout.addLayout(self.verticalLayout)
-        self.gridLayout.addLayout(self.horizontalLayout,0,0,1,1)
+        self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1100, 26))
@@ -202,13 +156,14 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", "Başlat"))
+        self.tableView.setWhatsThis(_translate("MainWindow", "<html><head/><body><p>asd</p></body></html>"))
+        self.pushButton.setText(_translate("MainWindow", "PushButton"))
         self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
         self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
         self.label_3.setText(_translate("MainWindow", "Atılmamış Mesaj Sayısı :"))
         self.label_4.setText(_translate("MainWindow", "Kalan Mesaj Hakkınız :"))
-        self.plain.setPlaceholderText(_translate("MainWindow", "Mesajınız..."))
+        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Mesajınız..."))
         self.label_5.setText(_translate("MainWindow", "  MESAJINIZI YAZARKEN\n"
 "  BUNA DİKKAT EDİNİZ.\n"
 "\n"
@@ -216,22 +171,13 @@ class Ui_MainWindow(object):
 " olması için isim kullanmak\n"
 " istiyorsanız, mesajınızda isim\n"
 " olmasını istediğiniz yere {}\n"
-" işaretlerini koyunuz."))
-        self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
+" işaretlerini koyunuz.\n"
+"Aşağıdaki QR kodu telefonunuzdan okutunuz."))
+        self.label_6.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><img src=\":/Prefix/qrcode.png\" width=\"200\" height=\"200\"/></p></body></html>"))
         self.menuDosya.setTitle(_translate("MainWindow", "Dosya"))
         self.actionDosya_A.setText(_translate("MainWindow", "Dosya Aç..."))
         self.actionDosya_A.setShortcut(_translate("MainWindow", "Ctrl+O"))
         self.actionKapat.setText(_translate("MainWindow", "Kapat"))
         self.actionKapat.setShortcut(_translate("MainWindow", "Ctrl+Q"))
         self.actionAyarla.setText(_translate("MainWindow", "Ayarlar"))
-import icons
-
-if __name__ == '__main__':
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_()) 
-
+import resource_rc
