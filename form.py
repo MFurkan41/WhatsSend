@@ -3,6 +3,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout
 from win32api import GetSystemMetrics
+from sub_menu import Ui_OtherWindow
 
 class Customer(object):
     def __init__(self,name,number,status):
@@ -12,14 +13,23 @@ class Customer(object):
 
 class CustomerTableModel(QtCore.QAbstractTableModel):
 
-    def __init__(self):
+    def __init__(self,rawHeaders):
         super(CustomerTableModel,self).__init__()
-        self.headers = ['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']
+        self.rawHeaders = rawHeaders
+        self.headers = list(self.rawHeaders)
+        for i in range(len(self.headers)):
+            if(len(self.headers[i]) < 5):
+                self.headers[i] = "           " + self.headers[i] + "           "
+            elif(len(self.headers[i]) < 10):
+                self.headers[i] = "     " + self.headers[i] + "     "
+            elif(len(self.rawHeaders[i]) > 10):
+                self.headers[i] = "   " + self.headers[i] + "   "
+            elif(len(headers[i]) > 20):
+                pass
         self.customers  = []
- 
+
     def rowCount(self,index=QtCore.QModelIndex()):
         return len(self.customers)
-
 
     def addCustomer(self,customer):
         self.beginResetModel()
@@ -54,9 +64,8 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1100, 700)
-        self.sizePolicy = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
-        MainWindow.setMinimumSize(QtCore.QSize(1100, 700))
+        MainWindow.resize(1111, 700)
+        MainWindow.setMinimumSize(QtCore.QSize(1111, 700))
         MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -67,7 +76,6 @@ class Ui_MainWindow(object):
 
         self.tableView = QtWidgets.QTableView(self.centralwidget)
         self.tableView.setMinimumSize(QtCore.QSize(550, 0))
-        self.tableView.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
         self.tableView.setObjectName("tableView")
         self.horizontalLayout.addWidget(self.tableView)
 
@@ -76,24 +84,31 @@ class Ui_MainWindow(object):
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
         self.horizontalLayout.addWidget(self.line)
+
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
+
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout.addWidget(self.pushButton)
+
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout.addWidget(self.pushButton_2)
+
         self.line_2 = QtWidgets.QFrame(self.centralwidget)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
         self.verticalLayout.addWidget(self.line_2)
+        
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setObjectName("label")
         self.horizontalLayout_3.addWidget(self.label)
+
         self.spinBox = QtWidgets.QSpinBox(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -104,70 +119,76 @@ class Ui_MainWindow(object):
         self.spinBox.setMaximum(999999)
         self.spinBox.setObjectName("spinBox")
         self.horizontalLayout_3.addWidget(self.spinBox)
+
         self.verticalLayout.addLayout(self.horizontalLayout_3)
+
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_4.addWidget(self.label_2)
+
         self.spinBox_2 = QtWidgets.QSpinBox(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.spinBox_2.sizePolicy().hasHeightForWidth())
         self.spinBox_2.setSizePolicy(sizePolicy)
         self.spinBox_2.setReadOnly(True)
         self.spinBox_2.setMaximum(999999)
         self.spinBox_2.setObjectName("spinBox_2")
         self.horizontalLayout_4.addWidget(self.spinBox_2)
+
         self.verticalLayout.addLayout(self.horizontalLayout_4)
+
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_5.addWidget(self.label_3)
+
         self.spinBox_3 = QtWidgets.QSpinBox(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.spinBox_3.sizePolicy().hasHeightForWidth())
         self.spinBox_3.setSizePolicy(sizePolicy)
         self.spinBox_3.setReadOnly(True)
         self.spinBox_3.setMaximum(999999)
         self.spinBox_3.setObjectName("spinBox_3")
         self.horizontalLayout_5.addWidget(self.spinBox_3)
+
         self.verticalLayout.addLayout(self.horizontalLayout_5)
+
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setObjectName("label_4")
         self.horizontalLayout_6.addWidget(self.label_4)
+
         self.spinBox_4 = QtWidgets.QSpinBox(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.spinBox_4.sizePolicy().hasHeightForWidth())
         self.spinBox_4.setSizePolicy(sizePolicy)
         self.spinBox_4.setReadOnly(True)
         self.spinBox_4.setMaximum(999999)
         self.spinBox_4.setObjectName("spinBox_4")
         self.horizontalLayout_6.addWidget(self.spinBox_4)
+
         self.verticalLayout.addLayout(self.horizontalLayout_6)
+
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
 
         self.plain = QtWidgets.QPlainTextEdit(self.centralwidget)
         self.plain.setMinimumSize(QtCore.QSize(0, 380))
-        #self.plain.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.plain.setObjectName("plain")
         self.horizontalLayout_7.addWidget(self.plain)
 
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
+
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setMinimumSize(QtCore.QSize(250, 0))
         self.label_5.setObjectName("label_5")
         self.verticalLayout_2.addWidget(self.label_5)
+
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
         self.label_6.setObjectName("label_6")
         self.verticalLayout_2.addWidget(self.label_6)
@@ -201,7 +222,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        # Window Title
+        MainWindow.setWindowTitle(_translate("MainWindow", "Whatsapp Otomatik Mesaj Programı"))
+
         self.pushButton.setText(_translate("MainWindow", "Başlat"))
         self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
@@ -224,6 +247,7 @@ class Ui_MainWindow(object):
         self.actionKapat.setText(_translate("MainWindow", "Kapat"))
         self.actionKapat.setShortcut(_translate("MainWindow", "Ctrl+Q"))
         self.actionAyarla.setText(_translate("MainWindow", "Ayarlar"))
+        self.actionAyarla.setShortcut(_translate("MainWindow","Ctrl+Shift+A"))
 import icons
 
 if __name__ == '__main__':

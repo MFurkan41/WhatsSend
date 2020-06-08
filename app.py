@@ -1,7 +1,9 @@
+# Python Standart Library Imports
 import sys
 import os
 from time import sleep as bekle
 
+# Selenium Imports
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -9,34 +11,38 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException
 from selenium.webdriver.firefox.options import Options
 
+# Local Imports
 from whatsqr import save_qr
 from form import *
 from getexcel import GetExcel
 from htmlrequest import *
+#from sub-menu import *
 
+# Other Necessary Imports
 from passlib.hash import sha256_crypt
 from requests.exceptions import ConnectionError
 import urllib.parse
+
 
 
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
 
 image_path = os.getcwd() + "\\qrcode.png"
 
-
 class WPApp(Ui_MainWindow):
     def __init__(self, window):
         self.setupUi(window)
         self.text= None
+        self.window = window
 
         # Menu Button Settings
         self.actionDosya_A.triggered.connect(self.openFile)
-        self.actionAyarla.triggered.connect(self.openSecondDialog)
+        self.actionAyarla.triggered.connect(self.settings)
         self.actionKapat.triggered.connect(QtCore.QCoreApplication.instance().quit)
 
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
-        self.pushButton_2.clicked.connect(self.setColumnWidth)
+        self.pushButton_2.clicked.connect(self.create_table_view)
 
         # Create Table and Model
         self.dbModel()
@@ -44,20 +50,29 @@ class WPApp(Ui_MainWindow):
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
 
-    def setColumnWidth(self):
-        ##self.tableView.setColumnWidth(0,150)
-        pass
+    def create_table_view(self):
+        model = QtWidgets.QFileSystemModel()
+        model.setRootPath( QtCore.QDir.currentPath())
 
     def pageScroll(self,row:int):
         column = 0
         index = self.tableView.model().index(row, column)
         self.tableView.scrollTo(index)
 
-
-    def dbModel(self):
-        self.model = CustomerTableModel()
+    def settings(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_OtherWindow(self.window,self.model.rawHeaders)
+        self.ui.my_signal.connect(self.dbModel)
+        self.window.show()
+        
+    def dbModel(self,headers=None):
+        if headers is None:
+            self.model = CustomerTableModel(['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu'])
+        else:
+            self.model = CustomerTableModel(headers)
         self.tableView.setModel(self.model)
         self.tableView.resizeColumnsToContents()
+        QtGui.QGuiApplication.processEvents()
 
     def openFile(self):
         fileName, _ = QFileDialog.getOpenFileName(MainWindow, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
@@ -69,9 +84,10 @@ class WPApp(Ui_MainWindow):
             self.CreateTable(self.numaralar)
             self.spinBox.setValue(len(self.numaralar))
             self.spinBox_3.setValue(len(self.numaralar))
-            
+
     def refreshimage(self):
         self.label_6.setPixmap(QtGui.QPixmap("qrcode.png"))
+        QtGui.QGuiApplication.processEvents()
     
     def sendwp(self):
         if(self.text is None or self.text == ""):
@@ -81,7 +97,7 @@ class WPApp(Ui_MainWindow):
             bekle(2)  
             QtGui.QGuiApplication.processEvents()
             try:
-                self.openSecondDialog()
+                self.apiKeyControl()
             except ConnectionError:
                 self.pushButton.setText(self._translate("MainWindow", "TEKNİK ARIZA (Code : 001)"))
                 self.pushButton.setEnabled(False)
@@ -171,11 +187,12 @@ class WPApp(Ui_MainWindow):
         self.CreateTable(self.numaralar)
            
     def CreateTable(self, fromlist):
+        # Create or Refresh the QtTableView from 'fromlist' variable
         for i in range(0, len(fromlist)):
             self.model.addCustomer(Customer(fromlist[i][0], fromlist[i][1], fromlist[i][2]))
         QtGui.QGuiApplication.processEvents()
 
-    def openSecondDialog(self):
+    def apiKeyControl(self):
         self.text, okPressed = QtWidgets.QInputDialog.getText(MainWindow, "Api Key Control", "Anahtarınız:", QtWidgets.QLineEdit.Normal, "")
         if okPressed and self.text != '':
             try:
@@ -186,7 +203,7 @@ class WPApp(Ui_MainWindow):
                 self.pushButton.setText(self._translate("MainWindow", "Başlat"))
                 bekle(5)  
                 QtGui.QGuiApplication.processEvents()
-                self.openSecondDialog()
+                self.apiKeyControl()
             except ConnectionError:
                 self.pushButton.setText(self._translate("MainWindow", "TEKNİK ARIZA (Code : 001)"))
                 self.pushButton.setEnabled(False) 
