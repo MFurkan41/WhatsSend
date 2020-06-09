@@ -6,10 +6,11 @@ from win32api import GetSystemMetrics
 from sub_menu import Ui_OtherWindow
 
 class Customer(object):
-    def __init__(self,name,number,status):
-        self.name = name
-        self.number = number
-        self.status = status
+    def __init__(self,*args):
+        args = list(args[0])
+        for i in range(len(args)):
+            execution = "self.headers_" + str(i) + " = '" + str(args[i]) +"'"
+            exec(execution)
 
 class CustomerTableModel(QtCore.QAbstractTableModel):
 
@@ -20,14 +21,13 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
         for i in range(len(self.headers)):
             if(len(self.headers[i]) < 5):
                 self.headers[i] = "           " + self.headers[i] + "           "
-            elif(len(self.headers[i]) < 10):
+            elif(len(self.headers[i]) <= 10):
                 self.headers[i] = "     " + self.headers[i] + "     "
             elif(len(self.rawHeaders[i]) > 10):
                 self.headers[i] = "   " + self.headers[i] + "   "
             elif(len(headers[i]) > 20):
                 pass
         self.customers  = []
-
     def rowCount(self,index=QtCore.QModelIndex()):
         return len(self.customers)
 
@@ -42,13 +42,14 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
     def data(self,index,role=QtCore.Qt.DisplayRole):
         col = index.column()
         customer = self.customers[index.row()]
+
         if role == QtCore.Qt.DisplayRole:
-            if col == 0:
-                return QtCore.QVariant(customer.name)
-            elif col == 1:
-                return QtCore.QVariant(customer.number)
-            elif col == 2:
-                return QtCore.QVariant(customer.status)
+            for a in range(len(self.headers)+1):
+                if(col == a):
+                    code = "global WR_var;WR_var = customer.headers_"+str(a)
+                    exec(code)
+                    return QtCore.QVariant(WR_var)
+
             return QtCore.QVariant()
         elif role == QtCore.Qt.TextAlignmentRole:
             return QtCore.Qt.AlignCenter

@@ -67,9 +67,16 @@ class WPApp(Ui_MainWindow):
         
     def dbModel(self,headers=None):
         if headers is None:
-            self.model = CustomerTableModel(['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu'])
+            fileHeader = open("Loc_headers.txt","r",encoding='utf-8')
+            self.headers =  [line.rstrip() for line in fileHeader]
+            fileHeader.close
+            print(self.headers)
         else:
-            self.model = CustomerTableModel(headers)
+            fileHeader = open("Loc_headers.txt","w",encoding='utf-8')
+            fileHeader.write('\n'.join(headers) + '\n')
+            fileHeader.close()
+            self.headers = headers
+        self.model = CustomerTableModel(self.headers)
         self.tableView.setModel(self.model)
         self.tableView.resizeColumnsToContents()
         QtGui.QGuiApplication.processEvents()
@@ -78,7 +85,7 @@ class WPApp(Ui_MainWindow):
         fileName, _ = QFileDialog.getOpenFileName(MainWindow, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
         if fileName:
             excel = GetExcel()
-            excel.createList(fileName)
+            excel.createList(fileName,len(self.headers)-1)
             self.dbModel()
             self.numaralar = excel.getList()
             self.CreateTable(self.numaralar)
@@ -188,8 +195,13 @@ class WPApp(Ui_MainWindow):
            
     def CreateTable(self, fromlist):
         # Create or Refresh the QtTableView from 'fromlist' variable
-        for i in range(0, len(fromlist)):
-            self.model.addCustomer(Customer(fromlist[i][0], fromlist[i][1], fromlist[i][2]))
+        for i in range(len(fromlist)):
+            execution = "self.model.addCustomer(Customer(("
+            for a in range(len(self.headers)):
+                execution += "fromlist["+str(i)+"]["+str(a)+"], "
+            execution = execution[:-2] + ")))"
+            exec(execution,{'self': self,'fromlist':fromlist,'Customer':Customer},{'self': self,'fromlist':fromlist,'Customer':Customer})
+            #model.addCustomer(Customer(fromlist[i][0], fromlist[i][1], fromlist[i][2]))
         QtGui.QGuiApplication.processEvents()
 
     def apiKeyControl(self):
