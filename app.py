@@ -67,12 +67,12 @@ class WPApp(Ui_MainWindow):
         
     def dbModel(self,headers=None):
         if headers is None:
-            fileHeader = open("Loc_headers.txt","r",encoding='utf-8')
+            fileHeader = open("Loc_headers.txt","r", encoding='utf-8')
             self.headers =  [line.rstrip() for line in fileHeader]
             fileHeader.close
             print(self.headers)
         else:
-            fileHeader = open("Loc_headers.txt","w",encoding='utf-8')
+            fileHeader = open("Loc_headers.txt","w", encoding='utf-8')
             fileHeader.write('\n'.join(headers) + '\n')
             fileHeader.close()
             self.headers = headers
