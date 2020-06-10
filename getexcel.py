@@ -8,7 +8,7 @@ def group(lst, n):
       yield list(val)
 
 class GetExcel():
-    def createList(self,path,times):
+    def createList(self,path):
         global numaralar
         numaralar = []
         workbook = load_workbook(filename=path, read_only=True)
@@ -19,11 +19,10 @@ class GetExcel():
             for cell in row:
                 i += 1
                 numaralar.append(cell.value)
-                if(i % times == 0):
+                if(i % worksheet.max_column == 0):
                     numaralar.append("❌")
-
         #print("--- {} seconds ---".format(time.time() - start_time)) ## Time of Get Data
-        numaralar = (list(group(numaralar, times+1)))
+        numaralar = (list(group(numaralar, worksheet.max_column+1)))
     def getList(self):
         global numaralar
         return numaralar

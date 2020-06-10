@@ -1,4 +1,5 @@
 İsim
 Telefon No (Örn 9053xx..)
+Şifre
 Mesaj Durumu
-Deneme
+Yeni Kolon

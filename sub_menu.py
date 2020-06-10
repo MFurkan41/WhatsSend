@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
 
 class Ui_OtherWindow(QtCore.QObject):
     my_signal = QtCore.pyqtSignal(list)
@@ -82,6 +83,18 @@ class Ui_OtherWindow(QtCore.QObject):
         self.create_popup_menu()
         self.pushButton.clicked.connect(self.saveBtn)
         self.retranslateUi(MainWindow)
+
+        root = self.treeWidget.invisibleRootItem()
+        child_count = root.childCount()
+        for i in range(child_count):
+            item = root.child(i)
+            url = item.text(0)
+            if url == "İsim" or url == "Telefon No (Örn 9053xx..)":
+                item.setFlags(item.flags() & ~QtCore.Qt.ItemIsEditable)
+
+            if url == "Mesaj Durumu":
+                item.setHidden(True)
+
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def saveBtn(self):
@@ -92,30 +105,39 @@ class Ui_OtherWindow(QtCore.QObject):
             item = root.child(i)
             url = item.text(0)
             self.headers.append(url)
-        print(self.headers)
         self.my_signal.emit(self.headers)
         self.mainWindow.close()
 
     def new_cluster(self):
         item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
         item_0.setText(0,"Yeni Kolon")
-
         item_0.setFlags(item_0.flags() | QtCore.Qt.ItemIsEditable)
 
     def delete_cluster(self):
         root = self.treeWidget.invisibleRootItem()
         for item in self.treeWidget.selectedItems():
-            (item.parent() or root).removeChild(item)
+            liste = [0,1]
+            a = False
+            for i in liste:
+                if(item.text(0) == self.headers[i]):
+                    a = True
+                    msg = QMessageBox()
+                    msg.setWindowTitle("Uyarı")
+                    msg.setIcon(QMessageBox.Warning)
+                    msg.setText("'" + str(self.headers[i])+ "' kolonunu silemezsiniz.")
+                    x = msg.exec_()
+            if a == True:
+                break
+            else:
+                (item.parent() or root).removeChild(item)
 
     def create_popup_menu(self, parent=None):
         self.popup_menu = QtWidgets.QMenu()
         self.popup_menu.addAction("Yeni", self.new_cluster)
         self.popup_menu.addAction("Sil", self.delete_cluster)
-
     def on_context_menu(self, pos):        
         node = self.treeWidget.mapToGlobal(pos)
         self.popup_menu.exec_(self.treeWidget.mapToGlobal(pos))
-
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

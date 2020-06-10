@@ -23,9 +23,14 @@ from passlib.hash import sha256_crypt
 from requests.exceptions import ConnectionError
 import urllib.parse
 
-
-
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
+
+def warnMessage(title,iconType,text):
+    msg = QMessageBox()
+    msg.setWindowTitle(title)
+    msg.setIcon(iconType)
+    msg.setText(text)
+    x = msg.exec_()
 
 image_path = os.getcwd() + "\\qrcode.png"
 
@@ -69,13 +74,17 @@ class WPApp(Ui_MainWindow):
         if headers is None:
             fileHeader = open("Loc_headers.txt","r", encoding='utf-8')
             self.headers =  [line.rstrip() for line in fileHeader]
-            fileHeader.close
-            print(self.headers)
+            fileHeader.close()
         else:
             fileHeader = open("Loc_headers.txt","w", encoding='utf-8')
             fileHeader.write('\n'.join(headers) + '\n')
             fileHeader.close()
             self.headers = headers
+        for i in range(len(self.headers)):
+            if(self.headers[i] == "Mesaj Durumu"):
+                m = i
+        self.headers.pop(m)
+        self.headers.append("Mesaj Durumu")
         self.model = CustomerTableModel(self.headers)
         self.tableView.setModel(self.model)
         self.tableView.resizeColumnsToContents()
@@ -85,12 +94,17 @@ class WPApp(Ui_MainWindow):
         fileName, _ = QFileDialog.getOpenFileName(MainWindow, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
         if fileName:
             excel = GetExcel()
-            excel.createList(fileName,len(self.headers)-1)
+            excel.createList(fileName)
             self.dbModel()
             self.numaralar = excel.getList()
-            self.CreateTable(self.numaralar)
-            self.spinBox.setValue(len(self.numaralar))
-            self.spinBox_3.setValue(len(self.numaralar))
+            print(self.numaralar)
+            print(self.headers)
+            if(len(self.numaralar[0]) == len(self.headers)):
+                self.CreateTable(self.numaralar)
+                self.spinBox.setValue(len(self.numaralar))
+                self.spinBox_3.setValue(len(self.numaralar))
+            else:
+                warnMessage("Uyarı",QMessageBox.Warning,"Açmaya çalıştığınız dosyadaki kolon sayısı programdaki ile eşit değildir!")
 
     def refreshimage(self):
         self.label_6.setPixmap(QtGui.QPixmap("qrcode.png"))

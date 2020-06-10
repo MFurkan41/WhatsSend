@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout
+from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox
 from win32api import GetSystemMetrics
 from sub_menu import Ui_OtherWindow
 
