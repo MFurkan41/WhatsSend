@@ -227,8 +227,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addWidget(self.label_5)
 
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
-        self.label_6.setMinimumSize(QtCore.QSize(256, 200))
-        self.label_6.setMaximumSize(QtCore.QSize(256, 200))                                                      
+        self.label_6.setMinimumSize(QtCore.QSize(280, 280))
+        self.label_6.setMaximumSize(QtCore.QSize(280, 280))                                                      
         self.label_6.setObjectName("label_6")
         self.verticalLayout_2.addWidget(self.label_6)
         self.horizontalLayout_7.addLayout(self.verticalLayout_2)

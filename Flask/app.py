@@ -32,7 +32,7 @@ def wp(key):
     for i in range(len(data)):
         data[i] = list(data[i])
     for a in range(len(data)):
-        if str(key) in str(data[a][3]):
+        if str(key) == str(data[a][3]):
             c_id = data[a][0]
             id = int(a)
     if (info == True):

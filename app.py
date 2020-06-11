@@ -37,7 +37,7 @@ image_path = os.getcwd() + "\\qrcode.png"
 class WPApp(Ui_MainWindow):
     def __init__(self, window):
         self.setupUi(window)
-        self.text= None
+        self.apiKey = None
         self.window = window
 
         # Menu Button Settings
@@ -66,10 +66,25 @@ class WPApp(Ui_MainWindow):
 
     def settings(self):
         self.window = QtWidgets.QMainWindow()
-        self.ui = Ui_OtherWindow(self.window,self.model.rawHeaders)
+        if self.apiKey == None:
+            fileapi = open("apiKey.txt","r", encoding='utf-8')
+            self.apiKey =  fileapi.readlines()
+            fileapi.close()
+        self.ui = Ui_OtherWindow(self.window,self.model.rawHeaders,self.apiKey)
         self.ui.my_signal.connect(self.dbModel)
+        self.ui.my_signal2.connect(self.setKey)
         self.window.show()
-        
+
+    def setKey(self,key=None):
+        if(key is 0):
+            print("\n-----------\nBoş\n-----------\n")
+        else:
+            self.apiKey = key
+            fileapi = open("apiKey.txt","w", encoding='utf-8')
+            fileapi.write(str(self.apiKey))
+            fileapi.close()
+            self.apiKeyControl(self.apiKey)
+
     def dbModel(self,headers=None):
         if headers is None:
             fileHeader = open("Loc_headers.txt","r", encoding='utf-8')
@@ -97,13 +112,13 @@ class WPApp(Ui_MainWindow):
             excel.createList(fileName)
             self.dbModel()
             self.numaralar = excel.getList()
-            print(self.numaralar)
-            print(self.headers)
             if(len(self.numaralar[0]) == len(self.headers)):
                 self.CreateTable(self.numaralar)
                 self.spinBox.setValue(len(self.numaralar))
                 self.spinBox_3.setValue(len(self.numaralar))
             else:
+                self.spinBox.setValue(0)
+                self.spinBox_3.setValue(0)
                 warnMessage("Uyarı",QMessageBox.Warning,"Açmaya çalıştığınız dosyadaki kolon sayısı programdaki ile eşit değildir!")
 
     def refreshimage(self):
@@ -111,32 +126,21 @@ class WPApp(Ui_MainWindow):
         QtGui.QGuiApplication.processEvents()
     
     def sendwp(self):
-        if(self.text is None or self.text == ""):
-            self.pushButton.setText(self._translate("MainWindow", "Lütfen Anahtarınızı Giriniz."))
-            QtGui.QGuiApplication.processEvents()
-            self.pushButton.setText(self._translate("MainWindow", "Başlat"))
-            bekle(2)  
-            QtGui.QGuiApplication.processEvents()
-            try:
-                self.apiKeyControl()
-            except ConnectionError:
-                self.pushButton.setText(self._translate("MainWindow", "TEKNİK ARIZA (Code : 001)"))
-                self.pushButton.setEnabled(False)
-
+        if(self.apiKey is None or self.apiKey == ""):
+            warnMessage("Uyarı",QMessageBox.Warning,"Lütfen anahtarınızı giriniz.")
+            self.settings()
         elif(self.spinBox.text() == "0"):
-            self.pushButton.setText(self._translate("MainWindow", "Hiç numara eklenmemiş..."))
-            QtGui.QGuiApplication.processEvents()
-            self.pushButton.setText(self._translate("MainWindow", "Başlat"))
-            bekle(2)  
-            QtGui.QGuiApplication.processEvents()
+            self.apiKeyControl(self.apiKey)
+            if(self.c == True):
+                pass
+            else:
+                warnMessage("Uyarı",QMessageBox.Warning,"Hiç numara eklenmedi.")
         elif(self.plain.toPlainText() == ""):
-            self.pushButton.setText(self._translate("MainWindow", "Lütfen mesaj giriniz."))
-            QtGui.QGuiApplication.processEvents()
-            self.pushButton.setText(self._translate("MainWindow", "Başlat"))
-            bekle(2)  
-            QtGui.QGuiApplication.processEvents()
+            self.apiKeyControl(self.apiKey)
+            warnMessage("Uyarı",QMessageBox.Warning,"Mesaj girilmedi.")
         else:
-            self.pushButton.setText(self._translate("MainWindow", "Lütfen bekleyiniz..."))
+            self.apiKeyControl(self.apiKey)
+            warnMessage("Qr Kodu Okutunuz!",QMessageBox.Information,"Lütfen programın sağ altında çıkan QR kodu telefonunuzdan okutunuz.")
             self.label_5.setText(self._translate("MainWindow", "  MESAJINIZI YAZARKEN\n"
     "  BUNA DİKKAT EDİNİZ.\n"
     "\n"
@@ -179,7 +183,7 @@ class WPApp(Ui_MainWindow):
 
                 self.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
                 self.spinBox_3.setValue(int(self.spinBox_3.text()) - 1)
-                res = HtmlRequest(self.text, False)
+                res = HtmlRequest(self.apiKey, False)
                 self.pageScroll(i+1)
                 if(res["message"] != "no_message_count"):
                     
@@ -218,31 +222,28 @@ class WPApp(Ui_MainWindow):
             #model.addCustomer(Customer(fromlist[i][0], fromlist[i][1], fromlist[i][2]))
         QtGui.QGuiApplication.processEvents()
 
-    def apiKeyControl(self):
-        self.text, okPressed = QtWidgets.QInputDialog.getText(MainWindow, "Api Key Control", "Anahtarınız:", QtWidgets.QLineEdit.Normal, "")
-        if okPressed and self.text != '':
-            try:
-                self.info = HtmlRequest(self.text, True)
-            except SyntaxError:
-                self.pushButton.setText(self._translate("MainWindow", "HATALI ANAHTAR"))
+    def apiKeyControl(self,key):
+        try:
+            self.info = HtmlRequest(key, True)
+        except SyntaxError:
+            warnMessage("Geçersiz Anahtar!",QMessageBox.Warning,"Verilen anahtar geçersiz, kontrol edip tekrar deneyiniz.")
+            self.settings()
+            self.c = True
+        except ConnectionError:
+            warnMessage("TEKNİK ARIZA",QMessageBox.Critical,"Programın birlikte çalıştığı sunucularda hata var. Lütfen 'Hakkında' kısmındaki mailden ulaşınız.")
+            self.pushButton.setText(self._translate("MainWindow", "TEKNİK ARIZA (Code : 001)"))
+            self.pushButton.setEnabled(False) 
+        try:
+            print(self.info)
+        except AttributeError:
+            self.spinBox_4.setValue(0)
+        else:
+            self.spinBox_4.setValue(self.info['mcount'])
+            if self.info["mcount"] == 0:
+                warnMessage("Uyarı!",QMessageBox.Critical,"Mesaj hakkınız kalmadı.")
+                self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Yok"))
                 QtGui.QGuiApplication.processEvents()
-                self.pushButton.setText(self._translate("MainWindow", "Başlat"))
-                bekle(5)  
-                QtGui.QGuiApplication.processEvents()
-                self.apiKeyControl()
-            except ConnectionError:
-                self.pushButton.setText(self._translate("MainWindow", "TEKNİK ARIZA (Code : 001)"))
-                self.pushButton.setEnabled(False) 
-            try:
-                print(self.info)
-            except AttributeError:
-                self.spinBox_4.setValue(0)
-            else:
-                self.spinBox_4.setValue(self.info['mcount'])
-                if self.info["mcount"] == 0:
-                    self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Yok"))
-                    QtGui.QGuiApplication.processEvents()
-                    self.pushButton.setEnabled(False)
+                self.pushButton.setEnabled(False)
 
 # Start App
 app = QtWidgets.QApplication(sys.argv)

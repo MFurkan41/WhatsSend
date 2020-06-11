@@ -2,15 +2,18 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
+from time import sleep as bekle
 
 class Ui_OtherWindow(QtCore.QObject):
     my_signal = QtCore.pyqtSignal(list)
-    def __init__(self,MainWindow, headers):
+    my_signal2 = QtCore.pyqtSignal(str)
+    def __init__(self,MainWindow, headers, apiKey):
         super(Ui_OtherWindow,self).__init__()
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(350, 393)
         MainWindow.setMinimumSize(QtCore.QSize(350, 393))
         MainWindow.setMaximumSize(QtCore.QSize(350, 393))
+        MainWindow.setWindowFlags(MainWindow.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint)
 
         self.mainWindow = MainWindow
         self.headers = headers
@@ -62,6 +65,16 @@ class Ui_OtherWindow(QtCore.QObject):
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setContentsMargins(150, -1, -1, -1)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
+        self.pushButton_2.setSizePolicy(sizePolicy)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.horizontalLayout_2.addWidget(self.pushButton_2)
+
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -82,6 +95,13 @@ class Ui_OtherWindow(QtCore.QObject):
 
         self.create_popup_menu()
         self.pushButton.clicked.connect(self.saveBtn)
+        self.pushButton_2.clicked.connect(self.cancel)
+
+        if type(apiKey) == list:
+
+            self.lineEdit.setText(apiKey[0])
+        else:
+            self.lineEdit.setText(apiKey)
         self.retranslateUi(MainWindow)
 
         root = self.treeWidget.invisibleRootItem()
@@ -105,8 +125,17 @@ class Ui_OtherWindow(QtCore.QObject):
             item = root.child(i)
             url = item.text(0)
             self.headers.append(url)
+        if (len(self.lineEdit.text()) == 0):
+            self.text = 0
+        else:
+            self.text = str(self.lineEdit.text())
         self.my_signal.emit(self.headers)
+        self.my_signal2.emit(self.text)
         self.mainWindow.close()
+
+    def cancel(self):
+        self.mainWindow.close()
+
 
     def new_cluster(self):
         item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget)
@@ -151,3 +180,4 @@ class Ui_OtherWindow(QtCore.QObject):
             self.treeWidget.topLevelItem(i).setText(0, _translate("MainWindow", self.headers[i]))
         self.treeWidget.setSortingEnabled(__sortingEnabled)
         self.pushButton.setText(_translate("MainWindow", "Kaydet"))
+        self.pushButton_2.setText(_translate("MainWindow","İptal"))

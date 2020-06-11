@@ -661,7 +661,8 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1591096699549	Marionette	INFO	Listening on port 57051
 1591096699970	Marionette	WARN	TLS certificate errors will be ignored for this session
-1591305268020	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.2oySPkw0jJ50"
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.2oySPkw0jJ50"
 *** You are running in headless mode.
 1591305271349	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
 1591305271580	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
@@ -854,9 +855,9 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
-d, but the handler returned false (indicating failure)
-
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Script warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
@@ -923,7 +924,8 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
-b.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+Exiting due to channel error.
+0031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 IPDL protocol error: Handler returned error code!
@@ -1032,7 +1034,8 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
-031ac49.js, line 1: unreachable code after return statement
+Exiting due to channel error.
+ code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
@@ -1119,7 +1122,9 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 : this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
-WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+Exiting due to channel error.
+Exiting due to channel error.
+fest: Invalid extension permission: telemetry
 1591341909487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
 1591341909487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
@@ -1269,7 +1274,8 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
-t error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Exiting due to channel error.
+/XULStore.jsm, line 66: Error: Can't find profile directory.
 1591345523149	Marionette	INFO	Listening on port 54303
 1591345523153	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
@@ -1429,7 +1435,9 @@ JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeE
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
-JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.Exiting due to channel error.
+Exiting due to channel error.
+ion
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
@@ -1884,3 +1892,45 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 [Parent 1516, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
 [Parent 1516, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
 [Parent 1516, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+1591879524520	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.f9RaeL1MK2EB"
+*** You are running in headless mode.
+1591879527947	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591879528118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591879528118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591879528118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591879528118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591879533788	Marionette	INFO	Listening on port 53793
+1591879534237	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.AW06hPygQAoI"
+*** You are running in headless mode.
+1591880053530	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1591880053617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1591880053617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1591880053617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1591880053617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1591880055345	Marionette	INFO	Listening on port 53910
+1591880055529	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
