@@ -67,17 +67,30 @@ class WPApp(Ui_MainWindow):
     def settings(self):
         self.window = QtWidgets.QMainWindow()
         if self.apiKey == None:
-            fileapi = open("apiKey.txt","r", encoding='utf-8')
-            self.apiKey =  fileapi.readlines()
-            fileapi.close()
+            try:
+                open("apiKey.txt","x",encoding="utf-8")
+            except FileExistsError:
+                fileapi = open("apiKey.txt","r", encoding='utf-8')
+                self.apiKey =  fileapi.readlines()
+                fileapi.close()
+            finally:
+                self.apiKey = [""]
+            
         self.ui = Ui_OtherWindow(self.window,self.model.rawHeaders,self.apiKey)
         self.ui.my_signal.connect(self.dbModel)
         self.ui.my_signal2.connect(self.setKey)
         self.window.show()
 
     def setKey(self,key=None):
-        if(key is 0):
-            print("\n-----------\nBoş\n-----------\n")
+        if(key == ""):
+            self.apiKey = ""
+            self.headers = ["İsim","Telefon No (Örn 9053xx..)","Mesaj Durumu"]
+            self.dbModel(self.headers)
+            warnMessage("Uyarı",QMessageBox.Warning,"Lütfen anahtarınızı giriniz.")
+            fileapi = open("apiKey.txt","w", encoding='utf-8')
+            fileapi.write("")
+            fileapi.close()
+            self.settings()
         else:
             self.apiKey = key
             fileapi = open("apiKey.txt","w", encoding='utf-8')
@@ -87,9 +100,15 @@ class WPApp(Ui_MainWindow):
 
     def dbModel(self,headers=None):
         if headers is None:
-            fileHeader = open("Loc_headers.txt","r", encoding='utf-8')
-            self.headers =  [line.rstrip() for line in fileHeader]
-            fileHeader.close()
+            try:
+                fileHeader = open("Loc_headers.txt","r", encoding='utf-8')
+                self.headers =  [line.rstrip() for line in fileHeader]
+                fileHeader.close()
+            except FileNotFoundError:
+                self.headers = ["İsim","Telefon No (Örn 9053xx..)","Mesaj Durumu"]
+                fileHeader = open("Loc_headers.txt","w", encoding='utf-8')
+                fileHeader.write('\n'.join(self.headers) + '\n')
+                fileHeader.close()
         else:
             fileHeader = open("Loc_headers.txt","w", encoding='utf-8')
             fileHeader.write('\n'.join(headers) + '\n')

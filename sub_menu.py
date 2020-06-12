@@ -125,12 +125,15 @@ class Ui_OtherWindow(QtCore.QObject):
             item = root.child(i)
             url = item.text(0)
             self.headers.append(url)
-        if (len(self.lineEdit.text()) == 0):
-            self.text = 0
-        else:
-            self.text = str(self.lineEdit.text())
+
         self.my_signal.emit(self.headers)
-        self.my_signal2.emit(self.text)
+        
+        try:
+            self.text = str(self.lineEdit.text())
+            self.my_signal2.emit(self.text)
+        except TypeError:
+            self.my_signal2.emit("")
+
         self.mainWindow.close()
 
     def cancel(self):
