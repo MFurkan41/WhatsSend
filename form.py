@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox
 from win32api import GetSystemMetrics
@@ -63,7 +62,10 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
         return QtCore.QVariant(int(section + 1))
 
 class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+    def setupUi(self, MainWindow, version):
+
+        self.version = version
+
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1111, 700)
         MainWindow.setMinimumSize(QtCore.QSize(1111, 700))
@@ -221,14 +223,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName("verticalLayout_2")
 
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
-        self.label_5.setMinimumSize(QtCore.QSize(256, 171))
-        self.label_5.setMaximumSize(QtCore.QSize(256, 171))
+        self.label_5.setMinimumSize(QtCore.QSize(256, 130))
+        self.label_5.setMaximumSize(QtCore.QSize(256, 130))
         self.label_5.setObjectName("label_5")
         self.verticalLayout_2.addWidget(self.label_5)
 
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
-        self.label_6.setMinimumSize(QtCore.QSize(280, 280))
-        self.label_6.setMaximumSize(QtCore.QSize(280, 280))                                                      
+        self.label_6.setMinimumSize(QtCore.QSize(280, 230))
+        self.label_6.setMaximumSize(QtCore.QSize(280, 230))                                                      
         self.label_6.setObjectName("label_6")
         self.verticalLayout_2.addWidget(self.label_6)
         self.horizontalLayout_7.addLayout(self.verticalLayout_2)
@@ -241,6 +243,8 @@ class Ui_MainWindow(object):
         self.menubar.setObjectName("menubar")
         self.menuDosya = QtWidgets.QMenu(self.menubar)
         self.menuDosya.setObjectName("menuDosya")
+        self.menuAbout = QtWidgets.QMenu(self.menubar)
+        self.menuAbout.setObjectName("menuAbout")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -251,10 +255,17 @@ class Ui_MainWindow(object):
         self.actionKapat.setObjectName("actionKapat")
         self.actionAyarla = QtWidgets.QAction(MainWindow)
         self.actionAyarla.setObjectName("actionAyarla")
+        self.actionUpdate = QtWidgets.QAction(MainWindow)
+        self.actionUpdate.setObjectName("actionUpdate")
+        self.actionAbout = QtWidgets.QAction(MainWindow)
+        self.actionAbout.setObjectName("actionAbout")
         self.menuDosya.addAction(self.actionDosya_A)
         self.menuDosya.addAction(self.actionAyarla)
         self.menuDosya.addAction(self.actionKapat)
+        self.menuAbout.addAction(self.actionUpdate)
+        self.menuAbout.addAction(self.actionAbout)
         self.menubar.addAction(self.menuDosya.menuAction())
+        self.menubar.addAction(self.menuAbout.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -281,12 +292,15 @@ class Ui_MainWindow(object):
 " işaretlerini koyunuz."))
         self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
         self.menuDosya.setTitle(_translate("MainWindow", "Dosya"))
+        self.menuAbout.setTitle(_translate("MainWindow", "Hakkında"))
         self.actionDosya_A.setText(_translate("MainWindow", "Dosya Aç..."))
         self.actionDosya_A.setShortcut(_translate("MainWindow", "Ctrl+O"))
         self.actionKapat.setText(_translate("MainWindow", "Kapat"))
         self.actionKapat.setShortcut(_translate("MainWindow", "Ctrl+Q"))
         self.actionAyarla.setText(_translate("MainWindow", "Ayarlar"))
         self.actionAyarla.setShortcut(_translate("MainWindow","Ctrl+Shift+A"))
+        self.actionUpdate.setText(_translate("MainWindow","Güncelle..."))
+        self.actionAbout.setText(_translate("MainWindow","Versiyon\t" + self.version))
 import icons
 
 if __name__ == '__main__':

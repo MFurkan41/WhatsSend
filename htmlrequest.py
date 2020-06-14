@@ -1,7 +1,7 @@
 import ast
 import requests
 
-BASE_URL = "127.0.0.1:5000"
+BASE_URL = "myolal80.pythonanywhere.com"
 def HtmlRequest(key,info):
     if(info == True):
         url = "http://" + BASE_URL + "/wp/_" + str(key) + "_"

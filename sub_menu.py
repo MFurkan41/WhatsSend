@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QMessageBox
+from PyQt5.QtWidgets import QMessageBox,QHeaderView
 from time import sleep as bekle
 
 class Ui_OtherWindow(QtCore.QObject):
@@ -96,6 +96,7 @@ class Ui_OtherWindow(QtCore.QObject):
         self.create_popup_menu()
         self.pushButton.clicked.connect(self.saveBtn)
         self.pushButton_2.clicked.connect(self.cancel)
+        self.lineEdit.returnPressed.connect(self.saveBtn)
 
         if type(apiKey) == list:
 
@@ -103,6 +104,8 @@ class Ui_OtherWindow(QtCore.QObject):
         else:
             self.lineEdit.setText(apiKey)
         self.retranslateUi(MainWindow)
+        self.treeWidget.resizeColumnToContents(0)
+
 
         root = self.treeWidget.invisibleRootItem()
         child_count = root.childCount()
@@ -170,13 +173,14 @@ class Ui_OtherWindow(QtCore.QObject):
     def on_context_menu(self, pos):        
         node = self.treeWidget.mapToGlobal(pos)
         self.popup_menu.exec_(self.treeWidget.mapToGlobal(pos))
+        
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Ayarlar"))
         self.label.setText(_translate("MainWindow", "Anahtarınız"))
         self.label_2.setText(_translate("MainWindow", "Müşteri Liste Kolonları (Ekleme, Silme)"))
-        self.treeWidget.headerItem().setText(0, _translate("MainWindow", " "))                                                                           
+        self.treeWidget.headerItem().setText(0, _translate("MainWindow", "Kolonlar"))
         __sortingEnabled = self.treeWidget.isSortingEnabled()
         self.treeWidget.setSortingEnabled(False)
         for i in range(len(self.headers)):

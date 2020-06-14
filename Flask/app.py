@@ -35,8 +35,13 @@ def wp(key):
         if str(key) == str(data[a][3]):
             c_id = data[a][0]
             id = int(a)
+    try:
+        if id == "":
+            pass
+    except:
+        info = False
     if (info == True):
-            return CreateDict("info",data[id])
+        return CreateDict("info",data[id])
     if c_id is not None:
         try:
             cursor.execute("UPDATE allkeys SET mcount = mcount - 1 WHERE id ='{}'".format(c_id))

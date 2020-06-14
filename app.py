@@ -16,7 +16,6 @@ from whatsqr import save_qr
 from form import *
 from getexcel import GetExcel
 from htmlrequest import *
-#from sub-menu import *
 
 # Other Necessary Imports
 from passlib.hash import sha256_crypt
@@ -32,11 +31,17 @@ def warnMessage(title,iconType,text):
     msg.setText(text)
     x = msg.exec_()
 
+VERSION = "1.0.0"
+
+url = "https://raw.githubusercontent.com/MFurkan41/WhatsCompRepo/master/version.txt"
+strdict = requests.get(url).text
+othVERSION = strdict
+
 image_path = os.getcwd() + "\\qrcode.png"
 
 class WPApp(Ui_MainWindow):
     def __init__(self, window):
-        self.setupUi(window)
+        self.setupUi(window,VERSION)
         self.apiKey = None
         self.window = window
 
@@ -44,6 +49,7 @@ class WPApp(Ui_MainWindow):
         self.actionDosya_A.triggered.connect(self.openFile)
         self.actionAyarla.triggered.connect(self.settings)
         self.actionKapat.triggered.connect(QtCore.QCoreApplication.instance().quit)
+        self.actionUpdate.triggered.connect(self.update)
 
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
@@ -55,6 +61,9 @@ class WPApp(Ui_MainWindow):
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
 
+    def update(self):
+        os.startfile(os.getcwd()+"\\updater.exe")
+
     def create_table_view(self):
         model = QtWidgets.QFileSystemModel()
         model.setRootPath( QtCore.QDir.currentPath())
@@ -65,7 +74,7 @@ class WPApp(Ui_MainWindow):
         self.tableView.scrollTo(index)
 
     def settings(self):
-        self.window = QtWidgets.QMainWindow()
+        self.subWindow = QtWidgets.QMainWindow()
         if self.apiKey == None:
             try:
                 open("apiKey.txt","x",encoding="utf-8")
@@ -73,13 +82,12 @@ class WPApp(Ui_MainWindow):
                 fileapi = open("apiKey.txt","r", encoding='utf-8')
                 self.apiKey =  fileapi.readlines()
                 fileapi.close()
-            finally:
+            else:
                 self.apiKey = [""]
-            
-        self.ui = Ui_OtherWindow(self.window,self.model.rawHeaders,self.apiKey)
+        self.ui = Ui_OtherWindow(self.subWindow,self.model.rawHeaders,self.apiKey)
         self.ui.my_signal.connect(self.dbModel)
         self.ui.my_signal2.connect(self.setKey)
-        self.window.show()
+        self.subWindow.show()
 
     def setKey(self,key=None):
         if(key == ""):
@@ -159,18 +167,16 @@ class WPApp(Ui_MainWindow):
             warnMessage("Uyarı",QMessageBox.Warning,"Mesaj girilmedi.")
         else:
             self.apiKeyControl(self.apiKey)
-            warnMessage("Qr Kodu Okutunuz!",QMessageBox.Information,"Lütfen programın sağ altında çıkan QR kodu telefonunuzdan okutunuz.")
-            self.label_5.setText(self._translate("MainWindow", "  MESAJINIZI YAZARKEN\n"
-    "  BUNA DİKKAT EDİNİZ.\n"
-    "\n"
-    "Eğer mesajın attığınız kişiye özel\n"
-    " olması için isim kullanmak\n"
-    " istiyorsanız, mesajınızda isim\n"
-    " olmasını istediğiniz yere {}\n"
-    " işaretlerini koyunuz.\n"
-    "Aşağıdaki QR kodu telefonunuzdan okutunuz."))
+            warnMessage("Qr Kodu Okutunuz!",QMessageBox.Information,"Lütfen programın sağ altında çıkan QR kodu telefonunuzdan okutunuz. Kod için 'OK' tuşuna basınız.")
 
             QtGui.QGuiApplication.processEvents()
+
+            rec = 1161
+            while self.tableView.horizontalScrollBar().isVisible() == True:
+                self.window.resize(rec,700)
+                rec += 10
+            QtGui.QGuiApplication.processEvents()
+
             options = Options()
             options.headless = True
             browser = webdriver.Firefox(options=options,executable_path="C:\\Drivers\\geckodriver.exe")
@@ -180,15 +186,28 @@ class WPApp(Ui_MainWindow):
             self.refreshimage()
             QtGui.QGuiApplication.processEvents()
             bekle(10)
-            for i in range(0, len(self.numaralar)):
+
+            fList = []
+            self.mesaj = str(self.plain.toPlainText())
+            for i in range(len(self.headers)):
+                if "{" + str(i) + "}" in self.mesaj:
+                    fList.append(i)
+            
+            for i in range(len(self.numaralar)):
                 gen=1
                 while True:
-                    mesaj = str(self.plain.toPlainText())
-                    mesaj = mesaj.format(self.numaralar[i][0])
+                    execM = "self.mesaj = self.mesaj.format("
+                    for i in fList:
+                        execM += "str(self.numaralar[i][" + str(i) + "]),"
+                    execM = execM[:-1] + ")"
+                    exec(execM)
+                    print(execM)
+                    print(self.mesaj)
+                    print(self.mesaj.format(self.numaralar[i][0],self.numaralar[i][1],self.numaralar[i][2]))
                     url = "https://web.whatsapp.com/send?phone="
                     url += str(self.numaralar[i][1])
                     url += "&text="
-                    url += urllib.parse.quote_plus(mesaj)
+                    url += urllib.parse.quote_plus(self.mesaj)
                     browser.get(url)
 
                     try:
@@ -227,7 +246,7 @@ class WPApp(Ui_MainWindow):
 
     def changeTableItem(self, x):
         self.dbModel()
-        self.numaralar[x][2] = "✅"
+        self.numaralar[x][3] = "✅"
         self.CreateTable(self.numaralar)
            
     def CreateTable(self, fromlist):
@@ -244,14 +263,19 @@ class WPApp(Ui_MainWindow):
     def apiKeyControl(self,key):
         try:
             self.info = HtmlRequest(key, True)
-        except SyntaxError:
-            warnMessage("Geçersiz Anahtar!",QMessageBox.Warning,"Verilen anahtar geçersiz, kontrol edip tekrar deneyiniz.")
-            self.settings()
-            self.c = True
         except ConnectionError:
             warnMessage("TEKNİK ARIZA",QMessageBox.Critical,"Programın birlikte çalıştığı sunucularda hata var. Lütfen 'Hakkında' kısmındaki mailden ulaşınız.")
             self.pushButton.setText(self._translate("MainWindow", "TEKNİK ARIZA (Code : 001)"))
-            self.pushButton.setEnabled(False) 
+            self.pushButton.setEnabled(False)
+        try:
+            if self.info["error_message"] == "no_auth_key":
+                warnMessage("Geçersiz Anahtar!",QMessageBox.Warning,"Verilen anahtar geçersiz, kontrol edip tekrar deneyiniz.")
+                self.settings()
+                self.c = True
+                return
+        except:
+            pass
+
         try:
             print(self.info)
         except AttributeError:
@@ -266,6 +290,8 @@ class WPApp(Ui_MainWindow):
 
 # Start App
 app = QtWidgets.QApplication(sys.argv)
+app.setApplicationName("WP Auto Message Sender")
+app.setApplicationVersion(VERSION)
 MainWindow = QtWidgets.QMainWindow()
 
 ui = WPApp(MainWindow)
