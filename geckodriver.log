@@ -1947,7 +1947,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592080262154	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.uo6dlQYoBmGr"
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+s" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.uo6dlQYoBmGr"
 *** You are running in headless mode.
 1592080262834	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
 1592080262915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
@@ -1960,7 +1961,8 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592083028605	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.mEsdFmOrVbd3"
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+s" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.mEsdFmOrVbd3"
 *** You are running in headless mode.
 1592083030406	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
 1592083030486	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
@@ -1982,25 +1984,28 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592083302157	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.HkJXuPjFNhYT"
-*** You are running in headless mode.
-1592083302777	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1592083302857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1592083302857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1592083302857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1592083302857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1592083305519	Marionette	INFO	Listening on port 56472
-1592083305786	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+ps://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592083485591	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.mZXWVE4cuF0G"
-*** You are running in headless mode.
-1592083486193	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: , line 0: uncaught exception: Object
+workStatus
 1592083486381	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1592083486381	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
 1592083486381	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
@@ -2034,20 +2039,22 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592083663839	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.O6ph5FHKA00L"
-*** You are running in headless mode.
-1592083664960	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1592083665228	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1592083665228	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1592083665228	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1592083665228	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1592083669942	Marionette	INFO	Listening on port 56606
-1592083670057	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592083772117	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.A03jufZ310Zl"
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+odules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+s" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.A03jufZ310Zl"
 *** You are running in headless mode.
 1592083774416	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
 1592083774498	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
@@ -2060,9 +2067,10 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592083902446	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.1hZDhLuaQWyL"
-*** You are running in headless mode.
-1592083903843	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+rg': Reading manifest: Invalid extension permission: networkStatus
 1592083903960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1592083903960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
 1592083903960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
@@ -2073,9 +2081,10 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592084185321	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.oAnONeBL2ADI"
-*** You are running in headless mode.
-1592084187905	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+rg': Reading manifest: Invalid extension permission: networkStatus
 1592084187986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1592084187986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
 1592084187986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
@@ -2090,9 +2099,10 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript error: chrome://marionette/content/proxy.js, line 222: TypeError: this.browser.driver.dialogObserver is null
-1592084270881	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.dyfyPwkKaGF4"
-*** You are running in headless mode.
-1592084272173	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+rg': Reading manifest: Invalid extension permission: networkStatus
 1592084272283	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1592084272283	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
 1592084272283	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
@@ -2130,38 +2140,41 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript error: , line 0: uncaught exception: Object
-:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.SeQSSWHvqvn9"
-*** You are running in headless mode.
-1592084570786	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1592084570933	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1592084570933	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1592084570933	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1592084570933	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1592084575547	Marionette	INFO	Listening on port 57042
-1592084576272	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeJavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+outs.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
 JavaScript error: , line 0: uncaught exception: Object
-:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.nox7eoGGUDEX"
-*** You are running in headless mode.
-1592084758956	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1592084759211	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1592084759211	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1592084759211	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1592084759211	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+e://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1592084762673	Marionette	INFO	Listening on port 57114
 1592084762703	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript error: , line 0: uncaught exception: Object
-:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.KjCebZJZpFc3"
-*** You are running in headless mode.
-1592084862507	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1592084862592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: , line 0: uncaught exception: Object
+s@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1592084862592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
 1592084862593	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
 1592084862593	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
@@ -2172,9 +2185,10 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript error: , line 0: uncaught exception: Object
-:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.OMUAjCazFP1Z"
-*** You are running in headless mode.
-1592084976562	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+workStatus
 1592084976645	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
 1592084976645	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
 1592084976645	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
@@ -2269,16 +2283,17 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript error: , line 0: uncaught exception: Object
-:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.HKw8HbiOf72p"
-*** You are running in headless mode.
-1592085466953	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1592085467038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1592085467038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1592085467038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1592085467038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1592085469382	Marionette	INFO	Listening on port 57400
-1592085469630	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+ertificate errors will be ignored for this session
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
@@ -2314,23 +2329,73 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript error: , line 0: uncaught exception: Object
-:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile.4kWZKhyrNCZL"
-*** You are running in headless mode.
-1592085977710	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1592085977820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1592085977820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1592085977820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1592085977820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, lineJavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeJavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+rg': Reading manifest: Invalid extension permission: networkStatus
+1592153429184	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592153429184	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592153429184	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592153429184	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1592085980593	Marionette	INFO	Listening on port 57529
-1592085980906	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592153431436	Marionette	INFO	Listening on port 60615
+1592153431598	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
-
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+rg': Reading manifest: Invalid extension permission: networkStatus
+1592153900615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1592153900615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1592153900615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1592153900615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1592153903541	Marionette	INFO	Listening on port 60813
+1592153903975	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
@@ -2340,8 +2405,34 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
-1592086029970	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+ps://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+1592154210069	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 bail@chrome://marionette/content/sync.js:237:64
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 IPDL protocol error: Handler returned error code!
 
 ###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
@@ -2349,3 +2440,74 @@ IPDL protocol error: Handler returned error code!
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
+JavaScript error: chrome://marionette/content/proxy.js, line 222: TypeError: this.browser.driver.dialogObserver is null
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function
+JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 303: TypeError: this._timeouts.remove is not a function

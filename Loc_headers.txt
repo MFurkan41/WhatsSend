@@ -1,6 +1,5 @@
 İsim
 Telefon No (Örn 9053xx..)
 Yeni Kolon
+Yeni Kolon
 Mesaj Durumu
-Yeni Kolon2
-Yeni Kolon3

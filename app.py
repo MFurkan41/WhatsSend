@@ -16,11 +16,15 @@ from whatsqr import save_qr
 from form import *
 from getexcel import GetExcel
 from htmlrequest import *
+from parseText import parseVersion
+from UpdateForm import Ui_MainWindow as UpdateForm
 
 # Other Necessary Imports
 from passlib.hash import sha256_crypt
 from requests.exceptions import ConnectionError
 import urllib.parse
+import urllib.request
+import webbrowser
 
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
 
@@ -29,13 +33,10 @@ def warnMessage(title,iconType,text):
     msg.setWindowTitle(title)
     msg.setIcon(iconType)
     msg.setText(text)
+    
     x = msg.exec_()
 
-VERSION = "1.0.0"
-
-url = "https://raw.githubusercontent.com/MFurkan41/WhatsCompRepo/master/version.txt"
-strdict = requests.get(url).text
-othVERSION = strdict
+VERSION = "1.3"
 
 image_path = os.getcwd() + "\\qrcode.png"
 
@@ -58,11 +59,39 @@ class WPApp(Ui_MainWindow):
         # Create Table and Model
         self.dbModel()
 
+        # Look for Update
+        self.update("warn")
+        self.getDriver()
+
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
 
-    def update(self):
-        os.startfile(os.getcwd()+"\\updater.exe")
+    def getDriver(self):
+        if (os.path.exists(os.getcwd()+"\\geckodriver.exe") == False):
+            warnMessage("Gerekli sürücüler yüklenmemiş.",QMessageBox.Warning,"Programın çalışması için gerekli olan sürücüler bulunamadı. Yüklemek için devam ediniz.")
+            self.driverWindow = QtWidgets.QMainWindow()
+            self.ui = UpdateForm()
+            self.ui.setupUi(self.driverWindow)
+            self.driverWindow.show()
+
+    def update(self,*warn):
+        if self.controlVersion(list(warn)[0]) == True:
+            the_url = 'https://github.com/MFurkan41/WhatsCompRepo/raw/master/{}/WhatsMessageSender{}.exe'.format(list(parseVersion(self.othVERSION))[-1],list(parseVersion(self.othVERSION))[-1])
+            webbrowser.open(the_url)
+            sys.exit()
+
+    def controlVersion(self,*warn):
+        self.othVERSION = requests.get("https://github.com/MFurkan41/WhatsCompRepo/raw/master/version.txt")
+        self.othVERSION = self.othVERSION.text
+        if(list(parseVersion(self.othVERSION))[-1] != VERSION):
+            warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.\n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ list(parseVersion(self.othVERSION))[-1] + "\n\nGüncellemek için devam ediniz.")
+            return True
+        else:
+            if(list(warn)[0] != "warn"):
+                liste = parseVersion(self.othVERSION)[str(list(parseVersion(self.othVERSION))[-1])]
+                print(liste)
+                warnMessage("Program Güncel!",QMessageBox.Information,"Program Güncel.\nProgramınız sürümü : " + self.version + "\nYenilikler aşağıda sıralanmıştır;\n\n"+ '\n'.join(str(item) for item in liste))
+            return False
 
     def create_table_view(self):
         model = QtWidgets.QFileSystemModel()
@@ -73,6 +102,7 @@ class WPApp(Ui_MainWindow):
         index = self.tableView.model().index(row, column)
         self.tableView.scrollTo(index)
 
+    # Open Setting Menu
     def settings(self):
         self.subWindow = QtWidgets.QMainWindow()
         if self.apiKey == None:
@@ -89,11 +119,10 @@ class WPApp(Ui_MainWindow):
         self.ui.my_signal2.connect(self.setKey)
         self.subWindow.show()
 
+    # Get ApiKey From 'Sub_Menu.py'
     def setKey(self,key=None):
         if(key == ""):
             self.apiKey = ""
-            self.headers = ["İsim","Telefon No (Örn 9053xx..)","Mesaj Durumu"]
-            self.dbModel(self.headers)
             warnMessage("Uyarı",QMessageBox.Warning,"Lütfen anahtarınızı giriniz.")
             fileapi = open("apiKey.txt","w", encoding='utf-8')
             fileapi.write("")
@@ -105,7 +134,7 @@ class WPApp(Ui_MainWindow):
             fileapi.write(str(self.apiKey))
             fileapi.close()
             self.apiKeyControl(self.apiKey)
-
+    # Create QTableView Model and Set Header Automaticly From A .txt File
     def dbModel(self,headers=None):
         if headers is None:
             try:
@@ -131,7 +160,7 @@ class WPApp(Ui_MainWindow):
         self.tableView.setModel(self.model)
         self.tableView.resizeColumnsToContents()
         QtGui.QGuiApplication.processEvents()
-
+    # Open a .xlsx file with PyQt5.QFileDialog
     def openFile(self):
         fileName, _ = QFileDialog.getOpenFileName(MainWindow, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
         if fileName:
@@ -179,7 +208,7 @@ class WPApp(Ui_MainWindow):
 
             options = Options()
             options.headless = True
-            browser = webdriver.Firefox(options=options,executable_path="C:\\Drivers\\geckodriver.exe")
+            browser = webdriver.Firefox(options=options,executable_path=os.getcwd()+"\\geckodriver.exe")
             browser.get("https://web.whatsapp.com")
             bekle(5)
             save_qr(browser)
@@ -290,6 +319,7 @@ class WPApp(Ui_MainWindow):
 
 # Start App
 app = QtWidgets.QApplication(sys.argv)
+
 app.setApplicationName("WP Auto Message Sender")
 app.setApplicationVersion(VERSION)
 MainWindow = QtWidgets.QMainWindow()

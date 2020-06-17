@@ -99,8 +99,10 @@ class Ui_OtherWindow(QtCore.QObject):
         self.lineEdit.returnPressed.connect(self.saveBtn)
 
         if type(apiKey) == list:
-
-            self.lineEdit.setText(apiKey[0])
+            try:
+                self.lineEdit.setText(apiKey[0])
+            except IndexError:
+                self.lineEdit.setText("")
         else:
             self.lineEdit.setText(apiKey)
         self.retranslateUi(MainWindow)
