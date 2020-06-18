@@ -8,8 +8,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException
+from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException,WebDriverException
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 # Local Imports
 from whatsqr import save_qr
@@ -36,7 +38,7 @@ def warnMessage(title,iconType,text):
     
     x = msg.exec_()
 
-VERSION = "1.3"
+VERSION = "1.4"
 
 image_path = os.getcwd() + "\\qrcode.png"
 
@@ -71,7 +73,7 @@ class WPApp(Ui_MainWindow):
             warnMessage("Gerekli sürücüler yüklenmemiş.",QMessageBox.Warning,"Programın çalışması için gerekli olan sürücüler bulunamadı. Yüklemek için devam ediniz.")
             self.driverWindow = QtWidgets.QMainWindow()
             self.ui = UpdateForm()
-            self.ui.setupUi(self.driverWindow)
+            self.ui.setupUi(self.driverWindow, "https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-win64.zip")
             self.driverWindow.show()
 
     def update(self,*warn):
@@ -84,12 +86,11 @@ class WPApp(Ui_MainWindow):
         self.othVERSION = requests.get("https://github.com/MFurkan41/WhatsCompRepo/raw/master/version.txt")
         self.othVERSION = self.othVERSION.text
         if(list(parseVersion(self.othVERSION))[-1] != VERSION):
-            warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.\n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ list(parseVersion(self.othVERSION))[-1] + "\n\nGüncellemek için devam ediniz.")
+            warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.          \n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ list(parseVersion(self.othVERSION))[-1] + "\n\nGüncellemek için devam ediniz.")
             return True
         else:
             if(list(warn)[0] != "warn"):
                 liste = parseVersion(self.othVERSION)[str(list(parseVersion(self.othVERSION))[-1])]
-                print(liste)
                 warnMessage("Program Güncel!",QMessageBox.Information,"Program Güncel.\nProgramınız sürümü : " + self.version + "\nYenilikler aşağıda sıralanmıştır;\n\n"+ '\n'.join(str(item) for item in liste))
             return False
 
@@ -208,7 +209,13 @@ class WPApp(Ui_MainWindow):
 
             options = Options()
             options.headless = True
-            browser = webdriver.Firefox(options=options,executable_path=os.getcwd()+"\\geckodriver.exe")
+
+            try:
+                browser = webdriver.Firefox(options=options,executable_path=os.getcwd()+"\\geckodriver.exe")
+            except WebDriverException:
+                warnMessage("Uyarı",QMessageBox.Warning,"Programın çalışabilmesi için 'Firefox' tarayıcısını yüklemeniz gerekmekte. Yüklü ise programı yeniden başlatmalısınız.")
+                webbrowser.open("https://download-installer.cdn.mozilla.net/pub/firefox/releases/77.0.1/win32/tr/Firefox%20Installer.exe")
+                sys.exit()
             browser.get("https://web.whatsapp.com")
             bekle(5)
             save_qr(browser)
@@ -229,10 +236,12 @@ class WPApp(Ui_MainWindow):
                     for i in fList:
                         execM += "str(self.numaralar[i][" + str(i) + "]),"
                     execM = execM[:-1] + ")"
-                    exec(execM)
-                    print(execM)
-                    print(self.mesaj)
-                    print(self.mesaj.format(self.numaralar[i][0],self.numaralar[i][1],self.numaralar[i][2]))
+                    try:
+                        exec(execM)
+                    except IndexError:
+                        warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
+                        self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
+                        return
                     url = "https://web.whatsapp.com/send?phone="
                     url += str(self.numaralar[i][1])
                     url += "&text="
@@ -258,24 +267,17 @@ class WPApp(Ui_MainWindow):
                     self.changeTableItem(i)
                     QtGui.QGuiApplication.processEvents()
                 else:
+                    warnMessage("Uyarı",QMessageBox.Information,"Mesaj Hakkınız Kalmadı.")
                     self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Kalmadı"))
-                    QtGui.QGuiApplication.processEvents()
-                    self.pushButton.setText(self._translate("MainWindow", "Başlat"))
-                    bekle(2)  
-                    QtGui.QGuiApplication.processEvents()
+                    self.pushButton.setEnabled(False)
                     break
 
-            self.pushButton.setText(self._translate("MainWindow", "İşlem Tamamlandı"))
-            QtGui.QGuiApplication.processEvents()
-            self.pushButton.setText(self._translate("MainWindow", "Başlat"))
-            bekle(2)
-            QtGui.QGuiApplication.processEvents()
-
+            warnMessage("Uyarı",QMessageBox.Information,"Listedeki tüm mesajlar atıldı.")
             browser.close()
 
     def changeTableItem(self, x):
         self.dbModel()
-        self.numaralar[x][3] = "✅"
+        self.numaralar[x][-1] = "✅"
         self.CreateTable(self.numaralar)
            
     def CreateTable(self, fromlist):

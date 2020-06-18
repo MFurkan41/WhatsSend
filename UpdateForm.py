@@ -20,13 +20,14 @@ def warnMessage(title,iconType,text):
     x = msg.exec_()
 
 class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+    def setupUi(self, MainWindow, url):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(576, 117)
 
         MainWindow.setWindowFlags(MainWindow.windowFlags() | QtCore.Qt.WindowStaysOnTopHint)
 
         self.MainWindow = MainWindow
+        self.url = url
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -55,9 +56,9 @@ class Ui_MainWindow(object):
 
         # Download button event
     def on_pushButton_clicked(self):
-        the_url = 'https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-win32.zip'
+        the_url = self.url
         the_filesize = requests.get(the_url, stream=True).headers['Content-Length']
-        self.the_filepath = os.getcwd() + "\\geckodriver-v0.26.0-win32.zip"
+        self.the_filepath = os.getcwd() + "\\" +self.url.split(chr(47))[-1]
         the_fileobj = open(self.the_filepath, 'wb')
         #### Create a download thread
         self.downloadThread = downloadThread(the_url, the_filesize, the_fileobj, buffer=10240)
