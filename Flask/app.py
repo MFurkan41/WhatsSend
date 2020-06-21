@@ -32,7 +32,8 @@ def wp(key):
     for i in range(len(data)):
         data[i] = list(data[i])
     for a in range(len(data)):
-        if str(key) == str(data[a][3]):
+        if str(key) == str(data[a][4]):
+            print(data[a])
             c_id = data[a][0]
             id = int(a)
     try:
@@ -47,7 +48,7 @@ def wp(key):
             cursor.execute("UPDATE allkeys SET mcount = mcount - 1 WHERE id ='{}'".format(c_id))
         except sqlite3.OperationalError:
             return CreateDict("database_locked")
-        if(int(data[id][4]) <= 0):
+        if(int(data[id][5]) <= 0):
             return CreateDict("no_message_count",data[id])
         con.commit()
         return CreateDict("sent",data[id])

@@ -40,7 +40,7 @@ def warnMessage(title,iconType,text):
     
     x = msg.exec_()
 
-VERSION = "1.4"
+VERSION = "1.5"
 
 image_path = os.getcwd() + "\\qrcode.png"
 
@@ -49,6 +49,7 @@ class WPApp(Ui_MainWindow):
         self.setupUi(window,VERSION)
         self.apiKey = None
         self.window = window
+        self.c = False
 
         # Menu Button Settings
         self.actionDosya_A.triggered.connect(self.openFile)
@@ -63,7 +64,7 @@ class WPApp(Ui_MainWindow):
         # Create Table and Model
         self.dbModel()
 
-        # Look for Update
+        # Look for Update and Driver
         self.update("warn")
         self.getDriver()
 
@@ -313,12 +314,18 @@ class WPApp(Ui_MainWindow):
         except AttributeError:
             self.spinBox_4.setValue(0)
         else:
+            self.subWindow.close()
             self.spinBox_4.setValue(self.info['mcount'])
             if self.info["mcount"] == 0:
-                warnMessage("Uyarı!",QMessageBox.Critical,"Mesaj hakkınız kalmadı.")
+                warnMessage("Uyarı!",QMessageBox.Critical,"Hoşgeldiniz {},\nMalesef mesaj hakkınız kalmadı.".format(self.info["name"]))
                 self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Yok"))
                 QtGui.QGuiApplication.processEvents()
                 self.pushButton.setEnabled(False)
+            else:
+                self.pushButton.setText(self._translate("MainWindow", "Başlat"))
+                QtGui.QGuiApplication.processEvents()
+                self.pushButton.setEnabled(True)
+                warnMessage("Hoşgeldiniz!",QMessageBox.Information,"Hoşgeldiniz {},\nKalan Mesaj Hakkınız : {}".format(self.info["name"],self.info["mcount"]))
 
 # Start App
 app = QtWidgets.QApplication(sys.argv)

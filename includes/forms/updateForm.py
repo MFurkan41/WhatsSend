@@ -73,7 +73,7 @@ class Ui_MainWindow(object):
             self.MainWindow.close()
             os.remove(self.the_filepath)
             warnMessage("Bilgi",QMessageBox.Information,"Gerekli sürücüler yüklendi, programı kullanabilirsiniz.")
-            return
+            
 
 
     def retranslateUi(self, MainWindow):
