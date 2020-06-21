@@ -1,5 +1,4 @@
 İsim
 Telefon No (Örn 9053xx..)
-Yeni Kolon
-Yeni Kolon
+123
 Mesaj Durumu

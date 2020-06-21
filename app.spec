@@ -26,7 +26,7 @@ exe = EXE(pyz,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          console=False , icon='C:\\Users\\mfurk\\Desktop\\WP&Flask Projesi\\iconfinder_092-robot-face-1_3099460.ico')
+          console=False , icon='C:\\Users\\mfurk\\Desktop\\WP&Flask Projesi\\app-icon.ico')
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,

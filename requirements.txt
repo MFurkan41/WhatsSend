@@ -1,0 +1,7 @@
+selenium
+requests
+PyQt5
+openpyxl
+pillow
+pypiwin32
+passlib

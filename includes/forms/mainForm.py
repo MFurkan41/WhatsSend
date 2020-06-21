@@ -2,7 +2,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox
 from win32api import GetSystemMetrics
-from sub_menu import Ui_OtherWindow
+from includes.forms.subMenu import Ui_OtherWindow
 
 class Customer(object):
     def __init__(self,*args):

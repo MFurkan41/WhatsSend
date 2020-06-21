@@ -14,12 +14,14 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 # Local Imports
-from whatsqr import save_qr
-from form import *
-from getexcel import GetExcel
-from htmlrequest import *
-from parseText import parseVersion
-from UpdateForm import Ui_MainWindow as UpdateForm
+    ## Functions
+from includes.funcs.whatsqr import save_qr
+from includes.funcs.getexcel import GetExcel
+from includes.funcs.htmlrequest import *
+from includes.funcs.parseText import parseVersion
+    ## Forms
+from includes.forms.mainForm import *
+from includes.forms.updateForm import Ui_MainWindow as UpdateForm
 
 # Other Necessary Imports
 from passlib.hash import sha256_crypt
@@ -288,7 +290,6 @@ class WPApp(Ui_MainWindow):
                 execution += "fromlist["+str(i)+"]["+str(a)+"], "
             execution = execution[:-2] + ")))"
             exec(execution,{'self': self,'fromlist':fromlist,'Customer':Customer},{'self': self,'fromlist':fromlist,'Customer':Customer})
-            #model.addCustomer(Customer(fromlist[i][0], fromlist[i][1], fromlist[i][2]))
         QtGui.QGuiApplication.processEvents()
 
     def apiKeyControl(self,key):
