@@ -14,6 +14,7 @@ class Ui_OtherWindow(QtCore.QObject):
         MainWindow.setMinimumSize(QtCore.QSize(350, 393))
         MainWindow.setMaximumSize(QtCore.QSize(350, 393))
         MainWindow.setWindowFlags(MainWindow.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint)
+        MainWindow.setWindowIcon(QtGui.QIcon("app-icon.ico"))
 
         self.mainWindow = MainWindow
         self.headers = headers

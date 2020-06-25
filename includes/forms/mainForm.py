@@ -70,6 +70,8 @@ class Ui_MainWindow(object):
         MainWindow.resize(1111, 700)
         MainWindow.setMinimumSize(QtCore.QSize(1111, 700))
         MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700))
+        MainWindow.setWindowIcon(QtGui.QIcon("app-icon.ico"))
+        
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QGridLayout(self.centralwidget)
@@ -102,12 +104,13 @@ class Ui_MainWindow(object):
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout.addWidget(self.pushButton)
 
+        """
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setMinimumSize(QtCore.QSize(507, 28))
         self.pushButton_2.setMaximumSize(QtCore.QSize(507, 28))
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout.addWidget(self.pushButton_2)
-
+        """
         self.line_2 = QtWidgets.QFrame(self.centralwidget)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -273,10 +276,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         # Window Title
-        MainWindow.setWindowTitle(_translate("MainWindow", "Whatsapp Otomatik Mesaj Programı"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Whats Message Sender v"+ self.version))
 
         self.pushButton.setText(_translate("MainWindow", "Başlat"))
-        self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
+        #self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
         self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
         self.label_3.setText(_translate("MainWindow", "Atılmamış Mesaj Sayısı :"))

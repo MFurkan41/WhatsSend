@@ -36,11 +36,12 @@ def warnMessage(title,iconType,text):
     msg = QMessageBox()
     msg.setWindowTitle(title)
     msg.setIcon(iconType)
+    msg.setWindowIcon(QtGui.QIcon("app-icon.ico"))
     msg.setText(text)
     
     x = msg.exec_()
 
-VERSION = "1.5"
+VERSION = "1.6"
 
 image_path = os.getcwd() + "\\qrcode.png"
 
@@ -59,7 +60,7 @@ class WPApp(Ui_MainWindow):
 
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
-        self.pushButton_2.clicked.connect(self.create_table_view)
+        ##self.pushButton_2.clicked.connect(self.create_table_view)
 
         # Create Table and Model
         self.dbModel()
@@ -137,7 +138,7 @@ class WPApp(Ui_MainWindow):
             fileapi = open("apiKey.txt","w", encoding='utf-8')
             fileapi.write(str(self.apiKey))
             fileapi.close()
-            self.apiKeyControl(self.apiKey)
+            self.apiKeyControl(self.apiKey,0)
     # Create QTableView Model and Set Header Automaticly From A .txt File
     def dbModel(self,headers=None):
         if headers is None:
@@ -293,7 +294,7 @@ class WPApp(Ui_MainWindow):
             exec(execution,{'self': self,'fromlist':fromlist,'Customer':Customer},{'self': self,'fromlist':fromlist,'Customer':Customer})
         QtGui.QGuiApplication.processEvents()
 
-    def apiKeyControl(self,key):
+    def apiKeyControl(self,key,*control):
         try:
             self.info = HtmlRequest(key, True)
         except ConnectionError:
@@ -316,16 +317,21 @@ class WPApp(Ui_MainWindow):
         else:
             self.subWindow.close()
             self.spinBox_4.setValue(self.info['mcount'])
-            if self.info["mcount"] == 0:
-                warnMessage("Uyarı!",QMessageBox.Critical,"Hoşgeldiniz {},\nMalesef mesaj hakkınız kalmadı.".format(self.info["name"]))
-                self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Yok"))
-                QtGui.QGuiApplication.processEvents()
-                self.pushButton.setEnabled(False)
-            else:
-                self.pushButton.setText(self._translate("MainWindow", "Başlat"))
-                QtGui.QGuiApplication.processEvents()
-                self.pushButton.setEnabled(True)
-                warnMessage("Hoşgeldiniz!",QMessageBox.Information,"Hoşgeldiniz {},\nKalan Mesaj Hakkınız : {}".format(self.info["name"],self.info["mcount"]))
+            try:
+                control = control[0]
+            except IndexError:
+                pass
+            if(control == 0):
+                if self.info["mcount"] == 0:
+                    warnMessage("Uyarı!",QMessageBox.Critical,"Hoşgeldiniz {},\nMalesef mesaj hakkınız kalmadı.".format(self.info["name"]))
+                    self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Yok"))
+                    QtGui.QGuiApplication.processEvents()
+                    self.pushButton.setEnabled(False)
+                else:
+                    self.pushButton.setText(self._translate("MainWindow", "Başlat"))
+                    QtGui.QGuiApplication.processEvents()
+                    self.pushButton.setEnabled(True)
+                    warnMessage("Hoşgeldiniz!",QMessageBox.Information,"Hoşgeldiniz {},\nKalan Mesaj Hakkınız : {}".format(self.info["name"],self.info["mcount"]))
 
 # Start App
 app = QtWidgets.QApplication(sys.argv)

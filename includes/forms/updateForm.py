@@ -25,6 +25,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(576, 117)
 
         MainWindow.setWindowFlags(MainWindow.windowFlags() | QtCore.Qt.WindowStaysOnTopHint)
+        MainWindow.setWindowIcon(QtGui.QIcon("app-icon.ico"))
 
         self.MainWindow = MainWindow
         self.url = url
