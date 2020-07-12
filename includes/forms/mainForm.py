@@ -3,6 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox
 from win32api import GetSystemMetrics
 from includes.forms.subMenu import Ui_OtherWindow
+import os
 
 class Customer(object):
     def __init__(self,*args):
@@ -70,7 +71,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(1111, 700)
         MainWindow.setMinimumSize(QtCore.QSize(1111, 700))
         MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700))
-        MainWindow.setWindowIcon(QtGui.QIcon("app-icon.ico"))
+        MainWindow.setWindowIcon(QtGui.QIcon(os.getcwd() + "icon.ico"))
         
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")

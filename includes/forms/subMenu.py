@@ -3,6 +3,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox,QHeaderView
 from time import sleep as bekle
+import os
 
 class Ui_OtherWindow(QtCore.QObject):
     my_signal = QtCore.pyqtSignal(list)
@@ -14,7 +15,7 @@ class Ui_OtherWindow(QtCore.QObject):
         MainWindow.setMinimumSize(QtCore.QSize(350, 393))
         MainWindow.setMaximumSize(QtCore.QSize(350, 393))
         MainWindow.setWindowFlags(MainWindow.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint)
-        MainWindow.setWindowIcon(QtGui.QIcon("app-icon.ico"))
+        MainWindow.setWindowIcon(QtGui.QIcon(os.getcwd() + "icon.ico"))
 
         self.mainWindow = MainWindow
         self.headers = headers

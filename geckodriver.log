@@ -2598,3 +2598,825 @@ JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.5be2ce7458b30031ac49.js, line 1: unreachable code after return statement
 JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1593339493932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofiletDUnzt"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593339505297	Marionette	INFO	Listening on port 51825
+1593339505778	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 17344, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1593339726976	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofileSKdLcs"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593339734862	Marionette	INFO	Listening on port 51927
+1593339735117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 10876, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+1593340837356	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofileN9sQaA"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593340856651	Marionette	INFO	Listening on port 52177
+1593340856841	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofile4x6GET"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593341171316	Marionette	INFO	Listening on port 52330
+1593341171369	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593341242367	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593341263902	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593341289985	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593341314430	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x690008,name=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593341756970	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 568: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593341872287	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1593341920487	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x690008,name=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 1980, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 1980, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x690008,name=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593342567540	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593342744817	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593342877549	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 1980, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 1980, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 1980, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x690008,name=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+"-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofileKcWXEJ"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593344000568	Marionette	INFO	Listening on port 52801
+1593344000936	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ "-profile" "C:\\Users\\mfurk\\AppData\\Local\\Temp\\rust_mozprofileyx4XtR"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593344060781	Marionette	INFO	Listening on port 52844
+1593344060817	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593344096820	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 14832, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+3096	Marionette	INFO	Listening on port 52933
+1593344503496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593344746273	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593344766438	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x690008,name=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593344961638	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345110036	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345172474	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345297524	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345355259	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345402827	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345504992	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345556068	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345634473	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345649900	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345735455	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345749954	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345774873	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345843101	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593345955345	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x690008,name=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593346000010	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593346045120	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.14adffa5e404bcc68e38.js, line 1: unreachable code after return statement
+1593346098608	Marionette	INFO	Stopped listening on port 52933
+[Parent 11576, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522

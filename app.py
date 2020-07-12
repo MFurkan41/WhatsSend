@@ -2,6 +2,7 @@
 import sys
 import os
 from time import sleep as bekle
+import logging
 
 # Selenium Imports
 from selenium import webdriver
@@ -36,15 +37,20 @@ def warnMessage(title,iconType,text):
     msg = QMessageBox()
     msg.setWindowTitle(title)
     msg.setIcon(iconType)
-    msg.setWindowIcon(QtGui.QIcon("app-icon.ico"))
+    msg.setWindowIcon(QtGui.QIcon(os.getcwd() + "\\icon.ico"))
     msg.setText(text)
     
     x = msg.exec_()
 
-VERSION = "1.6"
+# Version Info
+VERSION = "1.7"
 
+# Image Paths
 image_path = os.getcwd() + "\\qrcode.png"
+IconPath = os.getcwd() + "\\icon.ico"
 
+# Setup For Logging
+logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
 class WPApp(Ui_MainWindow):
     def __init__(self, window):
         self.setupUi(window,VERSION)
@@ -87,7 +93,11 @@ class WPApp(Ui_MainWindow):
             sys.exit()
 
     def controlVersion(self,*warn):
-        self.othVERSION = requests.get("https://github.com/MFurkan41/WhatsCompRepo/raw/master/version.txt")
+        try:
+            self.othVERSION = requests.get("https://github.com/MFurkan41/WhatsCompRepo/raw/master/version.txt")
+        except ConnectionError:
+            warnMessage("Uyarı!",QMessageBox.Warning,"Bilgisayarınız internete bağlı olmadığından bu programı kullanmazsınız.")
+            sys.exit()
         self.othVERSION = self.othVERSION.text
         if(list(parseVersion(self.othVERSION))[-1] != VERSION):
             warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.          \n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ list(parseVersion(self.othVERSION))[-1] + "\n\nGüncellemek için devam ediniz.")
@@ -167,7 +177,7 @@ class WPApp(Ui_MainWindow):
         QtGui.QGuiApplication.processEvents()
     # Open a .xlsx file with PyQt5.QFileDialog
     def openFile(self):
-        fileName, _ = QFileDialog.getOpenFileName(MainWindow, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
+        fileName, _ = QFileDialog.getOpenFileName(self.window, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
         if fileName:
             excel = GetExcel()
             excel.createList(fileName)
@@ -241,7 +251,8 @@ class WPApp(Ui_MainWindow):
                         execM += "str(self.numaralar[i][" + str(i) + "]),"
                     execM = execM[:-1] + ")"
                     try:
-                        exec(execM)
+                        if(len(fList) != 0):
+                            exec(execM)
                     except IndexError:
                         warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
                         self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
@@ -334,13 +345,31 @@ class WPApp(Ui_MainWindow):
                     warnMessage("Hoşgeldiniz!",QMessageBox.Information,"Hoşgeldiniz {},\nKalan Mesaj Hakkınız : {}".format(self.info["name"],self.info["mcount"]))
 
 # Start App
-app = QtWidgets.QApplication(sys.argv)
+def StartApp():
+    MainWindow = QtWidgets.QMainWindow()
+    m = WPApp(MainWindow)
+    MainWindow.show()
+    return m
 
-app.setApplicationName("WP Auto Message Sender")
-app.setApplicationVersion(VERSION)
-MainWindow = QtWidgets.QMainWindow()
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
 
-ui = WPApp(MainWindow)
+    app.setApplicationName("WP Auto Message Sender")
+    app.setApplicationVersion(VERSION)
 
-MainWindow.show()
-app.exec_()
+    window = StartApp()
+    app.exec_()
+
+"""
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+
+    app.setApplicationName("WP Auto Message Sender")
+    app.setApplicationVersion(VERSION)
+    MainWindow = QtWidgets.QMainWindow()
+
+    ui = WPApp(MainWindow)
+
+    MainWindow.show()
+    app.exec_()
+"""

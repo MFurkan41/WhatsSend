@@ -11,10 +11,12 @@ import queue
 import requests
 import zipfile
 
+
 def warnMessage(title,iconType,text):
     msg = QMessageBox()
     msg.setWindowTitle(title)
     msg.setIcon(iconType)
+    msg.setWindowIcon(QtGui.QIcon(os.getcwd() + "icon.ico"))
     msg.setText(text)
     
     x = msg.exec_()
@@ -25,7 +27,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(576, 117)
 
         MainWindow.setWindowFlags(MainWindow.windowFlags() | QtCore.Qt.WindowStaysOnTopHint)
-        MainWindow.setWindowIcon(QtGui.QIcon("app-icon.ico"))
+        MainWindow.setWindowIcon(QtGui.QIcon(os.getcwd() + "download.ico"))
 
         self.MainWindow = MainWindow
         self.url = url
