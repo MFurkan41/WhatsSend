@@ -6,6 +6,8 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 import os
+from win32api import GetSystemMetrics
+from appIcons import Icons
 
 import queue
 import requests
@@ -16,7 +18,7 @@ def warnMessage(title,iconType,text):
     msg = QMessageBox()
     msg.setWindowTitle(title)
     msg.setIcon(iconType)
-    msg.setWindowIcon(QtGui.QIcon(os.getcwd() + "icon.ico"))
+    msg.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
     msg.setText(text)
     
     x = msg.exec_()
@@ -27,7 +29,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(576, 117)
 
         MainWindow.setWindowFlags(MainWindow.windowFlags() | QtCore.Qt.WindowStaysOnTopHint)
-        MainWindow.setWindowIcon(QtGui.QIcon(os.getcwd() + "download.ico"))
+        MainWindow.setWindowIcon(QtGui.QIcon(Icons["Download"]))
 
         self.MainWindow = MainWindow
         self.url = url
@@ -81,7 +83,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Güncelleme"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Wp Auto Message Sender - Sürücü"))
         self.label.setText(_translate("MainWindow",  "Gerekli sürücüler indiriliyor..."))
 
 class downloadThread(QThread):

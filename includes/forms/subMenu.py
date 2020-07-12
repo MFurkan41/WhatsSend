@@ -4,23 +4,31 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox,QHeaderView
 from time import sleep as bekle
 import os
+from win32api import GetSystemMetrics
+from appIcons import Icons
 
 class Ui_OtherWindow(QtCore.QObject):
     my_signal = QtCore.pyqtSignal(list)
     my_signal2 = QtCore.pyqtSignal(str)
     def __init__(self,MainWindow, headers, apiKey):
         super(Ui_OtherWindow,self).__init__()
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(350, 393)
-        MainWindow.setMinimumSize(QtCore.QSize(350, 393))
-        MainWindow.setMaximumSize(QtCore.QSize(350, 393))
-        MainWindow.setWindowFlags(MainWindow.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint)
-        MainWindow.setWindowIcon(QtGui.QIcon(os.getcwd() + "icon.ico"))
+
+        self.ScRate = GetSystemMetrics(0)/1920
+        self.mainWindow = MainWindow
+        self.headers = headers  
+        
+        self.mainWindow.setObjectName("MainWindow")
+        self.mainWindow.resize(350*self.ScRate, 393*self.ScRate)
+        self.mainWindow.setMinimumSize(QtCore.QSize(350*self.ScRate, 393*self.ScRate))
+        self.mainWindow.setMaximumSize(QtCore.QSize(350*self.ScRate, 393*self.ScRate))
+        self.mainWindow.setWindowFlags(self.mainWindow.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint)
+        self.mainWindow.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
 
         self.mainWindow = MainWindow
         self.headers = headers
+        
 
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget = QtWidgets.QWidget(self.mainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
@@ -30,7 +38,7 @@ class Ui_OtherWindow(QtCore.QObject):
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.label = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(10*self.ScRate)
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.verticalLayout_4.addWidget(self.label)
@@ -40,7 +48,7 @@ class Ui_OtherWindow(QtCore.QObject):
         self.verticalLayout.addLayout(self.verticalLayout_4)
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(10*self.ScRate)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.verticalLayout.addWidget(self.label_2)
@@ -86,14 +94,14 @@ class Ui_OtherWindow(QtCore.QObject):
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout_2.addWidget(self.pushButton)
         self.gridLayout.addLayout(self.horizontalLayout_2, 2, 0, 2, 1)
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 350, 26))
+        self.mainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(self.mainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 350*self.ScRate, 26*self.ScRate))
         self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.mainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(self.mainWindow)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        self.mainWindow.setStatusBar(self.statusbar)
 
         self.create_popup_menu()
         self.pushButton.clicked.connect(self.saveBtn)
@@ -107,7 +115,7 @@ class Ui_OtherWindow(QtCore.QObject):
                 self.lineEdit.setText("")
         else:
             self.lineEdit.setText(apiKey)
-        self.retranslateUi(MainWindow)
+        self.retranslateUi(self.mainWindow)
         self.treeWidget.resizeColumnToContents(0)
 
 
@@ -122,7 +130,7 @@ class Ui_OtherWindow(QtCore.QObject):
             if url == "Mesaj Durumu":
                 item.setHidden(True)
 
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(self.mainWindow)
 
     def saveBtn(self):
         self.headers = []
@@ -181,7 +189,7 @@ class Ui_OtherWindow(QtCore.QObject):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Ayarlar"))
+        self.mainWindow.setWindowTitle(_translate("MainWindow", "Ayarlar"))
         self.label.setText(_translate("MainWindow", "Anahtarınız"))
         self.label_2.setText(_translate("MainWindow", "Müşteri Liste Kolonları (Ekleme, Silme)"))
         self.treeWidget.headerItem().setText(0, _translate("MainWindow", "Kolonlar"))

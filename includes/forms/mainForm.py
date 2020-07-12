@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessage
 from win32api import GetSystemMetrics
 from includes.forms.subMenu import Ui_OtherWindow
 import os
+from appIcons import Icons
 
 class Customer(object):
     def __init__(self,*args):
@@ -66,12 +67,14 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow, version):
 
         self.version = version
+        self.ScRate = GetSystemMetrics(0)/1920
+        self.font = QtGui.QFont("Georgia", 8.8*self.ScRate,weight=-2)
 
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1111, 700)
-        MainWindow.setMinimumSize(QtCore.QSize(1111, 700))
-        MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700))
-        MainWindow.setWindowIcon(QtGui.QIcon(os.getcwd() + "icon.ico"))
+        MainWindow.resize(1111*self.ScRate, 700)
+        MainWindow.setMinimumSize(QtCore.QSize(1111*self.ScRate, 700*self.ScRate))
+        MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700*self.ScRate))
+        MainWindow.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
         
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -81,7 +84,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName("horizontalLayout")
 
         self.tableView = QtWidgets.QTableView(self.centralwidget)
-        self.tableView.setMinimumSize(QtCore.QSize(550, 0))
+        self.tableView.setMinimumSize(QtCore.QSize(550*self.ScRate, 0))
         self.tableView.setObjectName("tableView")
         self.horizontalLayout.addWidget(self.tableView)
 
@@ -100,8 +103,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
         self.pushButton.setSizePolicy(sizePolicy)                                                                                                                                                
-        self.pushButton.setMinimumSize(QtCore.QSize(507, 28))
-        self.pushButton.setMaximumSize(QtCore.QSize(507, 28))
+        self.pushButton.setMinimumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
+        self.pushButton.setMaximumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout.addWidget(self.pushButton)
 
@@ -122,9 +125,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setMinimumSize(QtCore.QSize(249, 31))
-        self.label.setMaximumSize(QtCore.QSize(249, 31))
+        self.label.setMinimumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))
+        self.label.setMaximumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))
         self.label.setObjectName("label")
+        self.label.setFont(self.font)
         self.horizontalLayout_3.addWidget(self.label)
 
         self.spinBox = QtWidgets.QSpinBox(self.centralwidget)
@@ -133,8 +137,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.spinBox.sizePolicy().hasHeightForWidth())
         self.spinBox.setSizePolicy(sizePolicy)
-        self.spinBox.setMinimumSize(QtCore.QSize(249, 22))
-        self.spinBox.setMaximumSize(QtCore.QSize(249, 22))                              
+        self.spinBox.setMinimumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))
+        self.spinBox.setMaximumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))                              
         self.spinBox.setReadOnly(True)
         self.spinBox.setMaximum(999999)
         self.spinBox.setObjectName("spinBox")
@@ -146,9 +150,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
 
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setMinimumSize(QtCore.QSize(249, 32))
-        self.label_2.setMaximumSize(QtCore.QSize(249, 32))                                     
+        self.label_2.setMinimumSize(QtCore.QSize(249*self.ScRate, 32*self.ScRate))
+        self.label_2.setMaximumSize(QtCore.QSize(249*self.ScRate, 32*self.ScRate))                                     
         self.label_2.setObjectName("label_2")
+        self.label_2.setFont(self.font)
         self.horizontalLayout_4.addWidget(self.label_2)
 
         self.spinBox_2 = QtWidgets.QSpinBox(self.centralwidget)
@@ -157,8 +162,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)        
         sizePolicy.setHeightForWidth(self.spinBox_2.sizePolicy().hasHeightForWidth())
         self.spinBox_2.setSizePolicy(sizePolicy)
-        self.spinBox_2.setMinimumSize(QtCore.QSize(249, 22))
-        self.spinBox_2.setMaximumSize(QtCore.QSize(249, 22))                                
+        self.spinBox_2.setMinimumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))
+        self.spinBox_2.setMaximumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))                                
         self.spinBox_2.setReadOnly(True)
         self.spinBox_2.setMaximum(999999)
         self.spinBox_2.setObjectName("spinBox_2")
@@ -170,9 +175,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
 
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setMinimumSize(QtCore.QSize(249, 31))
-        self.label_3.setMaximumSize(QtCore.QSize(249, 31))                                     
+        self.label_3.setMinimumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))
+        self.label_3.setMaximumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))                                     
         self.label_3.setObjectName("label_3")
+        self.label_3.setFont(self.font)
         self.horizontalLayout_5.addWidget(self.label_3)
 
         self.spinBox_3 = QtWidgets.QSpinBox(self.centralwidget)
@@ -181,8 +187,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)                                        
         sizePolicy.setHeightForWidth(self.spinBox_3.sizePolicy().hasHeightForWidth())
         self.spinBox_3.setSizePolicy(sizePolicy)
-        self.spinBox_3.setMinimumSize(QtCore.QSize(249, 22))
-        self.spinBox_3.setMaximumSize(QtCore.QSize(249, 22))                                
+        self.spinBox_3.setMinimumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))
+        self.spinBox_3.setMaximumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))                                
         self.spinBox_3.setReadOnly(True)
         self.spinBox_3.setMaximum(999999)
         self.spinBox_3.setObjectName("spinBox_3")
@@ -194,9 +200,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
 
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setMinimumSize(QtCore.QSize(249, 31))
-        self.label_4.setMaximumSize(QtCore.QSize(249, 31))                                     
+        self.label_4.setMinimumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))
+        self.label_4.setMaximumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))                                     
         self.label_4.setObjectName("label_4")
+        self.label_4.setFont(self.font)
         self.horizontalLayout_6.addWidget(self.label_4)
 
         self.spinBox_4 = QtWidgets.QSpinBox(self.centralwidget)
@@ -205,8 +212,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)                                
         sizePolicy.setHeightForWidth(self.spinBox_4.sizePolicy().hasHeightForWidth())
         self.spinBox_4.setSizePolicy(sizePolicy)
-        self.spinBox_4.setMinimumSize(QtCore.QSize(249, 22))
-        self.spinBox_4.setMaximumSize(QtCore.QSize(249, 22))                               
+        self.spinBox_4.setMinimumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))
+        self.spinBox_4.setMaximumSize(QtCore.QSize(249*self.ScRate, 22*self.ScRate))                               
         self.spinBox_4.setReadOnly(True)
         self.spinBox_4.setMaximum(999999)
         self.spinBox_4.setObjectName("spinBox_4")
@@ -218,8 +225,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
 
         self.plain = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plain.setMinimumSize(QtCore.QSize(240, 380))
-        self.plain.setMaximumSize(QtCore.QSize(240, 380))                                                                    
+        self.plain.setMinimumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))
+        self.plain.setMaximumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))                                                                    
         self.plain.setObjectName("plain")
         self.horizontalLayout_7.addWidget(self.plain)
 
@@ -227,23 +234,26 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName("verticalLayout_2")
 
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
-        self.label_5.setMinimumSize(QtCore.QSize(256, 130))
-        self.label_5.setMaximumSize(QtCore.QSize(256, 130))
+        self.label_5.setMinimumSize(QtCore.QSize(256*self.ScRate, 130*self.ScRate))
+        self.label_5.setMaximumSize(QtCore.QSize(256*self.ScRate, 130*self.ScRate))
         self.label_5.setObjectName("label_5")
+        self.label_5.setFont(self.font)
         self.verticalLayout_2.addWidget(self.label_5)
 
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
-        self.label_6.setMinimumSize(QtCore.QSize(280, 230))
-        self.label_6.setMaximumSize(QtCore.QSize(280, 230))                                                      
+        self.label_6.setMinimumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))
+        self.label_6.setMaximumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))                                                      
         self.label_6.setObjectName("label_6")
+        self.label_6.setFont(self.font)
         self.verticalLayout_2.addWidget(self.label_6)
+
         self.horizontalLayout_7.addLayout(self.verticalLayout_2)
         self.verticalLayout.addLayout(self.horizontalLayout_7)
         self.horizontalLayout.addLayout(self.verticalLayout)
         self.gridLayout.addLayout(self.horizontalLayout,0,0,1,1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1100, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1100*self.ScRate, 26*self.ScRate))
         self.menubar.setObjectName("menubar")
         self.menuDosya = QtWidgets.QMenu(self.menubar)
         self.menuDosya.setObjectName("menuDosya")

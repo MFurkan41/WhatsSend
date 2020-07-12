@@ -166,10 +166,8 @@ class WPApp(Ui_MainWindow):
             fileHeader.write('\n'.join(headers) + '\n')
             fileHeader.close()
             self.headers = headers
-        for i in range(len(self.headers)):
-            if(self.headers[i] == "Mesaj Durumu"):
-                m = i
-        self.headers.pop(m)
+            
+        self.headers.pop(self.headers.index("Mesaj Durumu"))
         self.headers.append("Mesaj Durumu")
         self.model = CustomerTableModel(self.headers)
         self.tableView.setModel(self.model)
@@ -251,8 +249,10 @@ class WPApp(Ui_MainWindow):
                         execM += "str(self.numaralar[i][" + str(i) + "]),"
                     execM = execM[:-1] + ")"
                     try:
-                        if(len(fList) != 0):
+                        try:
                             exec(execM)
+                        except:
+                            pass
                     except IndexError:
                         warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
                         self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
