@@ -47,7 +47,6 @@ VERSION = "1.7"
 
 # Image Paths
 image_path = os.getcwd() + "\\qrcode.png"
-IconPath = os.getcwd() + "\\icon.ico"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
