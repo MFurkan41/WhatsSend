@@ -1,5 +1,6 @@
 from PIL import Image
 from io import BytesIO
+from win32api import GetSystemMetrics
 
 def save_qr(browser):
     ScRate = GetSystemMetrics(0)/1920
