@@ -12,5 +12,5 @@ def save_qr(browser):
     im = Image.open(BytesIO(png)) 
 
     im = im.crop((location['x'] -20, location['y'] -20, location['x'] + size['width'] + 10, location['y'] + size['height'] + 20))
-    im = im.resize((250*ScRate,250*ScRate))
+    im = im.resize((int(250*ScRate),int(250*ScRate)))
     im.save('qrcode.png') 

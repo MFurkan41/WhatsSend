@@ -9,7 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException,WebDriverException
+from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException,WebDriverException,NoSuchElementException
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
@@ -241,35 +241,33 @@ class WPApp(Ui_MainWindow):
                     fList.append(i)
             
             for i in range(len(self.numaralar)):
-                gen=1
-                while True:
-                    execM = "self.mesaj = self.mesaj.format("
-                    for i in fList:
-                        execM += "str(self.numaralar[i][" + str(i) + "]),"
-                    execM = execM[:-1] + ")"
-                    try:
-                        try:
-                            exec(execM)
-                        except:
-                            pass
-                    except IndexError:
-                        warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
-                        self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
-                        return
-                    url = "https://web.whatsapp.com/send?phone="
-                    url += str(self.numaralar[i][1])
-                    url += "&text="
-                    url += urllib.parse.quote_plus(self.mesaj)
-                    browser.get(url)
+                
+                execM = "self.mesaj = self.mesaj.format("
+                for i in fList:
+                    execM += "str(self.numaralar[i][" + str(i) + "]),"
+                execM = execM[:-1] + ")"
+                try:
+                    if(len(fList) != 0):
+                        exec(execM)
 
+                except IndexError:
+                    warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
+                    self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
+                    return
+                url = "https://web.whatsapp.com/send?phone="
+                url += str(self.numaralar[i][1])
+                url += "&text="
+                url += urllib.parse.quote_plus(self.mesaj)
+                browser.get(url)
+                while True:
                     try:
-                        bekle(gen*2+1)
-                        button = WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='main']/footer/div[1]/div[3]/button")))
+                        button = browser.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[3]/button")
                         button.click()
-                    except (TimeoutException, ElementClickInterceptedException):
-                        gen += 1
+                    except (TimeoutException, ElementClickInterceptedException, NoSuchElementException):
+                        bekle(0.5)
                         continue
-                    break
+                    else:
+                        break
 
                 self.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
                 self.spinBox_3.setValue(int(self.spinBox_3.text()) - 1)
@@ -285,9 +283,11 @@ class WPApp(Ui_MainWindow):
                     self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Kalmadı"))
                     self.pushButton.setEnabled(False)
                     break
+                QtGui.QGuiApplication.processEvents()
 
             warnMessage("Uyarı",QMessageBox.Information,"Listedeki tüm mesajlar atıldı.")
             browser.close()
+            QtGui.QGuiApplication.processEvents()
 
     def changeTableItem(self, x):
         self.dbModel()
