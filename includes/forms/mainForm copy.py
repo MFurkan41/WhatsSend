@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox
 from win32api import GetSystemMetrics
 from includes.forms.subMenu import Ui_OtherWindow
-import os
+import os,codecs
 from appIcons import Icons
 
 class Customer(object):
@@ -224,6 +224,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
 
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+
         self.plain = QtWidgets.QPlainTextEdit(self.centralwidget)
         self.plain.setMinimumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))
         self.plain.setMaximumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))                                                                    
@@ -231,35 +234,32 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        
 
-        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
-        self.pushButton_2.setMaximumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)                                                                                                                                               
+        self.pushButton_2.setMinimumSize(QtCore.QSize(30,30))
+        self.pushButton_2.setMaximumSize(QtCore.QSize(30,30))
         self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout_2.addWidget(self.pushButton_2)
-        self.verticalLayout_2.addWidget(self.plain)
-
-        self.horizontalLayout_7.addLayout(self.verticalLayout_2)
-
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.verticalLayout.addWidget(self.pushButton_2)
+        
+        self.verticalLayout_3.addWidget(self.pushButton_2)
+        self.verticalLayout_3.addWidget(self.plain)
+        self.horizontalLayout_7.addLayout(self.verticalLayout_3)
 
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setMinimumSize(QtCore.QSize(256*self.ScRate, 130*self.ScRate))
         self.label_5.setMaximumSize(QtCore.QSize(256*self.ScRate, 130*self.ScRate))
         self.label_5.setObjectName("label_5")
         self.label_5.setFont(self.font)
-        self.verticalLayout_3.addWidget(self.label_5)
+        self.verticalLayout_2.addWidget(self.label_5)
 
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
         self.label_6.setMinimumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))
         self.label_6.setMaximumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))                                                      
         self.label_6.setObjectName("label_6")
         self.label_6.setFont(self.font)
-        self.verticalLayout_3.addWidget(self.label_6)
+        self.verticalLayout_2.addWidget(self.label_6)
 
-        self.horizontalLayout_7.addLayout(self.verticalLayout_3)
+        self.horizontalLayout_7.addLayout(self.verticalLayout_2)
         self.verticalLayout.addLayout(self.horizontalLayout_7)
         self.horizontalLayout.addLayout(self.verticalLayout)
         self.gridLayout.addLayout(self.horizontalLayout,0,0,1,1)
@@ -302,12 +302,11 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Whats Message Sender v"+ self.version))
 
         self.pushButton.setText(_translate("MainWindow", "Başlat"))
-        
         self.pushButton_2.setIcon(QtGui.QIcon(Icons["Preview"]))
         self.pushButton_2.setToolTip(_translate("MainWindow","    Mesajınızın önizlemesine bu <br>butondan bakabilirsiniz."))
-        self.pushButton_2.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
+        self.pushButton_2.setIconSize(QtCore.QSize(30, 30))   
         self.pushButton_2.setStyleSheet('QPushButton{border: 0px solid;}')
-        
+
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
         self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
         self.label_3.setText(_translate("MainWindow", "Atılmamış Mesaj Sayısı :"))

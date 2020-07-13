@@ -1,8 +1,6 @@
 # Python Standart Library Imports
-import sys
-import os
+import sys,os,logging,codecs
 from time import sleep as bekle
-import logging
 
 # Selenium Imports
 from selenium import webdriver
@@ -65,7 +63,7 @@ class WPApp(Ui_MainWindow):
 
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
-        ##self.pushButton_2.clicked.connect(self.previewMessage)
+        self.pushButton_2.clicked.connect(self.previewMessage)
 
         # Create Table and Model
         self.dbModel()
