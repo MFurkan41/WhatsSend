@@ -27,7 +27,7 @@ from passlib.hash import sha256_crypt
 from requests.exceptions import ConnectionError
 import urllib.parse
 import urllib.request
-import webbrowser
+import webview
 
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
 
@@ -84,7 +84,11 @@ class WPApp(Ui_MainWindow):
        
             with codecs.open(os.getcwd()+"\\WhatsAppGui\\index.html","w","utf-8") as file:
                 file.write(index)
-            webbrowser.open(os.getcwd()+"\\WhatsAppGui\\index.html")
+
+            webview.create_window("Mesaj Önizleme","WhatsAppGui/index.html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
+            webview.start()
+            return
+
         else:
             warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")
 

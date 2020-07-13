@@ -1045,3 +1045,427 @@
 2020-07-14 00:18:16,863 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
 2020-07-14 00:18:16,865 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
 2020-07-14 00:18:17,102 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:09:18,186 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:09:18,556 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:09:18,558 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:09:18,916 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:09:29,584 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:09:29,777 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:09:29,779 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:09:30,012 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:10:01,136 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:10:01,307 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:10:01,309 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:10:01,760 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:11:01,912 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:11:02,118 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:11:02,120 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:11:02,349 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:12:26,360 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:12:26,751 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:12:26,753 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:12:27,011 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:13:11,509 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:13:12,332 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:13:12,333 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:13:12,660 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:13:43,137 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:13:43,308 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:13:43,310 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:13:43,522 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:14:03,774 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:14:03,966 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:14:03,968 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:14:04,193 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:14:05,886 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000023D8BDE9888> started on http://localhost:2786/
+2020-07-14 01:14:06,272 - Resolved /index.html to \C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:15:35,236 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:15:35,831 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:15:35,833 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:15:36,315 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:15:38,186 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000232E3C49D08> started on http://localhost:36437/
+2020-07-14 01:15:38,584 - Resolved /index.html to \C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:16:49,063 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:16:49,283 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:16:49,285 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:16:49,561 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:16:54,174 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001CE021DAB48> started on http://localhost:26676/
+2020-07-14 01:16:54,655 - Resolved /index.html to \\C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:16:54,656 - file not found: /index.html
+2020-07-14 01:16:54,656 - Resolved /index.html/index.html to \\C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html/index.html
+2020-07-14 01:16:54,656 - file not found: /index.html/index.html
+2020-07-14 01:17:11,004 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:17:11,188 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:17:11,189 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:17:11,589 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:17:14,391 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000236BDD89B88> started on http://localhost:62386/
+2020-07-14 01:17:14,776 - Resolved /index.html to \C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:18:01,188 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:18:01,678 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:18:01,678 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:18:01,893 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:18:04,702 - HTTP server for <webview.wsgi.StaticFiles object at 0x000002207C7B9BC8> started on http://localhost:46836/
+2020-07-14 01:18:05,203 - Resolved /index.html to \C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:18:17,398 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:18:17,567 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:18:17,568 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:18:17,803 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:19:46,635 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:19:46,822 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:19:46,824 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:19:47,048 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:19:49,948 - HTTP server for <webview.wsgi.StaticFiles object at 0x000002535648AB08> started on http://localhost:58110/
+2020-07-14 01:19:50,342 - Resolved /index.html to \C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:21:09,689 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:21:10,078 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:21:10,080 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:21:10,505 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:21:12,657 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001D5AA8A9CC8> started on http://localhost:40605/
+2020-07-14 01:22:00,497 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:22:00,692 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:22:00,693 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:22:00,902 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:22:02,307 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000247EAFC9348> started on http://localhost:57191/
+2020-07-14 01:22:02,694 - Resolved /index.html to \WhatsAppGui\index.html
+2020-07-14 01:22:02,694 - file not found: /index.html
+2020-07-14 01:22:02,694 - Resolved /index.html/index.html to \WhatsAppGui\index.html/index.html
+2020-07-14 01:22:02,694 - file not found: /index.html/index.html
+2020-07-14 01:22:28,954 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:22:29,157 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:22:29,159 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:22:29,418 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:22:31,640 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001F9E8098D08> started on http://localhost:5995/
+2020-07-14 01:22:32,030 - Resolved /index.html to \C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:22:44,591 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:22:44,762 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:22:44,764 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:22:45,132 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:22:47,082 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000259A4848C08> started on http://localhost:14542/
+2020-07-14 01:22:47,465 - Resolved /index.html to \C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:23:16,295 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:23:16,467 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:23:16,469 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:23:16,749 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:23:47,463 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:23:47,660 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:23:47,662 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:23:48,073 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:23:49,827 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000021EA7AD9B08> started on http://localhost:57930/
+2020-07-14 01:23:50,214 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:23:50,392 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:23:50,393 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:23:50,394 - file not found: /wp-profile.png
+2020-07-14 01:23:50,394 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png/index.html
+2020-07-14 01:23:50,394 - file not found: /wp-profile.png/index.html
+2020-07-14 01:23:50,395 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:24:10,014 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:24:10,199 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:24:10,201 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:24:10,406 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:24:15,272 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001349FD73DC8> started on http://localhost:11351/
+2020-07-14 01:24:16,124 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:24:16,144 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:24:16,145 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:24:16,145 - file not found: /wp-profile.png
+2020-07-14 01:24:16,146 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:24:16,146 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png/index.html
+2020-07-14 01:24:16,147 - file not found: /wp-profile.png/index.html
+2020-07-14 01:25:15,657 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:25:15,839 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:25:15,841 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:25:16,069 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:25:18,020 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001F394928B48> started on http://localhost:39627/
+2020-07-14 01:25:18,437 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:25:18,453 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:25:18,455 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:25:18,457 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:25:18,458 - file not found: /wp-profile.png
+2020-07-14 01:25:18,459 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png/index.html
+2020-07-14 01:25:18,459 - file not found: /wp-profile.png/index.html
+2020-07-14 01:25:49,191 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:25:49,587 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:25:49,589 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:25:49,849 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:25:53,202 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000024CADD38B48> started on http://localhost:6005/
+2020-07-14 01:25:53,776 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:25:53,800 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:25:53,800 - file not found: /wp-profile.png
+2020-07-14 01:25:53,801 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png/index.html
+2020-07-14 01:25:53,801 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:25:53,801 - file not found: /wp-profile.png/index.html
+2020-07-14 01:25:53,803 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:27:00,305 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:27:00,499 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:27:00,500 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:27:00,708 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:27:02,603 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001941A8E6488> started on http://localhost:34110/
+2020-07-14 01:27:03,038 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:27:03,055 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:27:03,055 - file not found: /wp-profile.png
+2020-07-14 01:27:03,056 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:27:03,056 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png/index.html
+2020-07-14 01:27:03,057 - file not found: /wp-profile.png/index.html
+2020-07-14 01:27:03,059 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:27:17,852 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:27:18,019 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:27:18,021 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:27:18,238 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:27:20,294 - HTTP server for <webview.wsgi.StaticFiles object at 0x000002488A3F9BC8> started on http://localhost:59953/
+2020-07-14 01:27:20,681 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:27:20,697 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:27:20,698 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:27:20,699 - file not found: /wp-profile.png
+2020-07-14 01:27:20,700 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png/index.html
+2020-07-14 01:27:20,702 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:27:20,702 - file not found: /wp-profile.png/index.html
+2020-07-14 01:27:38,756 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:27:38,977 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:27:38,979 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:27:39,180 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:27:43,912 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000279C3A29C88> started on http://localhost:54610/
+2020-07-14 01:27:44,395 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:27:44,414 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:27:44,416 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:27:44,418 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:27:44,419 - file not found: /wp-profile.png
+2020-07-14 01:27:44,419 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png/index.html
+2020-07-14 01:27:44,419 - file not found: /wp-profile.png/index.html
+2020-07-14 01:28:16,921 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:28:17,278 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:28:17,280 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:28:17,981 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:28:28,725 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:28:28,902 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:28:28,904 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:28:29,148 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:28:32,992 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000186FD3F6DC8> started on http://localhost:4049/
+2020-07-14 01:28:33,423 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:28:33,440 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:28:33,441 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:28:33,442 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:28:50,666 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:28:50,852 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:28:50,854 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:28:51,198 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:28:54,199 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001F3C6B29688> started on http://localhost:38893/
+2020-07-14 01:28:54,651 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:28:54,666 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:28:54,668 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:28:54,670 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:29:04,639 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:29:04,825 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:29:04,827 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:29:05,034 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:29:08,015 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001AB38619A88> started on http://localhost:7503/
+2020-07-14 01:29:08,449 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:29:08,466 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:29:08,470 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:29:08,471 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:30:30,575 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:30:30,949 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:30:30,951 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:30:31,378 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:31:04,686 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:31:04,873 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:31:04,875 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:31:05,110 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:31:08,910 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001E5582C9AC8> started on http://localhost:61404/
+2020-07-14 01:31:09,490 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:31:09,503 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:31:09,505 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:31:09,508 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:31:26,164 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:31:26,618 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:31:26,826 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:31:27,395 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:31:29,123 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:31:30,754 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:34:24,558 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:34:24,932 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 None
+2020-07-14 01:34:24,934 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:34:25,349 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:34:27,050 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001EE22F78B48> started on http://localhost:39474/
+2020-07-14 01:34:27,463 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:34:27,480 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:34:27,481 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:34:27,483 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:34:51,845 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:34:52,033 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:34:52,035 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:34:52,341 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:34:55,140 - HTTP server for <webview.wsgi.StaticFiles object at 0x000002299F1D9AC8> started on http://localhost:28343/
+2020-07-14 01:34:55,527 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:34:55,547 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:34:55,547 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:34:55,550 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:35:52,269 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:35:52,482 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:35:52,484 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:35:52,896 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:35:55,988 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001CDABA98C48> started on http://localhost:39139/
+2020-07-14 01:35:57,298 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:35:57,313 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:35:57,319 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:35:57,322 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:37:17,057 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:37:17,399 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:37:17,401 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:37:17,605 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:37:20,110 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000145A2198C08> started on http://localhost:34161/
+2020-07-14 01:37:20,505 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:37:20,521 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:37:20,522 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:37:20,523 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:39:58,225 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:39:58,629 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:39:58,631 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:39:59,047 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:40:02,179 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001D9C239D548> started on http://localhost:11231/
+2020-07-14 01:40:02,592 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:40:02,608 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:40:02,610 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:40:02,613 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:40:18,310 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:40:18,494 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:40:18,496 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:40:18,712 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:40:20,607 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001A507EA9B88> started on http://localhost:51932/
+2020-07-14 01:40:20,993 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:40:21,009 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:40:21,011 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:40:21,013 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:40:29,452 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:40:29,639 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:40:29,642 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:40:29,823 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:40:32,352 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000019F37DF9348> started on http://localhost:43990/
+2020-07-14 01:40:32,740 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:40:32,758 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:40:32,761 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:40:32,764 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:40:50,740 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:40:50,929 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:40:50,931 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:40:51,236 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:41:07,080 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000019C0F56AA48> started on http://localhost:52016/
+2020-07-14 01:41:30,814 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:41:30,985 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:41:30,988 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:41:31,412 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:41:36,500 - HTTP server for <webview.wsgi.StaticFiles object at 0x000002916A049C88> started on http://localhost:28145/
+2020-07-14 01:41:36,926 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:41:36,942 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:41:36,944 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:41:36,945 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:42:32,303 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:42:32,680 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:42:32,682 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:42:32,909 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:42:37,203 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000272EBF52888> started on http://localhost:64190/
+2020-07-14 01:42:37,590 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:42:37,607 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:42:37,609 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:42:37,616 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:43:00,337 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:43:00,544 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:43:00,546 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:43:00,786 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:43:04,215 - HTTP server for <webview.wsgi.StaticFiles object at 0x000002795E829C48> started on http://localhost:16121/
+2020-07-14 01:43:04,607 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:43:04,624 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:43:04,625 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:43:04,627 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:48:10,130 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:48:10,499 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:48:10,501 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:48:10,923 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:48:14,663 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000015CE1F89B48> started on http://localhost:52187/
+2020-07-14 01:48:15,088 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:48:15,106 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:48:15,107 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:48:15,108 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:48:50,194 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:48:50,361 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:48:50,363 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:48:50,781 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:48:54,125 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000296D8CB9508> started on http://localhost:45347/
+2020-07-14 01:48:54,515 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:48:54,533 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:48:54,535 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:48:54,538 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:49:47,796 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:49:47,991 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:49:47,993 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:49:48,225 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:49:50,018 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001F97351AA88> started on http://localhost:3101/
+2020-07-14 01:49:50,412 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:49:50,429 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:49:50,431 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:49:50,432 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:50:17,998 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:50:18,197 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:50:18,199 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:50:18,440 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:51:11,648 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:51:11,834 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:51:11,836 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:51:12,066 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:51:14,490 - HTTP server for <webview.wsgi.StaticFiles object at 0x000002094025AA48> started on http://localhost:31614/
+2020-07-14 01:51:14,873 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:51:14,890 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:51:14,891 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:51:14,893 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:52:57,834 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:52:58,274 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:52:58,276 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:52:58,536 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:53:00,359 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000236DA289C88> started on http://localhost:25456/
+2020-07-14 01:53:00,762 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:53:00,778 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:53:00,780 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:53:00,783 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:55:18,921 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:55:19,317 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:55:19,319 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:55:19,719 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:55:22,238 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000021B341C9D08> started on http://localhost:3128/
+2020-07-14 01:55:22,638 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:55:22,653 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:55:22,654 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:55:22,658 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 01:59:55,598 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 01:59:55,961 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 01:59:55,963 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 01:59:56,189 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 01:59:59,079 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001FE15558C08> started on http://localhost:16085/
+2020-07-14 01:59:59,480 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 01:59:59,496 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 01:59:59,498 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 01:59:59,500 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 02:02:02,172 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 02:02:02,400 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 02:02:02,401 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 02:02:02,815 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 02:02:04,794 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001437CB48BC8> started on http://localhost:23633/
+2020-07-14 02:02:05,233 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 02:02:05,249 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 02:02:05,251 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 02:02:05,252 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 02:02:25,665 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 02:02:25,894 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 02:02:25,896 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 02:02:26,154 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 02:02:28,191 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000015F92E1AA48> started on http://localhost:7274/
+2020-07-14 02:02:28,582 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 02:02:28,602 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 02:02:28,603 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 02:02:28,607 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js
+2020-07-14 02:02:51,888 - Starting new HTTPS connection (1): github.com:443
+2020-07-14 02:02:52,072 - https://github.com:443 "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-14 02:02:52,074 - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2020-07-14 02:02:52,451 - https://raw.githubusercontent.com:443 "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 238
+2020-07-14 02:02:54,879 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001FFDBE1AAC8> started on http://localhost:50940/
+2020-07-14 02:02:55,274 - Resolved /index.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index.html
+2020-07-14 02:02:55,299 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-14 02:02:55,300 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-14 02:02:55,302 - Resolved /script.js to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\script.js

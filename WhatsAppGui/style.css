@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  overflow: hidden; /* Hide scrollbars */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Roboto", sans-serif;
@@ -17,7 +18,7 @@ body {
   padding: 0;
   height: 100%;
   background:url(https://i.ibb.co/q9mygMq/background.jpg);
-   background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size:cover;
 }
 
