@@ -37,7 +37,7 @@ def warnMessage(title,iconType,text):
     msg = QMessageBox()
     msg.setWindowTitle(title)
     msg.setIcon(iconType)
-    msg.setWindowIcon(QtGui.QIcon(os.getcwd() + "\\icon.ico"))
+    msg.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
     msg.setText(text)
     
     x = msg.exec_()
@@ -65,7 +65,7 @@ class WPApp(Ui_MainWindow):
 
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
-        ##self.pushButton_2.clicked.connect(self.create_table_view)
+        ##self.pushButton_2.clicked.connect(self.previewMessage)
 
         # Create Table and Model
         self.dbModel()
@@ -76,6 +76,19 @@ class WPApp(Ui_MainWindow):
 
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
+
+    def previewMessage(self):
+        message = str(self.plain.toPlainText())
+        if(message != ""):
+            with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_raw.html","r","utf-8") as file:
+                index_raw = file.read()
+            index = index_raw.format(message=message)
+       
+            with codecs.open(os.getcwd()+"\\WhatsAppGui\\index.html","w","utf-8") as file:
+                file.write(index)
+            webbrowser.open(os.getcwd()+"\\WhatsAppGui\\index.html")
+        else:
+            warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")
 
     def getDriver(self):
         if (os.path.exists(os.getcwd()+"\\geckodriver.exe") == False):
@@ -212,10 +225,10 @@ class WPApp(Ui_MainWindow):
 
             QtGui.QGuiApplication.processEvents()
 
-            rec = 1161
+            rec = 1161*self.ScRate
             while self.tableView.horizontalScrollBar().isVisible() == True:
-                self.window.resize(rec,700)
-                rec += 10
+                self.window.resize(rec,700*self.ScRate)
+                rec += 10*self.ScRate
             QtGui.QGuiApplication.processEvents()
 
             options = Options()

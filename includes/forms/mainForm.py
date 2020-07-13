@@ -290,7 +290,12 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Whats Message Sender v"+ self.version))
 
         self.pushButton.setText(_translate("MainWindow", "Başlat"))
-        #self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
+        """
+        self.pushButton_2.setIcon(QtGui.QIcon(Icons["Preview"]))
+        self.pushButton_2.setToolTip(_translate("MainWindow","    Mesajınızın önizlemesine bu <br>butondan bakabilirsiniz."))
+        self.pushButton_2.setIconSize(QtCore.QSize(30, 30))   
+        self.pushButton_2.setStyleSheet('QPushButton{border: 0px solid;}')
+        """
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
         self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
         self.label_3.setText(_translate("MainWindow", "Atılmamış Mesaj Sayısı :"))
