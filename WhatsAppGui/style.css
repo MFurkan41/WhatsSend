@@ -427,3 +427,24 @@ body {
     height: calc(100vh - 120px);
   }
 }
+.file{
+  width: 250px;
+  height: 65px;
+  background-color: #cfe9ba;
+  border-radius: 4px;
+
+}
+.file .file-in img{
+  border-radius: 12px;  
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  
+
+}
+.file .file-in p{
+  display: block;
+  float: right;
+  margin-top: 22px;
+  margin-right: 20px;
+}

@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox
 from win32api import GetSystemMetrics
 from includes.forms.subMenu import Ui_OtherWindow
-import os
+import os,itertools
 from appIcons import Icons
 
 class Customer(object):
@@ -65,7 +65,7 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, version):
-
+        
         self.version = version
         self.ScRate = GetSystemMetrics(0)/1920
         self.font = QtGui.QFont("Georgia", 8.8*self.ScRate,weight=-2)
@@ -221,6 +221,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addLayout(self.horizontalLayout_6)
 
+        self.line_3 = QtWidgets.QFrame(self.centralwidget)
+        self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_3.setObjectName("line_3")
+        self.verticalLayout.addWidget(self.line_3)
+
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
 
@@ -228,6 +234,7 @@ class Ui_MainWindow(object):
         self.plain.setMinimumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))
         self.plain.setMaximumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))                                                                    
         self.plain.setObjectName("plain")
+
 
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
@@ -252,12 +259,33 @@ class Ui_MainWindow(object):
         self.label_5.setFont(self.font)
         self.verticalLayout_3.addWidget(self.label_5)
 
-        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        """self.label_6 = QtWidgets.QLabel(self.centralwidget)
         self.label_6.setMinimumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))
         self.label_6.setMaximumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))                                                      
         self.label_6.setObjectName("label_6")
-        self.label_6.setFont(self.font)
-        self.verticalLayout_3.addWidget(self.label_6)
+        self.label_6.setFont(self.font)"""
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.tableWidget.setColumnCount(2)
+
+        self.tableWidget.setHorizontalHeaderItem(0,QtWidgets.QTableWidgetItem("Dosya Adı"))
+        self.tableWidget.setHorizontalHeaderItem(1,QtWidgets.QTableWidgetItem("Mesaj Sırası"))
+        self.tableWidget.resizeColumnsToContents()
+        self.tableWidget.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
+        self.tableWidget.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
+
+        self.tableWidget.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
+        self.tableWidget.customContextMenuRequested.connect(self.on_context_menu)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy)
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setMinimumSize(QtCore.QSize(220*self.ScRate,280*self.ScRate))
+        self.tableWidget.setMaximumSize(QtCore.QSize(220*self.ScRate,280*self.ScRate))
+        self.verticalLayout_3.addWidget(self.tableWidget)
+        self.create_popup_menu()
 
         self.horizontalLayout_7.addLayout(self.verticalLayout_3)
         self.verticalLayout.addLayout(self.horizontalLayout_7)
@@ -295,6 +323,75 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.i = 1
+        self.list_of_files = [["Mesaj","1"]]
+        self.updateTable()
+
+    def create_popup_menu(self, parent=None):
+        self.popup_menu = QtWidgets.QMenu()
+        self.popup_menu.addAction("Yeni Dosya veya Fotoğraf ekle", self.new_cluster)
+        self.popup_menu.addAction("Sil", self.delete_cluster)
+        self.popup_menu.addSeparator()
+        self.popup_menu.addAction("Yukarı Taşı", self.up_cluster)
+        self.popup_menu.addAction("Aşağı Taşı", self.down_cluster)
+
+    def on_context_menu(self, pos):        
+        node = self.tableWidget.mapToGlobal(pos)
+        self.popup_menu.exec_(self.tableWidget.mapToGlobal(pos))
+
+    def new_cluster(self):
+        fileName, _ = QFileDialog.getOpenFileName(self.window, "Yeni Dosya veya Fotoğraf Ekle", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Tüm Dosyalar (*.*)")
+        if(fileName):
+            self.i+=1
+            self.list_of_files.append([fileName,self.i])
+            lall = list(itertools.chain.from_iterable(self.list_of_files))
+            for i in lall:
+                if(lall.count(i) > 1):
+                    warnMessage("Aynı Dosya",QMessageBox.Warning,"Aynı dosyayı iki kere seçemezsiniz.")
+                    self.list_of_files.pop()
+                    self.i-=1
+                    return
+            self.updateTable()
+
+    def delete_cluster(self):
+        for item in self.tableWidget.selectedIndexes():
+            for i in self.list_of_files:
+                if(self.tableWidget.item(item.row(),0).text() == "Mesaj"):
+                    warnMessage("Uyarı!",QMessageBox.Warning,"'Mesaj' satırını silemezsiniz.")
+                elif(self.tableWidget.item(item.row(),0).text() == i[0].split("/")[-1]):
+                    self.list_of_files.remove(i)
+        self.updateTable()
+
+    def up_cluster(self):
+        for item in self.tableWidget.selectedIndexes():
+            for i in self.list_of_files:
+                if(self.tableWidget.item(item.row(),0).text() == i[0].split("/")[-1]):
+                    index = self.list_of_files.index(i)
+        try:
+            self.list_of_files[index],self.list_of_files[index-1]=self.list_of_files[index-1],self.list_of_files[index]
+            self.updateTable()
+        except:
+            pass
+
+    def down_cluster(self):
+        for item in self.tableWidget.selectedIndexes():
+            for i in self.list_of_files:
+                if(self.tableWidget.item(item.row(),0).text() == i[0].split("/")[-1]):
+                    index = self.list_of_files.index(i)
+        try:
+            self.list_of_files[index],self.list_of_files[index+1]=self.list_of_files[index+1],self.list_of_files[index]
+            self.updateTable()
+        except:
+            pass
+
+    def updateTable(self):
+        self.tableWidget.setRowCount(len(self.list_of_files))
+        for j in range(len(self.list_of_files)):
+            self.list_of_files[j][1] = j+1
+        for i in range(len(self.list_of_files)):
+            code = "self.tableWidget.setItem("+str(i)+",0,QtWidgets.QTableWidgetItem('"+ self.list_of_files[i][0].split("/")[-1] +"'));" + \
+                "self.tableWidget.setItem("+str(i)+",1,QtWidgets.QTableWidgetItem('"+ str(self.list_of_files[i][1]) +"'))"
+            exec(code)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -308,6 +405,8 @@ class Ui_MainWindow(object):
         self.pushButton_2.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
         self.pushButton_2.setStyleSheet('QPushButton{border: 0px solid;}')
         
+        self.tableWidget.setItem(0,0,QtWidgets.QTableWidgetItem("Name"))
+
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
         self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
         self.label_3.setText(_translate("MainWindow", "Atılmamış Mesaj Sayısı :"))
@@ -321,7 +420,7 @@ class Ui_MainWindow(object):
 " istiyorsanız, mesajınızda isim\n"
 " olmasını istediğiniz yere {}\n"
 " işaretlerini koyunuz."))
-        self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
+        #self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
         self.menuDosya.setTitle(_translate("MainWindow", "Dosya"))
         self.menuAbout.setTitle(_translate("MainWindow", "Hakkında"))
         self.actionDosya_A.setText(_translate("MainWindow", "Dosya Aç..."))

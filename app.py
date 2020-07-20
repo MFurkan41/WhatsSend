@@ -1,16 +1,12 @@
 # Python Standart Library Imports
-import sys,os,logging,codecs
+import sys,os,logging,codecs,itertools,requests
 from time import sleep as bekle
+from random import randint
+from collections import defaultdict
 
 # Selenium Imports
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException,WebDriverException,NoSuchElementException
-from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException,WebDriverException,NoSuchElementException,ElementNotInteractableException, UnexpectedAlertPresentException
 
 # Local Imports
     ## Functions
@@ -18,9 +14,16 @@ from includes.funcs.whatsqr import save_qr
 from includes.funcs.getexcel import GetExcel
 from includes.funcs.htmlrequest import *
 from includes.funcs.parseText import parseVersion
+from includes.funcs.isChrome import isChrome
+from includes.funcs.linkfile import linkFile
+from includes.funcs.warnmessage import warnMessage
     ## Forms
 from includes.forms.mainForm import *
 from includes.forms.updateForm import Ui_MainWindow as UpdateForm
+from includes.forms.subMenu import Ui_OtherWindow
+    ## Other
+from appIcons import Icons
+from includes.other.thread import wpsend
 
 # Other Necessary Imports
 from passlib.hash import sha256_crypt
@@ -28,8 +31,13 @@ from requests.exceptions import ConnectionError
 import urllib.parse
 import urllib.request
 import webview
+import webbrowser
 
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
+
+class SafeDict(dict):
+    def __missing__(self, key):
+        return '{' + key + '}'
 
 def warnMessage(title,iconType,text):
     msg = QMessageBox()
@@ -79,26 +87,46 @@ class WPApp(Ui_MainWindow):
         message = str(self.plain.toPlainText())
         if(message != ""):
             with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_raw.html","r","utf-8") as file:
-                index_raw = file.read()
-            index = index_raw.format(message=message)
-       
-            with codecs.open(os.getcwd()+"\\WhatsAppGui\\index.html","w","utf-8") as file:
-                file.write(index)
+                    self.index_raw = file.read()
+            for i in range(1,len(self.list_of_files)+1):
+                if(self.list_of_files[i-1][0] == "Mesaj"):
+                    a = linkFile('message',message).replace("\n","").replace("\r","")
+                    code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
+                    exec(code)
+                else:
+                    a = linkFile('file',self.list_of_files[i-1][0]).replace("\n","").replace("\r","")
+                    code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
+                    exec(code)
+                
 
-            webview.create_window("Mesaj Önizleme","WhatsAppGui/index.html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
+
+            for i in range(1+len(self.list_of_files),26):
+                self.index_raw = self.index_raw.replace("{file"+str(i)+"}","")
+            
+            rast = str(randint(1001,10000))
+
+            with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_"+ rast  +".html","w","utf-8") as file:
+                file.write(self.index_raw)
+
+            webview.create_window("Mesaj Önizleme","WhatsAppGui/index_"+ rast  +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
             webview.start()
-            return
+            os.remove("WhatsAppGui\\index_"+ rast  +".html")
 
         else:
             warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")
 
     def getDriver(self):
-        if (os.path.exists(os.getcwd()+"\\geckodriver.exe") == False):
+        if (os.path.exists(os.getcwd()+"\\chromedriver.exe") == False):
             warnMessage("Gerekli sürücüler yüklenmemiş.",QMessageBox.Warning,"Programın çalışması için gerekli olan sürücüler bulunamadı. Yüklemek için devam ediniz.")
             self.driverWindow = QtWidgets.QMainWindow()
             self.ui = UpdateForm()
-            self.ui.setupUi(self.driverWindow, "https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-win64.zip")
+            self.ui.setupUi(self.driverWindow, "https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_win32.zip")
             self.driverWindow.show()
+        if(isChrome() == False):
+            warnMessage("Uyarı",QMessageBox.Warning,"Programın çalışabilmesi için 'Chrome' tarayıcısını yüklemeniz gerekmekte. Yüklü ise programı yeniden başlatmalısınız.")
+            webbrowser.open("https://www.google.com/intl/tr_tr/chrome/")
+            sys.exit()
+
 
     def update(self,*warn):
         if self.controlVersion(list(warn)[0]) == True:
@@ -163,7 +191,7 @@ class WPApp(Ui_MainWindow):
             fileapi.write(str(self.apiKey))
             fileapi.close()
             self.apiKeyControl(self.apiKey,0)
-    # Create QTableView Model and Set Header Automaticly From A .txt File
+    # Create QTableView Model and Set Header Automatically From A .txt File
     def dbModel(self,headers=None):
         if headers is None:
             try:
@@ -223,9 +251,7 @@ class WPApp(Ui_MainWindow):
             warnMessage("Uyarı",QMessageBox.Warning,"Mesaj girilmedi.")
         else:
             self.apiKeyControl(self.apiKey)
-            warnMessage("Qr Kodu Okutunuz!",QMessageBox.Information,"Lütfen programın sağ altında çıkan QR kodu telefonunuzdan okutunuz. Kod için 'OK' tuşuna basınız.")
-
-            QtGui.QGuiApplication.processEvents()
+            warnMessage("Qr Kodu Okutunuz!",QMessageBox.Information,"Lütfen QR kodu telefonunuzdan okutunuz. Kod için 'OK' tuşuna basınız.")
 
             rec = 1161*self.ScRate
             while self.tableView.horizontalScrollBar().isVisible() == True:
@@ -233,76 +259,9 @@ class WPApp(Ui_MainWindow):
                 rec += 10*self.ScRate
             QtGui.QGuiApplication.processEvents()
 
-            options = Options()
-            options.headless = True
-
-            try:
-                browser = webdriver.Firefox(options=options,executable_path=os.getcwd()+"\\geckodriver.exe")
-            except WebDriverException:
-                warnMessage("Uyarı",QMessageBox.Warning,"Programın çalışabilmesi için 'Firefox' tarayıcısını yüklemeniz gerekmekte. Yüklü ise programı yeniden başlatmalısınız.")
-                webbrowser.open("https://download-installer.cdn.mozilla.net/pub/firefox/releases/77.0.1/win32/tr/Firefox%20Installer.exe")
-                sys.exit()
-            browser.get("https://web.whatsapp.com")
-            bekle(5)
-            save_qr(browser)
-            self.refreshimage()
-            QtGui.QGuiApplication.processEvents()
-            bekle(10)
-
-            fList = []
-            self.mesaj = str(self.plain.toPlainText())
-            for i in range(len(self.headers)):
-                if "{" + str(i) + "}" in self.mesaj:
-                    fList.append(i)
             
-            for i in range(len(self.numaralar)):
-                
-                execM = "self.mesaj = self.mesaj.format("
-                for i in fList:
-                    execM += "str(self.numaralar[i][" + str(i) + "]),"
-                execM = execM[:-1] + ")"
-                try:
-                    if(len(fList) != 0):
-                        exec(execM)
-
-                except IndexError:
-                    warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
-                    self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
-                    return
-                url = "https://web.whatsapp.com/send?phone="
-                url += str(self.numaralar[i][1])
-                url += "&text="
-                url += urllib.parse.quote_plus(self.mesaj)
-                browser.get(url)
-                while True:
-                    try:
-                        button = browser.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[3]/button")
-                        button.click()
-                    except (TimeoutException, ElementClickInterceptedException, NoSuchElementException):
-                        bekle(0.5)
-                        continue
-                    else:
-                        break
-
-                self.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
-                self.spinBox_3.setValue(int(self.spinBox_3.text()) - 1)
-                res = HtmlRequest(self.apiKey, False)
-                self.pageScroll(i+1)
-                if(res["message"] != "no_message_count"):
-                    
-                    self.spinBox_4.setValue(res["mcount"])
-                    self.changeTableItem(i)
-                    QtGui.QGuiApplication.processEvents()
-                else:
-                    warnMessage("Uyarı",QMessageBox.Information,"Mesaj Hakkınız Kalmadı.")
-                    self.pushButton.setText(self._translate("MainWindow", "Mesaj Hakkınız Kalmadı"))
-                    self.pushButton.setEnabled(False)
-                    break
-                QtGui.QGuiApplication.processEvents()
-
-            warnMessage("Uyarı",QMessageBox.Information,"Listedeki tüm mesajlar atıldı.")
-            browser.close()
-            QtGui.QGuiApplication.processEvents()
+            wpsend(self,self)
+            
 
     def changeTableItem(self, x):
         self.dbModel()

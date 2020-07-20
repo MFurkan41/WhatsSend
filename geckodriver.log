@@ -3589,3 +3589,4 @@ webdriverClickElement@chrome://marionette/content/interaction.js:182:31
 ###!!! [Parent][MessageChannel] Error: (msgtype=0x690008,name=PMessagePort::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
 
 [Parent 3176, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+Invalid port. Exiting...

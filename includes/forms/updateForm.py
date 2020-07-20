@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
 import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
 import os
 from win32api import GetSystemMetrics
 from appIcons import Icons
@@ -86,8 +84,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Wp Auto Message Sender - Sürücü"))
         self.label.setText(_translate("MainWindow",  "Gerekli sürücüler indiriliyor..."))
 
-class downloadThread(QThread):
-    download_proess_signal = pyqtSignal(int)                        #Create signal
+class downloadThread(QtCore.QThread):
+    download_proess_signal = QtCore.pyqtSignal(int)                        #Create signal
 
     def __init__(self, url, filesize, fileobj, buffer):
         super(downloadThread, self).__init__()

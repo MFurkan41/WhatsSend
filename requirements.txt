@@ -5,4 +5,5 @@ openpyxl
 pillow
 pypiwin32
 passlib
-webview
+pywebview
+winregistry
