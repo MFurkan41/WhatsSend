@@ -1,0 +1,1 @@
+{'name': 'M.Furkan YOLAL', 'mail': 'fyolal2006@gmail.com', 'key': '12345', 'headers': ['İsim', 'Telefon No (Örn 9053xx..)', 'Mesaj Durumu']}

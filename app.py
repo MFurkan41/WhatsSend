@@ -17,6 +17,7 @@ from includes.funcs.parseText import parseVersion
 from includes.funcs.isChrome import isChrome
 from includes.funcs.linkfile import linkFile
 from includes.funcs.warnmessage import warnMessage
+from includes.funcs.txtinfo import getTxtInfo,saveTxtInfo
     ## Forms
 from includes.forms.mainForm import *
 from includes.forms.updateForm import Ui_MainWindow as UpdateForm
@@ -163,14 +164,7 @@ class WPApp(Ui_MainWindow):
     def settings(self):
         self.subWindow = QtWidgets.QMainWindow()
         if self.apiKey == None:
-            try:
-                open("apiKey.txt","x",encoding="utf-8")
-            except FileExistsError:
-                fileapi = open("apiKey.txt","r", encoding='utf-8')
-                self.apiKey =  fileapi.readlines()
-                fileapi.close()
-            else:
-                self.apiKey = [""]
+            self.apiKey = getTxtInfo()["key"]
         self.ui = Ui_OtherWindow(self.subWindow,self.model.rawHeaders,self.apiKey)
         self.ui.my_signal.connect(self.dbModel)
         self.ui.my_signal2.connect(self.setKey)
@@ -181,32 +175,19 @@ class WPApp(Ui_MainWindow):
         if(key == ""):
             self.apiKey = ""
             warnMessage("Uyarı",QMessageBox.Warning,"Lütfen anahtarınızı giriniz.")
-            fileapi = open("apiKey.txt","w", encoding='utf-8')
-            fileapi.write("")
-            fileapi.close()
+            saveTxtInfo("key","")
             self.settings()
         else:
             self.apiKey = key
-            fileapi = open("apiKey.txt","w", encoding='utf-8')
-            fileapi.write(str(self.apiKey))
-            fileapi.close()
+            saveTxtInfo("key",str(self.apiKey))
             self.apiKeyControl(self.apiKey,0)
+
     # Create QTableView Model and Set Header Automatically From A .txt File
     def dbModel(self,headers=None):
         if headers is None:
-            try:
-                fileHeader = open("Loc_headers.txt","r", encoding='utf-8')
-                self.headers =  [line.rstrip() for line in fileHeader]
-                fileHeader.close()
-            except FileNotFoundError:
-                self.headers = ["İsim","Telefon No (Örn 9053xx..)","Mesaj Durumu"]
-                fileHeader = open("Loc_headers.txt","w", encoding='utf-8')
-                fileHeader.write('\n'.join(self.headers) + '\n')
-                fileHeader.close()
+            self.headers = getTxtInfo()["headers"]
         else:
-            fileHeader = open("Loc_headers.txt","w", encoding='utf-8')
-            fileHeader.write('\n'.join(headers) + '\n')
-            fileHeader.close()
+            saveTxtInfo("headers",headers)
             self.headers = headers
             
         self.headers.pop(self.headers.index("Mesaj Durumu"))
@@ -259,7 +240,6 @@ class WPApp(Ui_MainWindow):
                 rec += 10*self.ScRate
             QtGui.QGuiApplication.processEvents()
 
-            
             wpsend(self,self)
             
 
@@ -296,6 +276,8 @@ class WPApp(Ui_MainWindow):
 
         try:
             print(self.info)
+            saveTxtInfo("name",self.info["name"])
+            saveTxtInfo("mail",self.info["email"])
         except AttributeError:
             self.spinBox_4.setValue(0)
         else:
@@ -331,6 +313,7 @@ if __name__ == "__main__":
     app.setApplicationVersion(VERSION)
 
     window = StartApp()
+    
     app.exec_()
 
 """

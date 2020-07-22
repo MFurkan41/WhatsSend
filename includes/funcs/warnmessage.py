@@ -1,3 +1,7 @@
+from PyQt5.QtWidgets import QMessageBox
+from appIcons import Icons
+from PyQt5 import QtGui
+
 def warnMessage(title,iconType,text):
     msg = QMessageBox()
     msg.setWindowTitle(title)

@@ -47,6 +47,7 @@ def wpsend(self):
         url += str(self.numaralar[i][1])
         url += "&text="
         url += urllib.parse.quote_plus(self.mesaj)
+        bekle(1)
         browser.get(url)
         while True:
             try:
