@@ -18,12 +18,13 @@ def linkFile(kind,src):
         fileName = src.split("/")[-1]
         shortFileName = fileName
         htmlCode = htmlCode.replace("\n","").replace("\r","")
+        fileExtension = fileName.split(".")[1]
         if(len(shortFileName) >= 21):
             shortFileName = shortFileName[:-1*(len(shortFileName)-20)]
             shortFileName += "..."
-        if(fileName.split(".")[1] == "xlsx"):
+        if(fileExtension == "xlsx"):
             htmlCode = htmlCode.format(urllib.parse.quote_plus(Icons["Excel"].replace("\\","/")),shortFileName)
-        elif(fileName.split(".")[1] == "doc" or fileName.split(".")[1] == "docx"):
+        elif(fileExtension == "doc" or fileExtension == "docx"):
             htmlCode = htmlCode.format(urllib.parse.quote_plus(Icons["Word"].replace("\\","/")),shortFileName)
         else:
             htmlCode = htmlCode.format(urllib.parse.quote_plus(Icons["DefaultFile"].replace("\\","/")),shortFileName)

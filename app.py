@@ -3,6 +3,7 @@ import sys,os,logging,codecs,itertools,requests
 from time import sleep as bekle
 from random import randint
 from collections import defaultdict
+from packaging import version
 
 # Selenium Imports
 from selenium import webdriver
@@ -40,23 +41,12 @@ class SafeDict(dict):
     def __missing__(self, key):
         return '{' + key + '}'
 
-def warnMessage(title,iconType,text):
-    msg = QMessageBox()
-    msg.setWindowTitle(title)
-    msg.setIcon(iconType)
-    msg.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
-    msg.setText(text)
-    
-    x = msg.exec_()
-
 # Version Info
-VERSION = "1.7"
-
-# Image Paths
-image_path = os.getcwd() + "\\qrcode.png"
+VERSION = "1.7.8"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
+
 class WPApp(Ui_MainWindow):
     def __init__(self, window):
         self.setupUi(window,VERSION)
@@ -99,8 +89,6 @@ class WPApp(Ui_MainWindow):
                     code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
                     exec(code)
                 
-
-
             for i in range(1+len(self.list_of_files),26):
                 self.index_raw = self.index_raw.replace("{file"+str(i)+"}","")
             
@@ -112,7 +100,6 @@ class WPApp(Ui_MainWindow):
             webview.create_window("Mesaj Önizleme","WhatsAppGui/index_"+ rast  +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
             webview.start()
             os.remove("WhatsAppGui\\index_"+ rast  +".html")
-
         else:
             warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")
 
@@ -124,7 +111,7 @@ class WPApp(Ui_MainWindow):
             self.ui.setupUi(self.driverWindow, "https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_win32.zip")
             self.driverWindow.show()
         if(isChrome() == False):
-            warnMessage("Uyarı",QMessageBox.Warning,"Programın çalışabilmesi için 'Chrome' tarayıcısını yüklemeniz gerekmekte. Yüklü ise programı yeniden başlatmalısınız.")
+            warnMessage("Uyarı",QMessageBox.Warning,"Programın çalışabilmesi için 'Google Chrome' tarayıcısını yüklemeniz gerekmekte. Yüklü ise programı yeniden başlatmalısınız.")
             webbrowser.open("https://www.google.com/intl/tr_tr/chrome/")
             sys.exit()
 
@@ -142,9 +129,11 @@ class WPApp(Ui_MainWindow):
             warnMessage("Uyarı!",QMessageBox.Warning,"Bilgisayarınız internete bağlı olmadığından bu programı kullanmazsınız.")
             sys.exit()
         self.othVERSION = self.othVERSION.text
-        if(list(parseVersion(self.othVERSION))[-1] != VERSION):
+        if(version.parse(list(parseVersion(self.othVERSION))[-1]) > version.parse(VERSION)):
             warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.          \n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ list(parseVersion(self.othVERSION))[-1] + "\n\nGüncellemek için devam ediniz.")
             return True
+        elif(version.parse(list(parseVersion(self.othVERSION))[-1]) < version.parse(VERSION)):
+            warnMessage("Uyarı, Test Sürümü!",QMessageBox.Information,"Test Sürümü :" + VERSION + "\nGitHub'daki versiyon " + list(parseVersion(self.othVERSION))[-1])
         else:
             if(list(warn)[0] != "warn"):
                 liste = parseVersion(self.othVERSION)[str(list(parseVersion(self.othVERSION))[-1])]
@@ -241,13 +230,14 @@ class WPApp(Ui_MainWindow):
             QtGui.QGuiApplication.processEvents()
 
             wpsend(self,self)
+            return
             
 
     def changeTableItem(self, x):
         self.dbModel()
         self.numaralar[x][-1] = "✅"
         self.CreateTable(self.numaralar)
-           
+        
     def CreateTable(self, fromlist):
         # Create or Refresh the QtTableView from 'fromlist' variable
         for i in range(len(fromlist)):

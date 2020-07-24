@@ -1,4 +1,5 @@
 from guiLoop import guiLoop
+from improvedSends import *
 import os
 from time import sleep as bekle
 
@@ -6,6 +7,7 @@ from time import sleep as bekle
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException,ElementClickInterceptedException,WebDriverException,NoSuchElementException,ElementNotInteractableException, UnexpectedAlertPresentException
 
+# Gui Imports
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 import urllib.parse
@@ -43,27 +45,40 @@ def wpsend(self):
         except IndexError:
             warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
             return
+        self.imageList = ["tiff","pjp","pjpeg","jfif","tif","gif","svg","bmp","png","jpeg", \
+                            "svgz","jpg","webp","ico","xbm","dib","m4v","mp4","3gpp","mov"]
         url = "https://web.whatsapp.com/send?phone="
         url += str(self.numaralar[i][1])
-        url += "&text="
-        url += urllib.parse.quote_plus(self.mesaj)
-        bekle(1)
-        browser.get(url)
-        while True:
-            try:
-                button = browser.find_element_by_xpath("//*[@id='main']/footer/div[1]/div[3]/button")
-                button.click()
-            except (TimeoutException, ElementClickInterceptedException, NoSuchElementException, ElementNotInteractableException, UnexpectedAlertPresentException):
-                bekle(0.5)
-                QtGui.QGuiApplication.processEvents()
-                continue
+        #url += urllib.parse.quote_plus(self.mesaj)
+        
+        
+        for j in self.list_of_files:
+            if(j[0] == "Mesaj"):
+                url += "&text="
+                url += urllib.parse.quote_plus(self.mesaj)
+                bekle(1)
+                browser.get(url)
+                clickButton(browser,"//*[@id='main']/footer/div[1]/div[3]/button")
+            elif(j[0].split("/")[-1].split(".")[1] in self.imageList):
+                url += "&text="
+                bekle(1)
+                browser.get(url)
+                clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
+                enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button/input",j[0])
+                clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
             else:
-                break
+                url += "&text="
+                bekle(1)
+                browser.get(url)
+                clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
+                enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[3]/button/input",j[0])
+                clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
+            bekle(1)
 
         self.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
         self.spinBox_3.setValue(int(self.spinBox_3.text()) - 1)
         res = HtmlRequest(self.apiKey, False)
-        self.pageScroll(i+1)
+        self.pageScroll(int(i+1))
         if(res["message"] != "no_message_count"):
             
             self.spinBox_4.setValue(res["mcount"])
@@ -75,7 +90,10 @@ def wpsend(self):
             self.pushButton.setEnabled(False)
             break
         QtGui.QGuiApplication.processEvents()
-
-    warnMessage("Uyarı",QMessageBox.Information,"Listedeki tüm mesajlar atıldı.")
+    bekle(0.5)
+    clickButton(browser,"//*[@id='side']/header/div[2]/div/span/div[3]/div")
+    clickButton(browser,"//*[@id='side']/header/div[2]/div/span/div[3]/span/div/ul/li[6]/div")
+    bekle(0.5)
     browser.close()
+    warnMessage("Uyarı",QMessageBox.Information,"Listedeki tüm mesajlar atıldı.")
     QtGui.QGuiApplication.processEvents()
