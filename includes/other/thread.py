@@ -1,5 +1,4 @@
 from guiLoop import guiLoop
-from improvedSends import *
 import os
 from time import sleep as bekle
 
@@ -13,6 +12,7 @@ from PyQt5.QtWidgets import QMessageBox
 import urllib.parse
 from includes.funcs.htmlrequest import *
 from includes.funcs.warnmessage import warnMessage
+from includes.funcs.improvedSends import clickButton,enterInput
 
 @guiLoop
 def wpsend(self):
@@ -38,41 +38,40 @@ def wpsend(self):
         for i in fList:
             execM += "str(self.numaralar[i][" + str(i) + "]),"
         execM = execM[:-1] + ")"
-        try:
-            if(len(fList) != 0):
-                exec(execM)
-
-        except IndexError:
-            warnMessage("Uyarı",QMessageBox.Warning,"Size verilen sürede QR kodu okutmadınız. Lütfen tekrar deneyiniz.")
-            return
+        if(len(fList) != 0):
+            exec(execM)
         self.imageList = ["tiff","pjp","pjpeg","jfif","tif","gif","svg","bmp","png","jpeg", \
                             "svgz","jpg","webp","ico","xbm","dib","m4v","mp4","3gpp","mov"]
         url = "https://web.whatsapp.com/send?phone="
         url += str(self.numaralar[i][1])
         #url += urllib.parse.quote_plus(self.mesaj)
         
-        
+        # ! Xpath : //*[@id="app"]/div/span[2]/div/span/div/div/div/div/div/div[2]/div
+        # ! Yukarıdaki xpath deki buton varsa demek ki numara hatalı. Buna göre kodu 
+        # ! düzenle.
         for j in self.list_of_files:
             if(j[0] == "Mesaj"):
                 url += "&text="
                 url += urllib.parse.quote_plus(self.mesaj)
                 bekle(1)
                 browser.get(url)
-                clickButton(browser,"//*[@id='main']/footer/div[1]/div[3]/button")
+                deger = clickButton(browser,"//*[@id='main']/footer/div[1]/div[3]/button")
             elif(j[0].split("/")[-1].split(".")[1] in self.imageList):
                 url += "&text="
                 bekle(1)
                 browser.get(url)
-                clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
+                deger = clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
                 enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button/input",j[0])
                 clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
             else:
                 url += "&text="
                 bekle(1)
                 browser.get(url)
-                clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
+                deger = clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
                 enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[3]/button/input",j[0])
                 clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
+            if(deger == 0):
+                self.changeTableItem(i,"qMark")
             bekle(1)
 
         self.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
@@ -82,7 +81,7 @@ def wpsend(self):
         if(res["message"] != "no_message_count"):
             
             self.spinBox_4.setValue(res["mcount"])
-            self.changeTableItem(i)
+            self.changeTableItem(i,"tick")
             QtGui.QGuiApplication.processEvents()
         else:
             warnMessage("Uyarı",QMessageBox.Information,"Mesaj Hakkınız Kalmadı.")

@@ -13,7 +13,7 @@ def getTxtInfo():
             return info
         except FileNotFoundError:
             info = open("info.txt","w", encoding='utf-8')
-            info.write("{'name':',','mail':',','key':',','headers':['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']}")
+            info.write("{'name':'','mail':'','key':'','headers':['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']}")
             info.close()
             continue
         else:
@@ -28,7 +28,7 @@ def saveTxtInfo(component,newValue):
             infotxt.write(str(info))
         except FileNotFoundError:
             info = open("info.txt","w", encoding='utf-8')
-            info.write("{'name':',','mail':',','key':',','headers':['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']}")
+            info.write("{'name':'','mail':'','key':'','headers':['İsim','Telefon No (Örn 9053xx..)','Mesaj Durumu']}")
             info.close()
             continue
         else:

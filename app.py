@@ -19,10 +19,12 @@ from includes.funcs.isChrome import isChrome
 from includes.funcs.linkfile import linkFile
 from includes.funcs.warnmessage import warnMessage
 from includes.funcs.txtinfo import getTxtInfo,saveTxtInfo
+from includes.funcs.checkicons import checkIcons
     ## Forms
 from includes.forms.mainForm import *
 from includes.forms.updateForm import Ui_MainWindow as UpdateForm
 from includes.forms.subMenu import Ui_OtherWindow
+from includes.forms.loadingScreen import LoadingScreen
     ## Other
 from appIcons import Icons
 from includes.other.thread import wpsend
@@ -42,7 +44,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.7.8"
+VERSION = "1.7.9"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -71,17 +73,43 @@ class WPApp(Ui_MainWindow):
         self.update("warn")
         self.getDriver()
 
+        # Create Loading Window
+        self.loading = LoadingScreen()
+
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
 
     def previewMessage(self):
-        message = str(self.plain.toPlainText())
-        if(message != ""):
+        self.message = str(self.plain.toPlainText())
+        if(self.message != ""):
+            self.imageList = ["tiff","pjp","pjpeg","jfif","tif","gif","svg","bmp","png","jpeg", \
+                            "svgz","jpg","webp","ico","xbm","dib","m4v","mp4","3gpp","mov"]        
+
             with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_raw.html","r","utf-8") as file:
                     self.index_raw = file.read()
             for i in range(1,len(self.list_of_files)+1):
                 if(self.list_of_files[i-1][0] == "Mesaj"):
-                    a = linkFile('message',message).replace("\n","").replace("\r","")
+                    fList = []
+                    for i in range(len(self.headers)):
+                        if "{" + str(i) + "}" in self.message:
+                            fList.append(i)
+                    if(len(fList) != 0):
+                        try:
+                            QtGui.QGuiApplication.processEvents()
+                            execM = "self.message = self.message.format("
+                            for i in fList:
+                                execM += "str(self.numaralar[0][" + str(i) + "]),"
+                            execM = execM[:-1] + ")"
+                            exec(execM)
+                            print(execM)
+                        except AttributeError:
+                            warnMessage("Uyarı!",QMessageBox.Warning,"Listede numara bulunmadığından önizlemeyi bu şekilde yapamazsınız.")
+                            return
+                    a = linkFile('message',str(self.message)).replace("\n","").replace("\r","")
+                    code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
+                    exec(code)
+                elif(self.list_of_files[i-1][0].split(".")[-1] in self.imageList):
+                    a = linkFile('image',self.list_of_files[i-1][0]).replace("\n","").replace("\r","")
                     code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
                     exec(code)
                 else:
@@ -115,7 +143,6 @@ class WPApp(Ui_MainWindow):
             webbrowser.open("https://www.google.com/intl/tr_tr/chrome/")
             sys.exit()
 
-
     def update(self,*warn):
         if self.controlVersion(list(warn)[0]) == True:
             the_url = 'https://github.com/MFurkan41/WhatsCompRepo/raw/master/{}/WhatsMessageSender{}.exe'.format(list(parseVersion(self.othVERSION))[-1],list(parseVersion(self.othVERSION))[-1])
@@ -124,20 +151,22 @@ class WPApp(Ui_MainWindow):
 
     def controlVersion(self,*warn):
         try:
-            self.othVERSION = requests.get("https://github.com/MFurkan41/WhatsCompRepo/raw/master/version.txt")
+            self.othVERSION = requests.get("https://github.com/MFurkan41/WhatsCompRepo/raw/master/version.txt").text
         except ConnectionError:
             warnMessage("Uyarı!",QMessageBox.Warning,"Bilgisayarınız internete bağlı olmadığından bu programı kullanmazsınız.")
             sys.exit()
-        self.othVERSION = self.othVERSION.text
-        if(version.parse(list(parseVersion(self.othVERSION))[-1]) > version.parse(VERSION)):
-            warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.          \n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ list(parseVersion(self.othVERSION))[-1] + "\n\nGüncellemek için devam ediniz.")
+
+        LastVersion = version.parse(parseVersion(self.othVERSION)[-1])
+
+        if(LastVersion > version.parse(VERSION)):
+            warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.          \n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ LastVersion.__str__() + "\n\nGüncellemek için devam ediniz.")
             return True
-        elif(version.parse(list(parseVersion(self.othVERSION))[-1]) < version.parse(VERSION)):
-            warnMessage("Uyarı, Test Sürümü!",QMessageBox.Information,"Test Sürümü :" + VERSION + "\nGitHub'daki versiyon " + list(parseVersion(self.othVERSION))[-1])
+        elif(LastVersion < version.parse(VERSION)):
+            warnMessage("Uyarı, Test Sürümü!",QMessageBox.Information,"Test Sürümü :" + VERSION + "\nGitHub'daki versiyon " + LastVersion.__str__())
         else:
             if(list(warn)[0] != "warn"):
-                liste = parseVersion(self.othVERSION)[str(list(parseVersion(self.othVERSION))[-1])]
-                warnMessage("Program Güncel!",QMessageBox.Information,"Program Güncel.\nProgramınız sürümü : " + self.version + "\nYenilikler aşağıda sıralanmıştır;\n\n"+ '\n'.join(str(item) for item in liste))
+                versionUpdates = parseVersion(self.othVERSION)[LastVersion.__str__()]
+                warnMessage("Program Güncel!",QMessageBox.Information,"Program Güncel.\nProgramınız sürümü : " + self.version + "\nYenilikler aşağıda sıralanmıştır;\n\n"+ '\n'.join(str(item) for item in versionUpdates))
             return False
 
     def create_table_view(self):
@@ -201,10 +230,6 @@ class WPApp(Ui_MainWindow):
                 self.spinBox.setValue(0)
                 self.spinBox_3.setValue(0)
                 warnMessage("Uyarı",QMessageBox.Warning,"Açmaya çalıştığınız dosyadaki kolon sayısı programdaki ile eşit değildir!")
-
-    def refreshimage(self):
-        self.label_6.setPixmap(QtGui.QPixmap("qrcode.png"))
-        QtGui.QGuiApplication.processEvents()
     
     def sendwp(self):
         if(self.apiKey is None or self.apiKey == ""):
@@ -233,9 +258,14 @@ class WPApp(Ui_MainWindow):
             return
             
 
-    def changeTableItem(self, x):
+    def changeTableItem(self, x, kind):
         self.dbModel()
-        self.numaralar[x][-1] = "✅"
+        if(kind == "tick"):
+            self.numaralar[x][-1] = "✔️"
+        elif(kind == "cross"):
+            self.numaralar[x][-1] = "❌"
+        elif(kind == "qMark"):
+            self.numaralar[x][-1] = "❓"
         self.CreateTable(self.numaralar)
         
     def CreateTable(self, fromlist):
@@ -297,6 +327,9 @@ def StartApp():
     return m
 
 if __name__ == "__main__":
+    # Icon Checker
+    checkIcons()
+
     app = QtWidgets.QApplication(sys.argv)
 
     app.setApplicationName("WP Auto Message Sender")

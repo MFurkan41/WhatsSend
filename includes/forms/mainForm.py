@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox
+from PyQt5.QtWidgets import QFileDialog,QDialog,QSizePolicy,QGridLayout,QMessageBox,QProgressBar
 from win32api import GetSystemMetrics
 from includes.forms.subMenu import Ui_OtherWindow
 from includes.funcs.warnmessage import warnMessage

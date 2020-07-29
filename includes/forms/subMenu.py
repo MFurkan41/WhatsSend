@@ -106,7 +106,7 @@ class Ui_OtherWindow(QtCore.QObject):
         self.create_popup_menu()
         self.pushButton.clicked.connect(self.saveBtn)
         self.pushButton_2.clicked.connect(self.cancel)
-        self.lineEdit.returnPressed.connect(self.saveBtn)
+        self.mainWindow.keyPressEvent = self.keyPressEvent
 
         if type(apiKey) == list:
             try:
@@ -131,6 +131,12 @@ class Ui_OtherWindow(QtCore.QObject):
                 item.setHidden(True)
 
         QtCore.QMetaObject.connectSlotsByName(self.mainWindow)
+
+    def keyPressEvent(self, event):
+        if event.key() == QtCore.Qt.Key_Enter or event.key() == QtCore.Qt.Key_Return:
+            self.saveBtn()
+        elif event.key() == QtCore.Qt.Key_Escape:
+            self.cancel()
 
     def saveBtn(self):
         self.headers = []

@@ -6,5 +6,6 @@ Icons = {
     "Preview":os.getcwd()+"\\includes\\icons\\preview-icon.png",
     "Word":os.getcwd()+"\\includes\\icons\\word.png",
     "Excel":os.getcwd()+"\\includes\\icons\\excel.png",
-    "DefaultFile":os.getcwd()+"\\includes\\icons\\default.png"
+    "DefaultFile":os.getcwd()+"\\includes\\icons\\default.png",
+    "Loading":os.getcwd()+"\\includes\\icons\\loading.gif"
     }

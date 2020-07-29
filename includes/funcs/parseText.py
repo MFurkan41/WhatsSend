@@ -9,4 +9,4 @@ def parseVersion(text):
             nList.append(i)
         else:
             version = i
-    return updateH
+    return list(updateH)
