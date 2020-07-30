@@ -24,7 +24,6 @@ from includes.funcs.checkicons import checkIcons
 from includes.forms.mainForm import *
 from includes.forms.updateForm import Ui_MainWindow as UpdateForm
 from includes.forms.subMenu import Ui_OtherWindow
-from includes.forms.loadingScreen import LoadingScreen
     ## Other
 from appIcons import Icons
 from includes.other.thread import wpsend
@@ -44,7 +43,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.7.9"
+VERSION = "1.8"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -73,13 +72,17 @@ class WPApp(Ui_MainWindow):
         self.update("warn")
         self.getDriver()
 
-        # Create Loading Window
-        self.loading = LoadingScreen()
-
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
 
     def previewMessage(self):
+        if(not os.path.exists(os.getcwd()+"\\WhatsAppGui")):
+            warnMessage("Gerekli sürücüler yüklenmemiş.",QMessageBox.Warning,"Mesaj Önizlemek için Gerekli Dosyalar İndirilecek. Yüklemek için devam ediniz.")
+            self.driverWindow = QtWidgets.QMainWindow()
+            self.ui = UpdateForm()
+            self.ui.setupUi(self.driverWindow, "http://furkanyolal.com.tr/wpsend/previewGui/WhatsAppGui.zip")
+            self.driverWindow.show()
+            return
         self.message = str(self.plain.toPlainText())
         if(self.message != ""):
             self.imageList = ["tiff","pjp","pjpeg","jfif","tif","gif","svg","bmp","png","jpeg", \
@@ -93,31 +96,38 @@ class WPApp(Ui_MainWindow):
                     for i in range(len(self.headers)):
                         if "{" + str(i) + "}" in self.message:
                             fList.append(i)
+                    print(fList)
                     if(len(fList) != 0):
                         try:
                             QtGui.QGuiApplication.processEvents()
                             execM = "self.message = self.message.format("
-                            for i in fList:
+                            for i in range(len(self.headers)):
                                 execM += "str(self.numaralar[0][" + str(i) + "]),"
                             execM = execM[:-1] + ")"
-                            exec(execM)
                             print(execM)
+                            exec(execM)
+                        
                         except AttributeError:
                             warnMessage("Uyarı!",QMessageBox.Warning,"Listede numara bulunmadığından önizlemeyi bu şekilde yapamazsınız.")
                             return
-                    a = linkFile('message',str(self.message)).replace("\n","").replace("\r","")
+                    
+                    a = linkFile('message',str(self.message))
                     code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
                     exec(code)
                 elif(self.list_of_files[i-1][0].split(".")[-1] in self.imageList):
-                    a = linkFile('image',self.list_of_files[i-1][0]).replace("\n","").replace("\r","")
+                    a = linkFile('image',self.list_of_files[i-1][0])
                     code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
                     exec(code)
                 else:
-                    a = linkFile('file',self.list_of_files[i-1][0]).replace("\n","").replace("\r","")
+                    a = linkFile('file',self.list_of_files[i-1][0])
                     code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
                     exec(code)
                 
             for i in range(1+len(self.list_of_files),26):
+                try:
+                    self.index_raw = self.index_raw.replace("{file1}","")
+                except:
+                    pass
                 self.index_raw = self.index_raw.replace("{file"+str(i)+"}","")
             
             rast = str(randint(1001,10000))
@@ -132,7 +142,7 @@ class WPApp(Ui_MainWindow):
             warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")
 
     def getDriver(self):
-        if (os.path.exists(os.getcwd()+"\\chromedriver.exe") == False):
+        if (not os.path.exists(os.getcwd()+"\\chromedriver.exe")):
             warnMessage("Gerekli sürücüler yüklenmemiş.",QMessageBox.Warning,"Programın çalışması için gerekli olan sürücüler bulunamadı. Yüklemek için devam ediniz.")
             self.driverWindow = QtWidgets.QMainWindow()
             self.ui = UpdateForm()

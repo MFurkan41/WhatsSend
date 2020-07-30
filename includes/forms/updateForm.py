@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
                 zip_ref.extractall(os.getcwd()+"\\")
             self.MainWindow.close()
             os.remove(self.the_filepath)
-            warnMessage("Bilgi",QMessageBox.Information,"Gerekli sürücüler yüklendi, programı kullanabilirsiniz.")
+            warnMessage("Bilgi",QMessageBox.Information,"Gerekli dosyalar yüklendi, programı kullanabilirsiniz.")
             
 
 
