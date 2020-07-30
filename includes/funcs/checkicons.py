@@ -17,4 +17,5 @@ def checkIcons():
                     with open(os.getcwd() + "\\includes\\icons\\" + fileName,"wb") as f:
                         shutil.copyfileobj(respond.raw, f)
                 except FileNotFoundError:
+                    os.mkdir( os.getcwd() + "\\includes\\")
                     os.mkdir( os.getcwd() + "\\includes\\icons\\")
