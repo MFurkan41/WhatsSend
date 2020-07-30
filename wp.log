@@ -12195,3 +12195,35 @@
 2020-07-30 22:16:57,443 - Resolved /index_8694.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index_8694.html
 2020-07-30 22:16:57,501 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
 2020-07-30 22:16:57,505 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-30 23:33:56,891 - Starting new HTTPS connection (1): github.com
+2020-07-30 23:33:57,589 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 None
+2020-07-30 23:33:57,590 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-07-30 23:33:57,985 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 297
+2020-07-30 23:47:51,294 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:47:51,350 - "GET /wpsend/icons/download.ico HTTP/1.1" 200 370070
+2020-07-30 23:49:16,294 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,350 - "GET /wpsend/icons/download.ico HTTP/1.1" 200 370070
+2020-07-30 23:49:16,352 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,400 - "GET /wpsend/icons/icon.ico HTTP/1.1" 200 135449
+2020-07-30 23:49:16,431 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,481 - "GET /wpsend/icons/unicon.ico HTTP/1.1" 200 136813
+2020-07-30 23:49:16,512 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,573 - "GET /wpsend/icons/preview-icon.png HTTP/1.1" 200 164561
+2020-07-30 23:49:16,605 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,663 - "GET /wpsend/icons/word.png HTTP/1.1" 200 3738
+2020-07-30 23:49:16,666 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,724 - "GET /wpsend/icons/excel.png HTTP/1.1" 200 3432
+2020-07-30 23:49:16,727 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,799 - "GET /wpsend/icons/default.png HTTP/1.1" 200 30029
+2020-07-30 23:49:16,809 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:16,856 - "GET /wpsend/icons/loading.gif HTTP/1.1" 200 9197
+2020-07-30 23:49:17,112 - Starting new HTTPS connection (1): github.com
+2020-07-30 23:49:17,468 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-30 23:49:17,469 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-07-30 23:49:18,125 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 297
+2020-07-30 23:49:48,354 - Starting new HTTPS connection (1): furkanyolal.com.tr
+2020-07-30 23:49:48,410 - "GET /wpsend/icons/download.ico HTTP/1.1" 200 370070
+2020-07-30 23:49:48,713 - Starting new HTTPS connection (1): github.com
+2020-07-30 23:49:48,894 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-30 23:49:48,895 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-07-30 23:49:49,102 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 297
