@@ -43,7 +43,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.8.4"
+VERSION = "1.8.5"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -167,8 +167,7 @@ class WPApp(Ui_MainWindow):
             warnMessage("Uyarı!",QMessageBox.Warning,"Bilgisayarınız internete bağlı olmadığından bu programı kullanmazsınız.")
             sys.exit()
 
-        LastVersion = version.parse(parseVersion(self.othVERSION)[-1])
-
+        LastVersion = version.parse(list(parseVersion(self.othVERSION))[-1])
         if(LastVersion > version.parse(VERSION)):
             warnMessage("Uyarı!",QMessageBox.Information,"Program güncel değil.          \n\nKurulu versiyon : "+ str(VERSION) + "\nYeni versiyon : "+ LastVersion.__str__() + "\n\nGüncellemek için devam ediniz.")
             return True
