@@ -43,7 +43,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.8.1"
+VERSION = "1.8.4"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -137,7 +137,7 @@ class WPApp(Ui_MainWindow):
 
             webview.create_window("Mesaj Önizleme","WhatsAppGui/index_"+ rast  +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
             webview.start()
-            
+
             os.remove("WhatsAppGui\\index_"+ rast  +".html")
         else:
             warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")

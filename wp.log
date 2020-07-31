@@ -12279,3 +12279,13 @@
 2020-07-31 07:55:11,359 - Resolved /index_7071.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index_7071.html
 2020-07-31 07:55:11,395 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
 2020-07-31 07:55:11,397 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-31 09:12:13,048 - Starting new HTTPS connection (1): github.com
+2020-07-31 09:12:13,422 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-31 09:12:13,423 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-07-31 09:12:13,778 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 297
+2020-07-31 09:12:23,451 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-07-31 09:12:23,967 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-07-31 09:12:46,351 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001F4E35CF108> started on http://localhost:36398/
+2020-07-31 09:12:47,070 - Resolved /index_9186.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index_9186.html
+2020-07-31 09:12:47,117 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-07-31 09:12:47,124 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css

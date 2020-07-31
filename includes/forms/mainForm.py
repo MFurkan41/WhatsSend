@@ -87,6 +87,8 @@ class Ui_MainWindow(object):
         self.tableView = QtWidgets.QTableView(self.centralwidget)
         self.tableView.setMinimumSize(QtCore.QSize(550*self.ScRate, 0))
         self.tableView.setObjectName("tableView")
+        self.tableView.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
+        self.tableView.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
         self.horizontalLayout.addWidget(self.tableView)
 
         self.line = QtWidgets.QFrame(self.centralwidget)
