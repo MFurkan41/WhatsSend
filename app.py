@@ -43,7 +43,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.8.5"
+VERSION = "1.8.6"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -135,7 +135,7 @@ class WPApp(Ui_MainWindow):
             with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_"+ rast  +".html","w","utf-8") as file:
                 file.write(self.index_raw)
 
-            webview.create_window("Mesaj Önizleme","WhatsAppGui/index_"+ rast  +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
+            webview.create_window("Mesaj Önizleme",url="WhatsAppGui\\index_"+ rast +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
             webview.start()
 
             os.remove("WhatsAppGui\\index_"+ rast  +".html")
