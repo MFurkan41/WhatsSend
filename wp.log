@@ -12481,3 +12481,7 @@
 2020-07-31 19:10:53,224 - Resolved /index_3858.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index_3858.html
 2020-07-31 19:10:53,256 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
 2020-07-31 19:10:53,259 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-07-31 19:19:20,226 - Starting new HTTPS connection (1): github.com
+2020-07-31 19:19:20,584 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-07-31 19:19:20,585 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-07-31 19:19:21,007 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 341

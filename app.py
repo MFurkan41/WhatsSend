@@ -43,7 +43,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.8.6"
+VERSION = "1.8.7"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -226,7 +226,7 @@ class WPApp(Ui_MainWindow):
         QtGui.QGuiApplication.processEvents()
     # Open a .xlsx file with PyQt5.QFileDialog
     def openFile(self):
-        fileName, _ = QFileDialog.getOpenFileName(self.window, "Excel Dosyası Aç", os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop'), "Excel Dosyası (*.xlsx)")
+        fileName, _ = QFileDialog.getOpenFileName(self.window, "Excel Dosyası Aç", '', "Excel Dosyası (*.xlsx)")
         if fileName:
             excel = GetExcel()
             excel.createList(fileName)
