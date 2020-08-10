@@ -6,7 +6,7 @@ def group(lst, n):
     val = lst[i:i+n]
     if len(val) == n:
       yield list(val)
-
+      
 class GetExcel():
     def createList(self,path):
         global numaralar

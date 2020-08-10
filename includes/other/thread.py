@@ -16,7 +16,9 @@ from includes.funcs.improvedSends import clickButton,enterInput
 
 @guiLoop
 def wpsend(self):
+    webdriver.DesiredCapabilities.CHROME["unexpectedAlertBehaviour"] = "accept"
     browser = webdriver.Chrome(executable_path=os.getcwd()+"\\chromedriver.exe")
+    
     browser.get("https://web.whatsapp.com")
     """
     bekle(5)
@@ -70,8 +72,6 @@ def wpsend(self):
                 deger = clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
                 enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[3]/button/input",j[0])
                 clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
-            if(deger == 0):
-                self.changeTableItem(i,"qMark")
             bekle(1)
 
         self.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
@@ -81,7 +81,10 @@ def wpsend(self):
         if(res["message"] != "no_message_count"):
             
             self.spinBox_4.setValue(res["mcount"])
-            self.changeTableItem(i,"tick")
+            if(deger == 0 ):
+                self.changeTableItem(i,"qMark")
+            else:
+                self.changeTableItem(i,"tick")
             QtGui.QGuiApplication.processEvents()
         else:
             warnMessage("Uyarı",QMessageBox.Information,"Mesaj Hakkınız Kalmadı.")
@@ -91,7 +94,7 @@ def wpsend(self):
         QtGui.QGuiApplication.processEvents()
     bekle(0.5)
     clickButton(browser,"//*[@id='side']/header/div[2]/div/span/div[3]/div")
-    clickButton(browser,"//*[@id='side']/header/div[2]/div/span/div[3]/span/div/ul/li[6]/div")
+    clickButton(browser,"//*[@id='side']/header/div[2]/div/span/div[3]/span/div/ul/li[7]/div")
     bekle(0.5)
     browser.close()
     warnMessage("Uyarı",QMessageBox.Information,"Listedeki tüm mesajlar atıldı.")

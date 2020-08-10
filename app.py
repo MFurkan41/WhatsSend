@@ -20,6 +20,7 @@ from includes.funcs.linkfile import linkFile
 from includes.funcs.warnmessage import warnMessage
 from includes.funcs.txtinfo import getTxtInfo,saveTxtInfo
 from includes.funcs.checkicons import checkIcons
+from includes.funcs.getfirstframe import getFirstFrame
     ## Forms
 from includes.forms.mainForm import *
 from includes.forms.updateForm import Ui_MainWindow as UpdateForm
@@ -29,12 +30,12 @@ from appIcons import Icons
 from includes.other.thread import wpsend
 
 # Other Necessary Imports
-from passlib.hash import sha256_crypt
 from requests.exceptions import ConnectionError
 import urllib.parse
 import urllib.request
-import webview
+from webview import create_window, start
 import webbrowser
+from openpyxl import Workbook
 
 #web.whatsapp.com/send?phone=905326045779&text=DENEME
 
@@ -43,7 +44,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.8.7"
+VERSION = "1.9"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -64,6 +65,7 @@ class WPApp(Ui_MainWindow):
         # QPushButton Settings
         self.pushButton.clicked.connect(self.sendwp)
         self.pushButton_2.clicked.connect(self.previewMessage)
+        self.pushButton_3.clicked.connect(self.getReport)
 
         # Create Table and Model
         self.dbModel()
@@ -74,6 +76,44 @@ class WPApp(Ui_MainWindow):
 
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
+
+    def getReport(self):
+        mesSent = False
+        try:
+            self.numaralar
+        except:
+            warnMessage("Uyarı!",QMessageBox.Warning,"Listede numara bulunmadığından rapor çıkartamazsınız.")
+            return
+        else:
+            for numara in self.numaralar:
+                if(numara[-1] != "❌"):
+                    mesSent = True
+        if(mesSent):
+            name = QFileDialog.getSaveFileName(self.window, "Raporu Kaydet",filter="Excel Files (*.xlsx)")
+            if(name):   
+                book = Workbook()
+                sheet = book.active
+
+                for idx ,row in enumerate(self.numaralar, 1):
+                    row[1] = str(("$" + str(row[1]))[1:])
+                    sheet.append(row)
+                    sheet.cell(idx, 2).number_format = "$"
+
+                book.save(name[0])
+
+                msgbox = QMessageBox()
+                
+                msgbox.setWindowModality(QtCore.Qt.NonModal)
+                msgbox.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
+                msgbox.setIcon(QMessageBox.Information)
+                msgbox.setText("Raporunuz aşağıda belirtilen dosya yoluna kaydedilmiştir;\n"+ name[0] +"\n\n" + "Dosyayı açmak ister misiniz?\n")
+                ac = msgbox.addButton('Evet', msgbox.ActionRole)
+                ac.clicked.connect(lambda : os.startfile(name[0]))
+                msgbox.addButton('Hayır', msgbox.ActionRole)
+                # disconnect the clicked signal from the slots QMessageBox automatically sets
+                msgbox.exec_()
+        else:
+            warnMessage("Uyarı!",QMessageBox.Warning,"Listedeki numaraların raporunu çıkartabilmek için mesaj atmanız gerekmektedir.")
 
     def previewMessage(self):
         if(not os.path.exists(os.getcwd()+"\\WhatsAppGui")):
@@ -86,17 +126,24 @@ class WPApp(Ui_MainWindow):
         self.message = str(self.plain.toPlainText())
         if(self.message != ""):
             self.imageList = ["tiff","pjp","pjpeg","jfif","tif","gif","svg","bmp","png","jpeg", \
-                            "svgz","jpg","webp","ico","xbm","dib","m4v","mp4","3gpp","mov"]        
+                            "svgz","jpg","webp","ico","xbm","dib"]  
+            self.videoList = ["mp4","m4v","3gpp","mov"]
 
-            with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_raw.html","r","utf-8") as file:
+            try:
+                self.index
+            except:
+                with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_raw.html","r","utf-8") as file:
                     self.index_raw = file.read()
+                self.index = self.index_raw
+            else:
+                self.index_raw = self.index
+         
             for i in range(1,len(self.list_of_files)+1):
                 if(self.list_of_files[i-1][0] == "Mesaj"):
                     fList = []
-                    for i in range(len(self.headers)):
-                        if "{" + str(i) + "}" in self.message:
-                            fList.append(i)
-                    print(fList)
+                    for j in range(len(self.headers)):
+                        if "{" + str(j) + "}" in self.message:
+                            fList.append(j)
                     if(len(fList) != 0):
                         try:
                             QtGui.QGuiApplication.processEvents()
@@ -104,7 +151,6 @@ class WPApp(Ui_MainWindow):
                             for i in range(len(self.headers)):
                                 execM += "str(self.numaralar[0][" + str(i) + "]),"
                             execM = execM[:-1] + ")"
-                            print(execM)
                             exec(execM)
                         
                         except AttributeError:
@@ -112,22 +158,23 @@ class WPApp(Ui_MainWindow):
                             return
                     
                     a = linkFile('message',str(self.message))
-                    code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
+                    code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
                     exec(code)
                 elif(self.list_of_files[i-1][0].split(".")[-1] in self.imageList):
                     a = linkFile('image',self.list_of_files[i-1][0])
-                    code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
+                    code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
+                    exec(code)
+                elif(self.list_of_files[i-1][0].split(".")[-1] in self.videoList):
+                    getFirstFrame(self.list_of_files[i-1][0])
+                    a = linkFile('image',os.getcwd() + "\\WhatsAppGui\\fFrame.jpg")
+                    code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
                     exec(code)
                 else:
                     a = linkFile('file',self.list_of_files[i-1][0])
-                    code = "self.index_raw = self.index_raw.format_map(SafeDict(file"+ str(i) +"='"+ a +"'))"
+                    code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
                     exec(code)
                 
             for i in range(1+len(self.list_of_files),26):
-                try:
-                    self.index_raw = self.index_raw.replace("{file1}","")
-                except:
-                    pass
                 self.index_raw = self.index_raw.replace("{file"+str(i)+"}","")
             
             rast = str(randint(1001,10000))
@@ -135,12 +182,17 @@ class WPApp(Ui_MainWindow):
             with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_"+ rast  +".html","w","utf-8") as file:
                 file.write(self.index_raw)
 
-            webview.create_window("Mesaj Önizleme",url="WhatsAppGui\\index_"+ rast +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
-            webview.start()
+            create_window("Mesaj Önizleme",url="WhatsAppGui\\index_"+ rast +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
+            start()
+            try:
+                os.remove(os.getcwd() + "\\WhatsAppGui\\fFrame.jpg")
+            except FileNotFoundError:
+                pass
 
             os.remove("WhatsAppGui\\index_"+ rast  +".html")
         else:
             warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")
+        
 
     def getDriver(self):
         if (not os.path.exists(os.getcwd()+"\\chromedriver.exe")):
@@ -242,9 +294,12 @@ class WPApp(Ui_MainWindow):
                 warnMessage("Uyarı",QMessageBox.Warning,"Açmaya çalıştığınız dosyadaki kolon sayısı programdaki ile eşit değildir!")
     
     def sendwp(self):
-        if(self.apiKey is None or self.apiKey == ""):
-            warnMessage("Uyarı",QMessageBox.Warning,"Lütfen anahtarınızı giriniz.")
-            self.settings()
+        if(self.apiKey == "" or self.apiKey is None):
+            if(getTxtInfo()["key"] == ""):
+                warnMessage("Uyarı",QMessageBox.Warning,"Lütfen anahtarınızı giriniz.")
+                self.settings()
+            else:
+                self.apiKey = getTxtInfo()["key"]
         elif(self.spinBox.text() == "0"):
             self.apiKeyControl(self.apiKey)
             if(self.c == True):
@@ -305,13 +360,16 @@ class WPApp(Ui_MainWindow):
             pass
 
         try:
-            print(self.info)
+            self.info
             saveTxtInfo("name",self.info["name"])
             saveTxtInfo("mail",self.info["email"])
         except AttributeError:
             self.spinBox_4.setValue(0)
         else:
-            self.subWindow.close()
+            try:
+                self.subWindow.close()
+            except:
+                pass
             self.spinBox_4.setValue(self.info['mcount'])
             try:
                 control = control[0]
@@ -344,6 +402,8 @@ if __name__ == "__main__":
 
     app.setApplicationName("WP Auto Message Sender")
     app.setApplicationVersion(VERSION)
+
+    #app.setStyleSheet(open("style.qss","r").read())
 
     window = StartApp()
     

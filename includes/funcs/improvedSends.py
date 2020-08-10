@@ -1,4 +1,4 @@
-from selenium.common.exceptions import NoSuchElementException,ElementNotInteractableException
+from selenium.common.exceptions import NoSuchElementException,ElementNotInteractableException,UnexpectedAlertPresentException
 from time import sleep as bekle
 
 def clickButton(browser,xpath):
@@ -15,7 +15,7 @@ def clickButton(browser,xpath):
             continue
         try:
             browser.find_element_by_xpath(xpath).click()
-        except (NoSuchElementException,ElementNotInteractableException):
+        except (NoSuchElementException,ElementNotInteractableException, UnexpectedAlertPresentException):
             gen+=1
             bekle(0.5)
             continue

@@ -48,5 +48,5 @@ def linkFile(kind,src):
                   </span>
                 </div>
         """
-        htmlCode = htmlCode.format(urllib.parse.quote_plus(src.replace("\\","/")))
+        htmlCode = htmlCode.format(urllib.parse.quote_plus(src)).replace("\\","/").replace("\n","").replace("\r","")
     return htmlCode

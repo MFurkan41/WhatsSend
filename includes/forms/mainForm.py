@@ -79,8 +79,10 @@ class Ui_MainWindow(object):
         
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        
         self.gridLayout = QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
+                
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
 
@@ -110,14 +112,7 @@ class Ui_MainWindow(object):
         self.pushButton.setMaximumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout.addWidget(self.pushButton)
-
-        """
-        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(507, 28))
-        self.pushButton_2.setMaximumSize(QtCore.QSize(507, 28))
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout.addWidget(self.pushButton_2)
-        """
+        
         self.line_2 = QtWidgets.QFrame(self.centralwidget)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -247,7 +242,18 @@ class Ui_MainWindow(object):
         self.pushButton_2.setMinimumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
         self.pushButton_2.setMaximumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
         self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout_2.addWidget(self.pushButton_2)
+
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_3.setMinimumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
+        self.pushButton_3.setMaximumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
+        self.pushButton_3.setObjectName("pushButton_3")
+
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_8.addWidget(self.pushButton_2)
+        self.horizontalLayout_8.addWidget(self.pushButton_3)
+        self.horizontalLayout_8.addStretch()
+
+        self.verticalLayout_2.addLayout(self.horizontalLayout_8)
         self.verticalLayout_2.addWidget(self.plain)
 
         self.horizontalLayout_7.addLayout(self.verticalLayout_2)
@@ -262,11 +268,6 @@ class Ui_MainWindow(object):
         self.label_5.setFont(self.font)
         self.verticalLayout_3.addWidget(self.label_5)
 
-        """self.label_6 = QtWidgets.QLabel(self.centralwidget)
-        self.label_6.setMinimumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))
-        self.label_6.setMaximumSize(QtCore.QSize(280*self.ScRate, 230*self.ScRate))                                                      
-        self.label_6.setObjectName("label_6")
-        self.label_6.setFont(self.font)"""
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget.setColumnCount(2)
@@ -293,7 +294,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.addLayout(self.verticalLayout_3)
         self.verticalLayout.addLayout(self.horizontalLayout_7)
         self.horizontalLayout.addLayout(self.verticalLayout)
+
         self.gridLayout.addLayout(self.horizontalLayout,0,0,1,1)
+        
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1100*self.ScRate, 26*self.ScRate))
@@ -407,8 +410,11 @@ class Ui_MainWindow(object):
         self.pushButton_2.setToolTip(_translate("MainWindow","    Mesajınızın önizlemesine bu <br>butondan bakabilirsiniz."))
         self.pushButton_2.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
         self.pushButton_2.setStyleSheet('QPushButton{border: 0px solid;}')
-        
-        self.tableWidget.setItem(0,0,QtWidgets.QTableWidgetItem("Name"))
+
+        self.pushButton_3.setIcon(QtGui.QIcon(Icons["Report"]))
+        self.pushButton_3.setToolTip(_translate("MainWindow","    Atılan mesajların raporunu excel formatında kaydetmek için bu butonu kullanabilirsiniz."))
+        self.pushButton_3.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
+        self.pushButton_3.setStyleSheet('QPushButton{border: 0px solid;}')
 
         self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
         self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
@@ -423,7 +429,6 @@ class Ui_MainWindow(object):
 " istiyorsanız, mesajınızda isim\n"
 " olmasını istediğiniz yere {}\n"
 " işaretlerini koyunuz."))
-        #self.label_6.setText(_translate("MainWindow", "<html><body><p style='text-align:center'>QR CODE</p></body></html>"))
         self.menuDosya.setTitle(_translate("MainWindow", "Dosya"))
         self.menuAbout.setTitle(_translate("MainWindow", "Hakkında"))
         self.actionDosya_A.setText(_translate("MainWindow", "Dosya Aç..."))

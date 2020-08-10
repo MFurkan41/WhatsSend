@@ -8,6 +8,5 @@ Icons = {
     "Excel":getcwd()+"\\includes\\icons\\excel.png",
     "DefaultFile":getcwd()+"\\includes\\icons\\default.png",
     "Loading":getcwd()+"\\includes\\icons\\loading.gif",
-    "Play":getcwd()+"\\includes\\icons\\play-icon.png",
-    "Report":getcwd()+"\\includes\\icons\\report-icon.png"
+    "Play":getcwd()+"\\includes\\icons\\play-icon.png"
     }
