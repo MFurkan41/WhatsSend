@@ -14,8 +14,15 @@ def checkIcons():
                 respond.raw.decode_content = True
 
                 try:
-                    with open(os.getcwd() + "\\includes\\icons\\" + fileName,"wb") as f:
-                        shutil.copyfileobj(respond.raw, f)
-                except FileNotFoundError:
                     os.mkdir( os.getcwd() + "\\includes\\")
+                except FileExistsError:
+                    pass
+                 
+                try:
                     os.mkdir( os.getcwd() + "\\includes\\icons\\")
+                except FileExistsError:
+                    pass
+
+                with open(os.getcwd() + "\\includes\\icons\\" + fileName,"wb") as f:
+                    shutil.copyfileobj(respond.raw, f)
+                    

@@ -314,6 +314,12 @@
             </item>
             <item>
              <widget class="QLineEdit" name="lineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="minimumSize">
                <size>
                 <width>240</width>
@@ -366,21 +372,12 @@ Aşağıdaki QR kodu telefonunuzdan okutunuz.</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_6">
-              <property name="minimumSize">
-               <size>
-                <width>256</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>256</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/Prefix/qrcode.png&quot; width=&quot;200&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
               </property>
              </widget>
             </item>
@@ -411,7 +408,15 @@ Aşağıdaki QR kodu telefonunuzdan okutunuz.</string>
     <addaction name="actionAyarla"/>
     <addaction name="actionKapat"/>
    </widget>
+   <widget class="QMenu" name="menuHakk_nda">
+    <property name="title">
+     <string>Hakkında</string>
+    </property>
+    <addaction name="actionG_ncelle"/>
+    <addaction name="actionVersiyon"/>
+   </widget>
    <addaction name="menuDosya"/>
+   <addaction name="menuHakk_nda"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionDosya_A">
@@ -433,6 +438,16 @@ Aşağıdaki QR kodu telefonunuzdan okutunuz.</string>
   <action name="actionAyarla">
    <property name="text">
     <string>Ayarlar</string>
+   </property>
+  </action>
+  <action name="actionG_ncelle">
+   <property name="text">
+    <string>Güncelle...</string>
+   </property>
+  </action>
+  <action name="actionVersiyon">
+   <property name="text">
+    <string>Versiyon</string>
    </property>
   </action>
  </widget>

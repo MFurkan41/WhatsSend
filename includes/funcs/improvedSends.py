@@ -4,7 +4,7 @@ from time import sleep as bekle
 def clickButton(browser,xpath):
     gen = 0
     while True:
-        if(gen >= 5):
+        if(gen >= 1):
             try:
                 browser.find_element_by_xpath("//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div").click()
             except:
@@ -16,8 +16,8 @@ def clickButton(browser,xpath):
         try:
             browser.find_element_by_xpath(xpath).click()
         except (NoSuchElementException,ElementNotInteractableException, UnexpectedAlertPresentException):
-            gen+=1
-            bekle(0.5)
+            gen+=0.5
+            bekle(gen)
             continue
         else:
             break

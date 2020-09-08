@@ -1,9 +1,6 @@
 {
     "python.pythonPath": "C:\\Users\\mfurk\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "python.linting.pylintArgs": [
-        "--extension-pkg-whitelist=PyQt5"
-    ],
     "python.linting.enabled": false,
     "python.autoComplete.addBrackets": true,
-    
+    "editor.quickSuggestions": true,
 }

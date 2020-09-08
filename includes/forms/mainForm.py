@@ -72,17 +72,17 @@ class Ui_MainWindow(object):
         self.font = QtGui.QFont("Georgia", 8.8*self.ScRate,weight=-2)
 
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1111*self.ScRate, 700)
-        MainWindow.setMinimumSize(QtCore.QSize(1111*self.ScRate, 700*self.ScRate))
-        MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700*self.ScRate))
+        MainWindow.resize(1111*self.ScRate, 730)
+        MainWindow.setMinimumSize(QtCore.QSize(1111*self.ScRate, 730*self.ScRate))
+        MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 730*self.ScRate))
         MainWindow.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
         
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        
-        self.gridLayout = QGridLayout(self.centralwidget)
-        self.gridLayout.setObjectName("gridLayout")
-                
+             
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
 
@@ -112,6 +112,17 @@ class Ui_MainWindow(object):
         self.pushButton.setMaximumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout.addWidget(self.pushButton)
+
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
+        self.pushButton_4.setSizePolicy(sizePolicy)                                                                                                                                                
+        self.pushButton_4.setMinimumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
+        self.pushButton_4.setMaximumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.verticalLayout.addWidget(self.pushButton_4)
         
         self.line_2 = QtWidgets.QFrame(self.centralwidget)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
@@ -123,10 +134,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setMinimumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))
-        self.label.setMaximumSize(QtCore.QSize(249*self.ScRate, 31*self.ScRate))
+        self.label.setMinimumSize(QtCore.QSize(249, 31))
+        self.label.setMaximumSize(QtCore.QSize(249, 31))
         self.label.setObjectName("label")
-        self.label.setFont(self.font)
         self.horizontalLayout_3.addWidget(self.label)
 
         self.spinBox = QtWidgets.QSpinBox(self.centralwidget)
@@ -149,11 +159,10 @@ class Ui_MainWindow(object):
 
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setMinimumSize(QtCore.QSize(249*self.ScRate, 32*self.ScRate))
-        self.label_2.setMaximumSize(QtCore.QSize(249*self.ScRate, 32*self.ScRate))                                     
+        self.label_2.setMaximumSize(QtCore.QSize(249*self.ScRate, 32*self.ScRate))
         self.label_2.setObjectName("label_2")
-        self.label_2.setFont(self.font)
         self.horizontalLayout_4.addWidget(self.label_2)
-
+        
         self.spinBox_2 = QtWidgets.QSpinBox(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -219,58 +228,84 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addLayout(self.horizontalLayout_6)
 
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+
         self.line_3 = QtWidgets.QFrame(self.centralwidget)
         self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
         self.verticalLayout.addWidget(self.line_3)
 
-        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
 
-        self.plain = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plain.setMinimumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))
-        self.plain.setMaximumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))                                                                    
-        self.plain.setObjectName("plain")
-
-
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
 
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)                                
+        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
+        self.pushButton_2.setSizePolicy(sizePolicy)
         self.pushButton_2.setMinimumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
         self.pushButton_2.setMaximumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
         self.pushButton_2.setObjectName("pushButton_2")
+        self.horizontalLayout_2.addWidget(self.pushButton_2)
 
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)                                
+        sizePolicy.setHeightForWidth(self.pushButton_3.sizePolicy().hasHeightForWidth())
+        self.pushButton_3.setSizePolicy(sizePolicy)
         self.pushButton_3.setMinimumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
         self.pushButton_3.setMaximumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
         self.pushButton_3.setObjectName("pushButton_3")
+        self.horizontalLayout_2.addWidget(self.pushButton_3)
 
-        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_8.addWidget(self.pushButton_2)
-        self.horizontalLayout_8.addWidget(self.pushButton_3)
-        self.horizontalLayout_8.addStretch()
+        #self.horizontalLayout_2.addStretch()
+        self.horizontalLayout_2.setAlignment(QtCore.Qt.AlignLeft)
 
-        self.verticalLayout_2.addLayout(self.horizontalLayout_8)
-        self.verticalLayout_2.addWidget(self.plain)
+        self.verticalLayout_7.addLayout(self.horizontalLayout_2)
 
-        self.horizontalLayout_7.addLayout(self.verticalLayout_2)
+        self.plain = QtWidgets.QPlainTextEdit(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)                                
+        sizePolicy.setHeightForWidth(self.plain.sizePolicy().hasHeightForWidth())
+        self.plain.setSizePolicy(sizePolicy)
+        self.plain.setMinimumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))
+        self.plain.setMaximumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))                                                                    
+        self.plain.setObjectName("plain")
+        self.verticalLayout_7.addWidget(self.plain)
 
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.horizontalLayout_7.addLayout(self.verticalLayout_7)
+
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
 
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)                                
+        sizePolicy.setHeightForWidth(self.label_5.sizePolicy().hasHeightForWidth())
+        self.label_5.setSizePolicy(sizePolicy)
         self.label_5.setMinimumSize(QtCore.QSize(256*self.ScRate, 130*self.ScRate))
         self.label_5.setMaximumSize(QtCore.QSize(256*self.ScRate, 130*self.ScRate))
         self.label_5.setObjectName("label_5")
         self.label_5.setFont(self.font)
-        self.verticalLayout_3.addWidget(self.label_5)
+        self.verticalLayout_2.addWidget(self.label_5)
 
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget.setColumnCount(2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred,QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy)
 
         self.tableWidget.setHorizontalHeaderItem(0,QtWidgets.QTableWidgetItem("Dosya Adı"))
         self.tableWidget.setHorizontalHeaderItem(1,QtWidgets.QTableWidgetItem("Mesaj Sırası"))
@@ -288,14 +323,13 @@ class Ui_MainWindow(object):
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setMinimumSize(QtCore.QSize(220*self.ScRate,280*self.ScRate))
         self.tableWidget.setMaximumSize(QtCore.QSize(220*self.ScRate,280*self.ScRate))
-        self.verticalLayout_3.addWidget(self.tableWidget)
+        self.verticalLayout_2.addWidget(self.tableWidget)
         self.create_popup_menu()
 
-        self.horizontalLayout_7.addLayout(self.verticalLayout_3)
+        self.horizontalLayout_7.addLayout(self.verticalLayout_2)
         self.verticalLayout.addLayout(self.horizontalLayout_7)
         self.horizontalLayout.addLayout(self.verticalLayout)
-
-        self.gridLayout.addLayout(self.horizontalLayout,0,0,1,1)
+        self.horizontalLayout_8.addLayout(self.horizontalLayout)
         
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -405,12 +439,14 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Whats Message Sender v"+ self.version))
 
         self.pushButton.setText(_translate("MainWindow", "Başlat"))
+        self.pushButton_4.setText(_translate("MainWindow", "Durdur"))
+        self.pushButton_4.setVisible(False)
         
         self.pushButton_2.setIcon(QtGui.QIcon(Icons["Preview"]))
         self.pushButton_2.setToolTip(_translate("MainWindow","    Mesajınızın önizlemesine bu <br>butondan bakabilirsiniz."))
         self.pushButton_2.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
         self.pushButton_2.setStyleSheet('QPushButton{border: 0px solid;}')
-
+        
         self.pushButton_3.setIcon(QtGui.QIcon(Icons["Report"]))
         self.pushButton_3.setToolTip(_translate("MainWindow","    Atılan mesajların raporunu excel formatında kaydetmek için bu butonu kullanabilirsiniz."))
         self.pushButton_3.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
