@@ -45,7 +45,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.9.2"
+VERSION = "1.9.3"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -442,7 +442,7 @@ def StartApp():
     return m
 
 if __name__ == "__main__":
-    if not is_admin():
+    if is_admin():
         # Icon Checker
         checkIcons()
 
@@ -457,8 +457,7 @@ if __name__ == "__main__":
         
         sys.exit(app.exec_())
     else:
-        pass
-        #ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+        ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
 
 """
 if __name__ == "__main__":

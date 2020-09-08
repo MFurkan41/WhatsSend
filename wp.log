@@ -22837,3 +22837,15 @@
 2020-09-08 20:59:32,066 - DELETE http://127.0.0.1:55974/session/23bacdcad7cd793ec8fcbaafc9ff6392 {}
 2020-09-08 20:59:32,103 - http://127.0.0.1:55974 "DELETE /session/23bacdcad7cd793ec8fcbaafc9ff6392 HTTP/1.1" 200 14
 2020-09-08 20:59:32,104 - Finished Request
+2020-09-09 00:52:27,987 - Starting new HTTPS connection (1): github.com
+2020-09-09 00:52:28,811 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-09 00:52:28,812 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-09 00:52:29,197 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 387
+2020-09-09 00:52:42,541 - Starting new HTTPS connection (1): github.com
+2020-09-09 00:52:42,713 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-09 00:52:42,714 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-09 00:52:42,909 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 387
+2020-09-09 01:39:52,512 - Starting new HTTPS connection (1): github.com
+2020-09-09 01:39:52,880 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-09 01:39:52,881 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-09 01:39:53,279 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 387
