@@ -114,6 +114,7 @@ class MesThread(QtCore.QThread):
             browser.quit()
             self.spinBoxSignal.emit(["done",0])
             QtGui.QGuiApplication.processEvents()
+            self.pushButton_4.emit(True)
         except WebDriverException:
             warnMessage("Uyarı!",QMessageBox.Warning,"Açılan 'komut istemi (cmd)' veya chrome sekmesi kapatıldı. Mesajların atılabilmesi için bu iki pencerenin açık olması gerekmektedir.")
         self.quit()

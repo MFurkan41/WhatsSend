@@ -66,7 +66,7 @@ class WPApp(Ui_MainWindow):
         # Menu Button Settings
         self.actionDosya_A.triggered.connect(self.openFile)
         self.actionAyarla.triggered.connect(self.settings)
-        self.actionKapat.triggered.connect(exit)
+        self.actionKapat.triggered.connect(sys.exit)
         self.actionUpdate.triggered.connect(self.update)
 
         # QPushButton Settings
@@ -212,16 +212,18 @@ class WPApp(Ui_MainWindow):
         
 
     def getDriver(self):
-        if (not os.path.exists(os.getcwd()+"\\chromedriver.exe")):
-            warnMessage("Gerekli sürücüler yüklenmemiş.",QMessageBox.Warning,"Programın çalışması için gerekli olan sürücüler bulunamadı. Yüklemek için devam ediniz.")
-            self.driverWindow = QtWidgets.QMainWindow()
-            self.ui = UpdateForm()
-            self.ui.setupUi(self.driverWindow, "https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_win32.zip")
-            self.driverWindow.show()
         if(isChrome() == False):
             warnMessage("Uyarı",QMessageBox.Warning,"Programın çalışabilmesi için 'Google Chrome' tarayıcısını yüklemeniz gerekmekte. Yüklü ise programı yeniden başlatmalısınız.")
             webbrowser.open("https://www.google.com/intl/tr_tr/chrome/")
             sys.exit()
+        else:
+            if (not os.path.exists(os.getcwd()+"\\chromedriver.exe")):
+                warnMessage("Gerekli sürücüler yüklenmemiş.",QMessageBox.Warning,"Programın çalışması için gerekli olan sürücüler bulunamadı. Yüklemek için devam ediniz.")
+                self.driverWindow = QtWidgets.QMainWindow()
+                self.ui = UpdateForm()
+                self.ui.setupUi(self.driverWindow, "https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_win32.zip")
+                self.driverWindow.show()
+        
 
     def update(self,*warn):
         if self.controlVersion(list(warn)[0]) == True:
@@ -295,7 +297,7 @@ class WPApp(Ui_MainWindow):
         QtGui.QGuiApplication.processEvents()
     # Open a .xlsx file with PyQt5.QFileDialog
     def openFile(self):
-        fileName, _ = QFileDialog.getOpenFileName(self.window, "Excel Dosyası Aç", '', "Excel Dosyası (*.xlsx)")
+        fileName,_ = QFileDialog.getOpenFileName(self.window, "Excel Dosyası Aç", '', "Excel Dosyası (*.xlsx)")
         if fileName:
             excel = GetExcel()
             excel.createList(fileName)
