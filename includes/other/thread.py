@@ -65,28 +65,33 @@ class MesThread(QtCore.QThread):
                 #url += urllib.parse.quote_plus(self.mesaj)
                 
                 for j in self.list_of_files:
-                    if(j[0] == "Mesaj"):
-                        url += "&text="
-                        url += urllib.parse.quote_plus(self.mesaj)
+                    while True:
+                        if(j[0] == "Mesaj"):
+                            url += "&text="
+                            url += urllib.parse.quote_plus(self.mesaj)
+                            bekle(1)
+                            browser.get(url)
+                            deger = clickButton(browser,"//*[@id='main']/footer/div[1]/div[3]/button")
+                        elif(j[0].split("/")[-1].split(".")[1] in self.imageList):
+                            url += "&text="
+                            bekle(1)
+                            browser.get(url)
+                            deger = clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
+                            enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button/input",j[0])
+                            clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
+                        else:
+                            url += "&text="
+                            bekle(1)
+                            browser.get(url)
+                            deger = clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
+                            enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[3]/button/input",j[0])
+                            clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
+                        #res = HtmlRequest(self.app.apiKey, False)
+                        if(deger == 2):
+                            continue
+                        else:
+                            break
                         bekle(1)
-                        browser.get(url)
-                        deger = clickButton(browser,"//*[@id='main']/footer/div[1]/div[3]/button")
-                    elif(j[0].split("/")[-1].split(".")[1] in self.imageList):
-                        url += "&text="
-                        bekle(1)
-                        browser.get(url)
-                        deger = clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
-                        enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button/input",j[0])
-                        clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
-                    else:
-                        url += "&text="
-                        bekle(1)
-                        browser.get(url)
-                        deger = clickButton(browser,"//*[@id='main']/header/div[3]/div/div[2]/div")
-                        enterInput(browser,"//*[@id='main']/header/div[3]/div/div[2]/span/div/div/ul/li[3]/button/input",j[0])
-                        clickButton(browser,"//*[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div")
-                    #res = HtmlRequest(self.app.apiKey, False)
-                    bekle(1)
 
                 #self.app.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
                 self.spinBoxSignal.emit(["2","+1"])
@@ -98,7 +103,7 @@ class MesThread(QtCore.QThread):
                     self.spinBoxSignal.emit([4,res["mcount"]])
                     if(deger == 0 ):
                         self.changeItemSignal.emit([i,"qMark"])
-                    else:
+                    elif(deger == 1):
                         self.changeItemSignal.emit([i,"tick"])
                     QtGui.QGuiApplication.processEvents()
                 else:
@@ -116,7 +121,14 @@ class MesThread(QtCore.QThread):
             QtGui.QGuiApplication.processEvents()
             self.pushButton_4.emit(True)
         except WebDriverException:
-            warnMessage("Uyarı!",QMessageBox.Warning,"Açılan 'komut istemi (cmd)' veya chrome sekmesi kapatıldı. Mesajların atılabilmesi için bu iki pencerenin açık olması gerekmektedir.")
+            try:
+                browser.quit()
+            except:
+                pass
+            try:
+                self.pushButton_4.emit(True)
+            except:
+                pass
         self.quit()
 
         
