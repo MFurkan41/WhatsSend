@@ -66,17 +66,16 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, version):
-        
         self.version = version
         self.ScRate = GetSystemMetrics(0)/1920
         self.font = QtGui.QFont("Georgia", 8.8*self.ScRate,weight=-2)
 
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1126*self.ScRate, 700)
-        MainWindow.setMinimumSize(QtCore.QSize(1126*self.ScRate, 700*self.ScRate))
-        MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 700*self.ScRate))
+        MainWindow.resize(1111*self.ScRate, 730)
+        MainWindow.setMinimumSize(QtCore.QSize(1111*self.ScRate, 730*self.ScRate))
+        MainWindow.setMaximumSize(QtCore.QSize(GetSystemMetrics(0), 730*self.ScRate))
         MainWindow.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
-
+        
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
              
@@ -118,7 +117,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
-        self.pushButton_4.setSizePolicy(sizePolicy)
+        self.pushButton_4.setSizePolicy(sizePolicy)                                                                                                                                                
         self.pushButton_4.setMinimumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
         self.pushButton_4.setMaximumSize(QtCore.QSize(507*self.ScRate, 28*self.ScRate))
         self.pushButton_4.setObjectName("pushButton_4")
@@ -129,52 +128,15 @@ class Ui_MainWindow(object):
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
         self.verticalLayout.addWidget(self.line_2)
-
+        
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
 
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setObjectName("label")
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
-        self.label.setMinimumSize(QtCore.QSize(100*self.ScRate,25*self.ScRate))
-        self.label.setMaximumSize(QtCore.QSize(100*self.ScRate,25*self.ScRate))
-        self.label.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
-        self.horizontalLayout_3.addWidget(self.label)
-
-        self.bar = QProgressBar(self.centralwidget)
-        self.bar.setObjectName("bar")
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.bar.sizePolicy().hasHeightForWidth())
-        self.bar.setSizePolicy(sizePolicy)
-        self.bar.setMinimumSize(QtCore.QSize(430*self.ScRate,25*self.ScRate))
-        self.bar.setMaximumSize(QtCore.QSize(430*self.ScRate,25*self.ScRate))
-        #self.bar.setValue(50)
-        self.bar.setTextVisible(False)
-        self.bar.setStyleSheet("QProgressBar {margin-right: 60px;}")
-        self.bar.setAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignHCenter) 
-        self.horizontalLayout_3.addWidget(self.bar)
-        
-
-        #self.horizontalLayout_3.addStretch()
-        self.verticalLayout.addLayout(self.horizontalLayout_3)
-
-        
-        """
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setMinimumSize(QtCore.QSize(249, 31))
         self.label.setMaximumSize(QtCore.QSize(249, 31))
         self.label.setObjectName("label")
         self.horizontalLayout_3.addWidget(self.label)
-
 
         self.spinBox = QtWidgets.QSpinBox(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
@@ -188,10 +150,8 @@ class Ui_MainWindow(object):
         self.spinBox.setMaximum(999999)
         self.spinBox.setObjectName("spinBox")
         self.horizontalLayout_3.addWidget(self.spinBox)
-        
 
         self.verticalLayout.addLayout(self.horizontalLayout_3)
-        
 
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
@@ -241,7 +201,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addWidget(self.spinBox_3)
 
         self.verticalLayout.addLayout(self.horizontalLayout_5)
-        """
 
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
@@ -492,10 +451,9 @@ class Ui_MainWindow(object):
         self.pushButton_3.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
         self.pushButton_3.setStyleSheet('QPushButton{border: 0px solid;}')
 
-        #self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
-        #self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
-        self.label.setText(_translate("MainWindow", "0/0 - 0%"))
-        self.bar.setValue(0)
+        self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
+        self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
+        self.label_3.setText(_translate("MainWindow", "Atılmamış Mesaj Sayısı :"))
         self.label_4.setText(_translate("MainWindow", "Kalan Mesaj Hakkınız :"))
         self.plain.setPlaceholderText(_translate("MainWindow", "Mesajınız..."))
         self.label_5.setText(_translate("MainWindow", "  MESAJINIZI YAZARKEN\n"
@@ -506,17 +464,6 @@ class Ui_MainWindow(object):
 " istiyorsanız, mesajınızda isim\n"
 " olmasını istediğiniz yere {}\n"
 " işaretlerini koyunuz."))
-        """
-                self.label_5.setText(_translate("MainWindow", "  MESAJINIZI YAZARKEN\n"
-        "  BUNA DİKKAT EDİNİZ.\n"
-        "\n"
-        "Eğer mesajın attığınız kişiye özel\n"
-        " olması için kolon değeri kullanmak\n"
-        " istiyorsanız, mesajınızda \n"
-        "kullanmak istediğiniz değerleri içeren kolonu;\n"
-        " {kolon sıra numarası} Örn. {1}, {2}, {3}\n"
-        " şeklinde koyabilirsiniz."))
-        """
         self.menuDosya.setTitle(_translate("MainWindow", "Dosya"))
         self.menuAbout.setTitle(_translate("MainWindow", "Hakkında"))
         self.actionDosya_A.setText(_translate("MainWindow", "Dosya Aç..."))

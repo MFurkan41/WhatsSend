@@ -5,7 +5,7 @@ openpyxl
 pillow
 pypiwin32
 passlib
-pywebview
+pywebview==3.3.1
 winregistry
 packaging
 opencv-python

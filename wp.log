@@ -27951,3 +27951,1404 @@
 2020-09-13 16:01:54,889 - Incremented Retry for (url='/session/f03979a790184c4a54bd33c9c2ea8e5c'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
 2020-09-13 16:01:54,889 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DB82E562C8>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/f03979a790184c4a54bd33c9c2ea8e5c
 2020-09-13 16:01:54,890 - Starting new HTTP connection (9): 127.0.0.1:54258
+2020-09-13 19:19:42,254 - Starting new HTTPS connection (1): github.com
+2020-09-13 19:19:42,449 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-13 19:19:42,450 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-13 19:19:42,647 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 41
+2020-09-13 19:20:05,152 - Starting new HTTPS connection (1): github.com
+2020-09-13 19:20:05,307 - "GET /MFurkan41/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-13 19:20:05,309 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-13 19:20:05,510 - "GET /MFurkan41/WhatsCompRepo/master/version.txt HTTP/1.1" 200 41
+2020-09-13 19:53:17,322 - Starting new HTTPS connection (1): github.com
+2020-09-13 19:53:17,674 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 404 None
+2020-09-14 12:30:28,485 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:30:29,056 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:30:29,058 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:30:29,442 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:31:45,099 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:31:45,271 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:31:45,274 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:31:45,490 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:33:08,368 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:33:08,705 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:33:08,708 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:33:08,913 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:33:20,692 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:33:20,842 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:33:20,844 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:33:21,046 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:34:01,281 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:34:01,430 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:34:01,432 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:34:01,637 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:34:41,599 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:34:41,770 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:34:41,772 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:34:41,965 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:34:57,654 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:34:57,815 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:34:57,817 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:34:58,021 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:35:27,581 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:35:27,904 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:35:27,906 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:35:28,104 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:35:36,064 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:35:36,210 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:35:36,212 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:35:36,580 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:35:49,568 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:35:49,782 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:35:49,784 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:35:49,976 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:35:56,894 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:35:57,047 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:35:57,049 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:35:57,238 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:36:28,080 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:36:28,246 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:36:28,249 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:36:28,440 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:36:51,308 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:36:51,510 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:36:51,512 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:36:51,710 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:37:36,364 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:37:36,552 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:37:36,554 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:37:36,750 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:38:03,937 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:38:04,095 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:38:04,097 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:38:04,293 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:38:22,353 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:38:22,511 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:38:22,513 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:38:22,765 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:38:33,402 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:38:33,552 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:38:33,554 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:38:33,755 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:38:55,178 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:38:55,375 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:38:55,379 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:38:55,586 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:39:32,175 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:39:32,337 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:39:32,339 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:39:32,535 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:39:40,502 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:39:40,653 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:39:40,655 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:39:40,839 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:42:03,453 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:42:03,773 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:42:03,773 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:42:04,150 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:42:14,210 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:42:14,360 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:42:14,362 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:42:14,535 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:42:25,344 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:42:25,496 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:42:25,498 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:42:25,694 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:42:57,618 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:42:57,792 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:42:57,794 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:42:57,996 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:44:20,444 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:44:20,777 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 None
+2020-09-14 12:44:20,778 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:44:20,981 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:44:27,594 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:44:27,743 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:44:27,745 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:44:27,936 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:44:43,990 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:44:44,142 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:44:44,144 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:44:44,333 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 12:44:51,019 - Starting new HTTPS connection (1): github.com
+2020-09-14 12:44:51,166 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 12:44:51,168 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 12:44:51,353 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:25:37,345 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:25:37,680 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:25:37,682 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:25:38,049 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:25:52,583 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:25:52,727 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:25:52,729 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:25:52,934 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:26:02,134 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:26:02,285 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:26:02,287 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:26:02,514 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:28:17,435 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:28:17,786 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 None
+2020-09-14 13:28:17,789 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:28:18,002 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:28:26,425 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:28:26,603 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:28:26,604 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:28:26,810 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:28:41,398 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:28:41,550 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:28:41,552 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:28:41,752 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:28:59,766 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:28:59,929 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:28:59,932 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:29:00,134 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:29:25,224 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:29:25,383 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:29:25,386 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:29:25,615 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:29:36,985 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:29:37,168 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:29:37,170 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:29:37,381 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 13:32:29,129 - Starting new HTTPS connection (1): github.com
+2020-09-14 13:32:29,441 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 13:32:29,443 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 13:32:29,793 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:39:53,255 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:39:53,790 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:39:53,791 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:39:54,224 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:40:02,560 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:40:02,715 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:40:02,717 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:40:02,943 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:40:21,615 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:40:21,787 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:40:21,789 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:40:21,974 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:44:24,965 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:44:25,587 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:44:25,589 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:44:25,776 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:44:35,811 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:44:35,966 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:44:35,967 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:44:36,164 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:46:34,419 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:46:34,594 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:46:34,595 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:46:34,968 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:46:51,080 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:46:51,246 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:46:51,248 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:46:51,471 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:47:11,902 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:47:12,052 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:47:12,054 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:47:12,234 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:48:19,511 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:48:19,682 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:48:19,684 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:48:19,884 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:50:25,557 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:50:25,888 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:50:25,891 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:50:26,084 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:50:42,448 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:50:42,596 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:50:42,597 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:50:42,798 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:50:56,393 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:50:56,556 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:50:56,558 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:50:56,741 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:51:13,545 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:51:13,696 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:51:13,698 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:51:13,886 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:53:57,212 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:53:57,532 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:53:57,534 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:53:57,917 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:54:02,989 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:54:03,147 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:54:03,149 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:54:03,343 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:55:33,974 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:55:34,142 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:55:34,144 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:55:34,363 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:57:06,499 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:57:06,886 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:57:06,888 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:57:07,092 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:57:38,408 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:57:38,563 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:57:38,565 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:57:38,755 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:58:58,713 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:58:58,894 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:58:58,896 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:58:59,256 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 17:59:09,289 - Starting new HTTPS connection (1): github.com
+2020-09-14 17:59:09,437 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 17:59:09,439 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 17:59:09,642 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:00:10,851 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:00:11,020 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:00:11,022 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:00:11,313 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:00:27,639 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:00:27,811 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:00:27,813 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:00:28,003 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:04:40,989 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:04:41,308 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:04:41,310 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:04:41,676 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:05:15,337 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:05:15,492 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:05:15,494 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:05:15,694 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:06:22,901 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:06:23,072 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:06:23,074 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:06:23,281 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:08:59,488 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:08:59,856 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:08:59,858 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:09:00,042 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:12:55,664 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:12:56,027 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:12:56,029 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:12:56,389 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:13:58,722 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:13:58,930 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:13:58,934 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:13:59,124 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:14:07,002 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:14:07,153 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:14:07,155 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:14:07,349 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:14:50,788 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:14:50,943 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:14:50,945 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:14:51,141 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:16:08,942 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:16:09,276 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:16:09,278 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:16:09,483 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:17:13,419 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:17:13,629 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:17:13,631 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:17:13,826 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:17:51,583 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:17:51,730 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:17:51,731 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:17:51,975 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-14 18:19:18,431 - Starting new HTTPS connection (1): github.com
+2020-09-14 18:19:18,758 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-14 18:19:18,760 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-14 18:19:19,120 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:27:58,659 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:27:59,265 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:27:59,267 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:27:59,615 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:30:49,509 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:30:49,862 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:30:49,864 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:30:50,047 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:31:00,484 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:31:00,637 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:31:00,639 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:31:00,835 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:31:07,331 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:31:07,485 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:31:07,487 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:31:07,830 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:31:58,313 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:31:58,486 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:31:58,488 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:31:58,701 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:32:43,830 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:32:43,995 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:32:43,997 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:32:44,190 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:32:52,384 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:32:52,539 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:32:52,542 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:32:52,738 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:33:03,226 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:33:03,394 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:33:03,396 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:33:03,782 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:33:27,381 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:33:27,589 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:33:27,592 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:33:27,819 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:33:37,868 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:33:38,019 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:33:38,021 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:33:38,203 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:34:02,138 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:34:02,323 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:34:02,324 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:34:02,524 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:34:57,115 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:34:57,284 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:34:57,286 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:34:57,509 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:35:03,646 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:35:03,794 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:35:03,796 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:35:03,985 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:35:30,471 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:35:30,621 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:35:30,623 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:35:30,832 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:35:51,186 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:35:51,351 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:35:51,353 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:35:51,647 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:36:12,047 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:36:12,214 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:36:12,216 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:36:12,409 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:36:33,254 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:36:33,424 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:36:33,426 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:36:33,631 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:36:54,276 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:36:54,449 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:36:54,451 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:36:54,633 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:37:07,894 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:37:08,207 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:37:08,209 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:37:08,408 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:37:44,936 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:37:45,094 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:37:45,096 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:37:45,290 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:37:56,812 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:37:56,959 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:37:56,963 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:37:57,151 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:38:07,823 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:38:07,980 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:38:07,983 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:38:08,319 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:39:44,129 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:39:44,477 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:39:44,480 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:39:44,670 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:39:57,928 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:39:58,079 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:39:58,081 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:39:58,272 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:41:11,391 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:41:11,550 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:41:11,552 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:41:11,750 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:41:51,405 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:41:51,566 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:41:51,568 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:41:51,775 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:43:07,241 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:43:07,400 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:43:07,402 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:43:07,608 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:43:40,041 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:43:40,209 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:43:40,211 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:43:40,568 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:43:48,406 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:43:48,567 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:43:48,570 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:43:48,800 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:44:07,266 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:44:07,587 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:44:07,588 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:44:07,920 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:44:30,797 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:44:30,947 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:44:30,949 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:44:31,185 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:44:40,563 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:44:40,715 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:44:40,717 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:44:40,895 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:44:51,188 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:44:51,399 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:44:51,401 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:44:51,588 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:45:12,687 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:45:12,840 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:45:12,841 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:45:13,049 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:45:43,353 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:45:43,521 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:45:43,523 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:45:43,732 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:45:58,126 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:45:58,281 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:45:58,283 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:45:58,523 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:47:26,252 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:47:26,574 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:47:26,576 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:47:26,787 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:47:38,682 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:47:38,839 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:47:38,841 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:47:39,030 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:47:48,205 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:47:48,363 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:47:48,365 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:47:48,557 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:47:56,598 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:47:56,761 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:47:56,763 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:47:56,951 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:48:16,903 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:48:17,073 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:48:17,076 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:48:17,287 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:48:42,162 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:48:42,322 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:48:42,324 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:48:42,669 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:48:51,384 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:48:51,555 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:48:51,558 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:48:51,763 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:49:07,817 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:49:08,042 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:49:08,044 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:49:08,251 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:49:16,359 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:49:16,517 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:49:16,519 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:49:16,716 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:49:25,371 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:49:25,534 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:49:25,536 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:49:25,718 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:49:48,414 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:49:48,742 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:49:48,743 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:49:48,947 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:49:58,670 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:49:58,830 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:49:58,833 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:49:59,036 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:50:09,056 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:50:09,277 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:50:09,279 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:50:09,478 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:50:18,945 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:50:19,112 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:50:19,114 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:50:19,369 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:50:28,546 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:50:28,703 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:50:28,705 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:50:28,907 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:50:33,356 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:50:33,512 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:50:33,514 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:50:33,694 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:51:00,890 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:51:01,047 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:51:01,049 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:51:01,243 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:51:09,456 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:51:09,664 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:51:09,666 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:51:09,861 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:51:37,200 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:51:37,357 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:51:37,359 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:51:37,553 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:51:47,788 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:51:47,942 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:51:47,944 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:51:48,141 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 00:52:07,935 - Starting new HTTPS connection (1): github.com
+2020-09-15 00:52:08,243 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 00:52:08,245 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 00:52:08,453 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:04:19,227 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:04:19,562 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:04:19,564 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:04:19,951 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:06:14,365 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:06:14,536 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:06:14,538 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:06:14,726 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:06:32,650 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:06:32,955 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:06:32,957 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:06:33,191 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:10:07,095 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:10:07,475 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:10:07,477 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:10:07,876 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:11:15,493 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:11:15,694 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:11:15,696 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:11:15,895 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:34:10,202 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:34:10,522 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:34:10,525 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:34:10,906 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:34:38,758 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:34:38,908 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:34:38,910 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:34:39,109 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:47:27,637 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:47:28,003 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:47:28,005 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:47:28,363 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:48:24,935 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:48:30,157 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:48:45,366 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:48:45,635 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:48:45,640 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:48:45,917 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:52:07,950 - POST http://127.0.0.1:52177/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "unexpectedAlertBehaviour": "accept", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2020-09-15 02:52:07,951 - Starting new HTTP connection (1): 127.0.0.1:52177
+2020-09-15 02:52:16,890 - http://127.0.0.1:52177 "POST /session HTTP/1.1" 200 719
+2020-09-15 02:52:16,890 - Finished Request
+2020-09-15 02:52:16,903 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/url {"url": "https://web.whatsapp.com"}
+2020-09-15 02:52:19,580 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/url HTTP/1.1" 200 14
+2020-09-15 02:52:19,581 - Finished Request
+2020-09-15 02:52:20,679 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=DENEME"}
+2020-09-15 02:52:21,612 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/url HTTP/1.1" 200 14
+2020-09-15 02:52:21,613 - Finished Request
+2020-09-15 02:52:21,613 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:21,861 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:21,861 - Finished Request
+2020-09-15 02:52:22,362 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:22,371 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:22,372 - Finished Request
+2020-09-15 02:52:23,382 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:23,395 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:23,395 - Finished Request
+2020-09-15 02:52:23,395 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:23,404 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:23,404 - Finished Request
+2020-09-15 02:52:23,915 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:23,924 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:23,925 - Finished Request
+2020-09-15 02:52:24,929 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:24,936 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:24,936 - Finished Request
+2020-09-15 02:52:24,936 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:24,946 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:24,946 - Finished Request
+2020-09-15 02:52:25,456 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:25,508 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:25,508 - Finished Request
+2020-09-15 02:52:26,516 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:26,526 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:26,526 - Finished Request
+2020-09-15 02:52:26,526 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:26,535 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:26,535 - Finished Request
+2020-09-15 02:52:27,048 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:27,058 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:27,059 - Finished Request
+2020-09-15 02:52:28,063 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:28,073 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:28,074 - Finished Request
+2020-09-15 02:52:28,074 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:28,081 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:28,081 - Finished Request
+2020-09-15 02:52:28,584 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:28,593 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:28,593 - Finished Request
+2020-09-15 02:52:29,596 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:29,605 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:29,605 - Finished Request
+2020-09-15 02:52:30,611 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=DENEME&text=DENEME"}
+2020-09-15 02:52:30,978 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/url HTTP/1.1" 200 14
+2020-09-15 02:52:30,978 - Finished Request
+2020-09-15 02:52:30,978 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:30,989 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:30,989 - Finished Request
+2020-09-15 02:52:31,497 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:31,507 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:31,507 - Finished Request
+2020-09-15 02:52:32,520 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:32,529 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:32,529 - Finished Request
+2020-09-15 02:52:32,530 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:32,539 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:32,539 - Finished Request
+2020-09-15 02:52:33,051 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:33,059 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:33,059 - Finished Request
+2020-09-15 02:52:34,061 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:34,069 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:34,070 - Finished Request
+2020-09-15 02:52:34,070 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:34,079 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:34,079 - Finished Request
+2020-09-15 02:52:34,590 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:34,600 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:34,600 - Finished Request
+2020-09-15 02:52:35,606 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:35,617 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:35,617 - Finished Request
+2020-09-15 02:52:35,617 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:35,626 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:35,626 - Finished Request
+2020-09-15 02:52:36,137 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:36,146 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:36,147 - Finished Request
+2020-09-15 02:52:37,159 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:37,440 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:37,441 - Finished Request
+2020-09-15 02:52:37,441 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:37,663 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:37,663 - Finished Request
+2020-09-15 02:52:38,167 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:38,174 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:38,175 - Finished Request
+2020-09-15 02:52:39,190 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:39,198 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:39,198 - Finished Request
+2020-09-15 02:52:40,207 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=DENEME&text=DENEME&text=DENEME"}
+2020-09-15 02:52:41,408 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/url HTTP/1.1" 200 14
+2020-09-15 02:52:41,408 - Finished Request
+2020-09-15 02:52:41,408 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:41,415 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:41,416 - Finished Request
+2020-09-15 02:52:41,923 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:42,035 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1075
+2020-09-15 02:52:42,035 - Finished Request
+2020-09-15 02:52:43,042 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:52:43,353 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 404 1098
+2020-09-15 02:52:43,354 - Finished Request
+2020-09-15 02:52:43,354 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:52:43,418 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element HTTP/1.1" 200 88
+2020-09-15 02:52:43,418 - Finished Request
+2020-09-15 02:52:43,418 - POST http://127.0.0.1:52177/session/2e62fd1751917b338bd8104738f72d18/element/9308ffc5-6cda-4eb8-af9f-a7a97c0c841a/click {"id": "9308ffc5-6cda-4eb8-af9f-a7a97c0c841a"}
+2020-09-15 02:52:43,743 - http://127.0.0.1:52177 "POST /session/2e62fd1751917b338bd8104738f72d18/element/9308ffc5-6cda-4eb8-af9f-a7a97c0c841a/click HTTP/1.1" 200 14
+2020-09-15 02:52:43,744 - Finished Request
+2020-09-15 02:52:43,745 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:55:01,080 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:55:01,428 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:55:01,430 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:55:01,847 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:55:14,054 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:55:14,375 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:55:14,380 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:55:14,635 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:55:16,152 - POST http://127.0.0.1:52294/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "unexpectedAlertBehaviour": "accept", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2020-09-15 02:55:16,152 - Starting new HTTP connection (1): 127.0.0.1:52294
+2020-09-15 02:55:19,411 - http://127.0.0.1:52294 "POST /session HTTP/1.1" 200 718
+2020-09-15 02:55:19,411 - Finished Request
+2020-09-15 02:55:19,411 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/url {"url": "https://web.whatsapp.com"}
+2020-09-15 02:55:20,865 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/url HTTP/1.1" 200 14
+2020-09-15 02:55:20,866 - Finished Request
+2020-09-15 02:55:21,868 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=DENEME"}
+2020-09-15 02:55:22,310 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/url HTTP/1.1" 200 14
+2020-09-15 02:55:22,310 - Finished Request
+2020-09-15 02:55:22,310 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:22,320 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:22,321 - Finished Request
+2020-09-15 02:55:22,823 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:22,862 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:22,862 - Finished Request
+2020-09-15 02:55:23,875 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:23,885 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:23,885 - Finished Request
+2020-09-15 02:55:23,885 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:23,892 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:23,893 - Finished Request
+2020-09-15 02:55:24,407 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:24,414 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:24,415 - Finished Request
+2020-09-15 02:55:25,426 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:25,434 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:25,434 - Finished Request
+2020-09-15 02:55:25,434 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:25,441 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:25,441 - Finished Request
+2020-09-15 02:55:25,943 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:25,952 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:25,952 - Finished Request
+2020-09-15 02:55:26,965 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:26,973 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:26,973 - Finished Request
+2020-09-15 02:55:26,974 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:26,980 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:26,981 - Finished Request
+2020-09-15 02:55:27,485 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:27,492 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:27,493 - Finished Request
+2020-09-15 02:55:28,505 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:28,513 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:28,513 - Finished Request
+2020-09-15 02:55:28,513 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:28,520 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:28,520 - Finished Request
+2020-09-15 02:55:29,024 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:29,031 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:29,031 - Finished Request
+2020-09-15 02:55:30,044 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:30,052 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:30,052 - Finished Request
+2020-09-15 02:55:31,055 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=DENEME&text=DENEME"}
+2020-09-15 02:55:31,524 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/url HTTP/1.1" 200 14
+2020-09-15 02:55:31,524 - Finished Request
+2020-09-15 02:55:31,524 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:31,544 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:31,545 - Finished Request
+2020-09-15 02:55:32,052 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:32,271 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:32,271 - Finished Request
+2020-09-15 02:55:33,280 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:33,291 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:33,291 - Finished Request
+2020-09-15 02:55:33,291 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:33,298 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:33,299 - Finished Request
+2020-09-15 02:55:33,814 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:33,823 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:33,823 - Finished Request
+2020-09-15 02:55:34,834 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:34,840 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:34,841 - Finished Request
+2020-09-15 02:55:34,841 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:34,847 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:34,847 - Finished Request
+2020-09-15 02:55:35,363 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:35,371 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:35,371 - Finished Request
+2020-09-15 02:55:36,382 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:36,390 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:36,390 - Finished Request
+2020-09-15 02:55:36,390 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:36,397 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:36,397 - Finished Request
+2020-09-15 02:55:36,912 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:36,922 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:36,922 - Finished Request
+2020-09-15 02:55:37,931 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:37,939 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:37,939 - Finished Request
+2020-09-15 02:55:37,940 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:37,946 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:37,946 - Finished Request
+2020-09-15 02:55:38,452 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:38,467 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:38,467 - Finished Request
+2020-09-15 02:55:39,474 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:39,747 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:39,747 - Finished Request
+2020-09-15 02:55:40,761 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=DENEME&text=DENEME&text=DENEME"}
+2020-09-15 02:55:41,445 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/url HTTP/1.1" 200 14
+2020-09-15 02:55:41,445 - Finished Request
+2020-09-15 02:55:41,445 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:41,452 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:41,452 - Finished Request
+2020-09-15 02:55:41,968 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:41,975 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1075
+2020-09-15 02:55:41,976 - Finished Request
+2020-09-15 02:55:42,980 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:55:43,176 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 404 1098
+2020-09-15 02:55:43,176 - Finished Request
+2020-09-15 02:55:43,177 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:55:43,424 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element HTTP/1.1" 200 88
+2020-09-15 02:55:43,424 - Finished Request
+2020-09-15 02:55:43,424 - POST http://127.0.0.1:52294/session/69fab39cb5d19b369192d2a0db00c0fa/element/d82d85db-ad60-4ffb-b526-8a588857430d/click {"id": "d82d85db-ad60-4ffb-b526-8a588857430d"}
+2020-09-15 02:55:43,575 - http://127.0.0.1:52294 "POST /session/69fab39cb5d19b369192d2a0db00c0fa/element/d82d85db-ad60-4ffb-b526-8a588857430d/click HTTP/1.1" 200 14
+2020-09-15 02:55:43,576 - Finished Request
+2020-09-15 02:55:43,578 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:56:59,354 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:56:59,519 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:56:59,521 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:56:59,736 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:57:13,470 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:57:13,744 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:57:13,750 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:57:14,026 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:57:15,809 - POST http://127.0.0.1:52476/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "unexpectedAlertBehaviour": "accept", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2020-09-15 02:57:15,810 - Starting new HTTP connection (1): 127.0.0.1:52476
+2020-09-15 02:57:19,016 - http://127.0.0.1:52476 "POST /session HTTP/1.1" 200 717
+2020-09-15 02:57:19,016 - Finished Request
+2020-09-15 02:57:19,016 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/url {"url": "https://web.whatsapp.com"}
+2020-09-15 02:57:19,812 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/url HTTP/1.1" 200 14
+2020-09-15 02:57:19,812 - Finished Request
+2020-09-15 02:57:20,814 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=olloolol"}
+2020-09-15 02:57:21,319 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/url HTTP/1.1" 200 14
+2020-09-15 02:57:21,319 - Finished Request
+2020-09-15 02:57:21,320 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:21,342 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:21,343 - Finished Request
+2020-09-15 02:57:21,851 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:21,898 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:21,898 - Finished Request
+2020-09-15 02:57:22,904 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:57:22,914 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1098
+2020-09-15 02:57:22,915 - Finished Request
+2020-09-15 02:57:22,915 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:22,924 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:22,925 - Finished Request
+2020-09-15 02:57:23,434 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:23,442 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:23,443 - Finished Request
+2020-09-15 02:57:24,448 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:57:24,457 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1098
+2020-09-15 02:57:24,457 - Finished Request
+2020-09-15 02:57:24,457 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:24,466 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:24,467 - Finished Request
+2020-09-15 02:57:24,980 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:24,988 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:24,989 - Finished Request
+2020-09-15 02:57:26,000 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:57:26,008 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1098
+2020-09-15 02:57:26,008 - Finished Request
+2020-09-15 02:57:26,008 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:26,016 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:26,016 - Finished Request
+2020-09-15 02:57:26,522 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:26,531 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:26,531 - Finished Request
+2020-09-15 02:57:27,546 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:57:27,555 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1098
+2020-09-15 02:57:27,556 - Finished Request
+2020-09-15 02:57:27,556 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:27,563 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:27,563 - Finished Request
+2020-09-15 02:57:28,065 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:28,073 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:28,073 - Finished Request
+2020-09-15 02:57:29,079 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:57:29,086 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1098
+2020-09-15 02:57:29,087 - Finished Request
+2020-09-15 02:57:30,095 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=olloolol&text=olloolol"}
+2020-09-15 02:57:30,616 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/url HTTP/1.1" 200 14
+2020-09-15 02:57:30,617 - Finished Request
+2020-09-15 02:57:30,617 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:30,626 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:30,626 - Finished Request
+2020-09-15 02:57:31,142 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:31,150 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1075
+2020-09-15 02:57:31,150 - Finished Request
+2020-09-15 02:57:32,154 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:57:32,653 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 404 1098
+2020-09-15 02:57:32,654 - Finished Request
+2020-09-15 02:57:32,654 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:57:32,875 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element HTTP/1.1" 200 88
+2020-09-15 02:57:32,875 - Finished Request
+2020-09-15 02:57:32,876 - POST http://127.0.0.1:52476/session/fe939938c421069fb8460003f8b19516/element/aca4d364-3d78-4959-9d1d-da197fbd793f/click {"id": "aca4d364-3d78-4959-9d1d-da197fbd793f"}
+2020-09-15 02:57:33,884 - http://127.0.0.1:52476 "POST /session/fe939938c421069fb8460003f8b19516/element/aca4d364-3d78-4959-9d1d-da197fbd793f/click HTTP/1.1" 200 14
+2020-09-15 02:57:33,885 - Finished Request
+2020-09-15 02:57:33,888 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:58:52,351 - Starting new HTTPS connection (1): github.com
+2020-09-15 02:58:52,664 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 02:58:52,666 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 02:58:52,872 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 02:59:00,518 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:59:00,811 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:59:00,816 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:59:01,090 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 02:59:02,538 - POST http://127.0.0.1:52674/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "unexpectedAlertBehaviour": "accept", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2020-09-15 02:59:02,538 - Starting new HTTP connection (1): 127.0.0.1:52674
+2020-09-15 02:59:05,462 - http://127.0.0.1:52674 "POST /session HTTP/1.1" 200 718
+2020-09-15 02:59:05,462 - Finished Request
+2020-09-15 02:59:05,463 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/url {"url": "https://web.whatsapp.com"}
+2020-09-15 02:59:06,369 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/url HTTP/1.1" 200 14
+2020-09-15 02:59:06,370 - Finished Request
+2020-09-15 02:59:07,375 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=dEneme"}
+2020-09-15 02:59:07,872 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/url HTTP/1.1" 200 14
+2020-09-15 02:59:07,872 - Finished Request
+2020-09-15 02:59:07,872 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:07,883 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:07,884 - Finished Request
+2020-09-15 02:59:08,391 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:08,407 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:08,407 - Finished Request
+2020-09-15 02:59:09,411 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:09,421 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:09,422 - Finished Request
+2020-09-15 02:59:09,422 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:09,429 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:09,429 - Finished Request
+2020-09-15 02:59:09,932 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:09,940 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:09,940 - Finished Request
+2020-09-15 02:59:10,954 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:10,962 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:10,962 - Finished Request
+2020-09-15 02:59:10,962 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:10,970 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:10,971 - Finished Request
+2020-09-15 02:59:11,479 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:11,487 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:11,487 - Finished Request
+2020-09-15 02:59:12,498 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:12,505 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:12,506 - Finished Request
+2020-09-15 02:59:12,506 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:12,512 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:12,512 - Finished Request
+2020-09-15 02:59:13,026 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:13,033 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:13,034 - Finished Request
+2020-09-15 02:59:14,043 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:14,050 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:14,050 - Finished Request
+2020-09-15 02:59:14,050 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:14,057 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:14,057 - Finished Request
+2020-09-15 02:59:14,558 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:14,566 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:14,566 - Finished Request
+2020-09-15 02:59:15,578 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:15,585 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:15,585 - Finished Request
+2020-09-15 02:59:16,600 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=dEneme&text=dEneme"}
+2020-09-15 02:59:17,070 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/url HTTP/1.1" 200 14
+2020-09-15 02:59:17,070 - Finished Request
+2020-09-15 02:59:17,070 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:17,081 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:17,081 - Finished Request
+2020-09-15 02:59:17,592 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:17,600 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:17,601 - Finished Request
+2020-09-15 02:59:18,602 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:18,683 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:18,683 - Finished Request
+2020-09-15 02:59:18,684 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:19,221 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:19,221 - Finished Request
+2020-09-15 02:59:19,734 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:19,868 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 200 88
+2020-09-15 02:59:19,869 - Finished Request
+2020-09-15 02:59:19,870 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element/e4a5c38f-3a32-4873-8b3e-301964adec7b/click {"id": "e4a5c38f-3a32-4873-8b3e-301964adec7b"}
+2020-09-15 02:59:19,985 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element/e4a5c38f-3a32-4873-8b3e-301964adec7b/click HTTP/1.1" 200 14
+2020-09-15 02:59:19,985 - Finished Request
+2020-09-15 02:59:20,061 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:59:20,375 - "GET /wp/12345 HTTP/1.1" 200 None
+2020-09-15 02:59:21,432 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/url {"url": "https://web.whatsapp.com/send?phone=905555555555&text=dEneme"}
+2020-09-15 02:59:21,808 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/url HTTP/1.1" 200 14
+2020-09-15 02:59:21,808 - Finished Request
+2020-09-15 02:59:21,808 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:21,818 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:21,818 - Finished Request
+2020-09-15 02:59:22,320 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:22,328 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:22,328 - Finished Request
+2020-09-15 02:59:23,329 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:23,470 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:23,470 - Finished Request
+2020-09-15 02:59:23,470 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:23,677 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:23,677 - Finished Request
+2020-09-15 02:59:24,178 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:24,186 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:24,187 - Finished Request
+2020-09-15 02:59:25,188 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:25,195 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 200 88
+2020-09-15 02:59:25,195 - Finished Request
+2020-09-15 02:59:25,195 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element/84f67d57-434f-4165-9f5b-6d871e116c96/click {"id": "84f67d57-434f-4165-9f5b-6d871e116c96"}
+2020-09-15 02:59:25,839 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element/84f67d57-434f-4165-9f5b-6d871e116c96/click HTTP/1.1" 200 14
+2020-09-15 02:59:25,840 - Finished Request
+2020-09-15 02:59:25,842 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:59:26,151 - "GET /wp/12345 HTTP/1.1" 200 None
+2020-09-15 02:59:27,156 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=dEneme"}
+2020-09-15 02:59:27,421 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/url HTTP/1.1" 200 14
+2020-09-15 02:59:27,421 - Finished Request
+2020-09-15 02:59:27,421 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:27,430 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:27,431 - Finished Request
+2020-09-15 02:59:27,933 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:27,941 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:27,941 - Finished Request
+2020-09-15 02:59:28,942 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:29,116 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:29,116 - Finished Request
+2020-09-15 02:59:29,116 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:29,124 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1075
+2020-09-15 02:59:29,124 - Finished Request
+2020-09-15 02:59:29,625 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:29,827 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 200 88
+2020-09-15 02:59:29,827 - Finished Request
+2020-09-15 02:59:29,828 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element/287e51f9-2dbd-4d09-8656-79c905ab383a/click {"id": "287e51f9-2dbd-4d09-8656-79c905ab383a"}
+2020-09-15 02:59:29,932 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element/287e51f9-2dbd-4d09-8656-79c905ab383a/click HTTP/1.1" 400 1044
+2020-09-15 02:59:29,932 - Finished Request
+2020-09-15 02:59:30,934 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 02:59:30,943 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 404 1098
+2020-09-15 02:59:30,944 - Finished Request
+2020-09-15 02:59:30,944 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 02:59:30,950 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 200 88
+2020-09-15 02:59:30,951 - Finished Request
+2020-09-15 02:59:30,951 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element/287e51f9-2dbd-4d09-8656-79c905ab383a/click {"id": "287e51f9-2dbd-4d09-8656-79c905ab383a"}
+2020-09-15 02:59:31,041 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element/287e51f9-2dbd-4d09-8656-79c905ab383a/click HTTP/1.1" 200 14
+2020-09-15 02:59:31,043 - Finished Request
+2020-09-15 02:59:31,046 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 02:59:31,353 - "GET /wp/12345 HTTP/1.1" 200 None
+2020-09-15 02:59:31,870 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='side']/header/div[2]/div/span/div[3]/div"}
+2020-09-15 02:59:31,881 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 200 88
+2020-09-15 02:59:31,881 - Finished Request
+2020-09-15 02:59:31,881 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element/ff6a4559-aaa5-403f-827e-6779e9001e62/click {"id": "ff6a4559-aaa5-403f-827e-6779e9001e62"}
+2020-09-15 02:59:31,921 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element/ff6a4559-aaa5-403f-827e-6779e9001e62/click HTTP/1.1" 200 14
+2020-09-15 02:59:31,921 - Finished Request
+2020-09-15 02:59:31,921 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element {"using": "xpath", "value": "//*[@id='side']/header/div[2]/div/span/div[3]/span/div/ul/li[7]/div"}
+2020-09-15 02:59:31,931 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element HTTP/1.1" 200 88
+2020-09-15 02:59:31,931 - Finished Request
+2020-09-15 02:59:31,931 - POST http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a/element/0258a522-02c1-4edd-a1c1-447c8d8668cc/click {"id": "0258a522-02c1-4edd-a1c1-447c8d8668cc"}
+2020-09-15 02:59:32,092 - http://127.0.0.1:52674 "POST /session/f24cdd065679b1a1ad4726d718b6ab1a/element/0258a522-02c1-4edd-a1c1-447c8d8668cc/click HTTP/1.1" 200 14
+2020-09-15 02:59:32,092 - Finished Request
+2020-09-15 02:59:32,596 - DELETE http://127.0.0.1:52674/session/f24cdd065679b1a1ad4726d718b6ab1a {}
+2020-09-15 02:59:32,655 - http://127.0.0.1:52674 "DELETE /session/f24cdd065679b1a1ad4726d718b6ab1a HTTP/1.1" 200 14
+2020-09-15 02:59:32,656 - Finished Request
+2020-09-15 03:00:33,261 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:00:33,419 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:00:33,421 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:00:33,837 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:02:43,313 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:02:43,640 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:02:43,642 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:02:43,851 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:03:29,278 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 03:03:29,656 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 03:03:29,660 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 03:03:29,940 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 03:03:35,385 - POST http://127.0.0.1:52770/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "unexpectedAlertBehaviour": "accept", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2020-09-15 03:03:35,385 - Starting new HTTP connection (1): 127.0.0.1:52770
+2020-09-15 03:03:38,464 - http://127.0.0.1:52770 "POST /session HTTP/1.1" 200 718
+2020-09-15 03:03:38,465 - Finished Request
+2020-09-15 03:03:38,465 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/url {"url": "https://web.whatsapp.com"}
+2020-09-15 03:03:39,296 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/url HTTP/1.1" 200 14
+2020-09-15 03:03:39,296 - Finished Request
+2020-09-15 03:03:40,310 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=edeerdr"}
+2020-09-15 03:03:40,801 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/url HTTP/1.1" 200 14
+2020-09-15 03:03:40,801 - Finished Request
+2020-09-15 03:03:40,801 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:40,815 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:40,815 - Finished Request
+2020-09-15 03:03:41,319 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:41,328 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:41,328 - Finished Request
+2020-09-15 03:03:42,341 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:42,351 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:42,351 - Finished Request
+2020-09-15 03:03:42,351 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:42,358 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:42,358 - Finished Request
+2020-09-15 03:03:42,873 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:42,881 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:42,881 - Finished Request
+2020-09-15 03:03:43,888 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:43,895 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:43,896 - Finished Request
+2020-09-15 03:03:43,896 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:43,902 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:43,902 - Finished Request
+2020-09-15 03:03:44,405 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:44,412 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:44,412 - Finished Request
+2020-09-15 03:03:45,422 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:45,429 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:45,430 - Finished Request
+2020-09-15 03:03:45,430 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:45,436 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:45,437 - Finished Request
+2020-09-15 03:03:45,938 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:45,946 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:45,946 - Finished Request
+2020-09-15 03:03:46,951 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:46,958 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:46,958 - Finished Request
+2020-09-15 03:03:46,958 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:46,964 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:46,965 - Finished Request
+2020-09-15 03:03:47,471 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:47,479 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:47,479 - Finished Request
+2020-09-15 03:03:48,481 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:48,488 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:48,489 - Finished Request
+2020-09-15 03:03:49,502 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=edeerdr&text=edeerdr"}
+2020-09-15 03:03:50,190 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/url HTTP/1.1" 200 14
+2020-09-15 03:03:50,190 - Finished Request
+2020-09-15 03:03:50,190 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:50,205 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:50,206 - Finished Request
+2020-09-15 03:03:50,719 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:50,822 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:50,822 - Finished Request
+2020-09-15 03:03:51,826 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:51,839 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:51,840 - Finished Request
+2020-09-15 03:03:51,840 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:51,849 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:51,849 - Finished Request
+2020-09-15 03:03:52,360 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:52,369 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:52,369 - Finished Request
+2020-09-15 03:03:53,374 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:53,382 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:53,382 - Finished Request
+2020-09-15 03:03:53,383 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:53,390 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:53,390 - Finished Request
+2020-09-15 03:03:53,905 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:53,913 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:53,913 - Finished Request
+2020-09-15 03:03:54,918 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:54,926 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:54,926 - Finished Request
+2020-09-15 03:03:54,926 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:54,933 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:54,933 - Finished Request
+2020-09-15 03:03:55,446 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:55,454 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:55,454 - Finished Request
+2020-09-15 03:03:56,460 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:56,468 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:56,469 - Finished Request
+2020-09-15 03:03:56,469 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:56,476 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:56,477 - Finished Request
+2020-09-15 03:03:56,977 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:56,986 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:56,986 - Finished Request
+2020-09-15 03:03:57,995 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:03:58,002 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:03:58,002 - Finished Request
+2020-09-15 03:03:59,010 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=edeerdr&text=edeerdr&text=edeerdr"}
+2020-09-15 03:03:59,483 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/url HTTP/1.1" 200 14
+2020-09-15 03:03:59,483 - Finished Request
+2020-09-15 03:03:59,483 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:03:59,499 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:03:59,500 - Finished Request
+2020-09-15 03:04:00,002 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:00,224 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:00,224 - Finished Request
+2020-09-15 03:04:01,228 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:04:01,239 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:04:01,240 - Finished Request
+2020-09-15 03:04:01,240 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:01,247 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:01,247 - Finished Request
+2020-09-15 03:04:01,759 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:01,767 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:01,767 - Finished Request
+2020-09-15 03:04:02,774 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:04:03,023 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:04:03,024 - Finished Request
+2020-09-15 03:04:03,024 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:03,085 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:03,085 - Finished Request
+2020-09-15 03:04:03,595 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:03,660 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:03,661 - Finished Request
+2020-09-15 03:04:04,666 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:04:04,875 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:04:04,875 - Finished Request
+2020-09-15 03:04:04,876 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:04,922 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 200 88
+2020-09-15 03:04:04,922 - Finished Request
+2020-09-15 03:04:04,922 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element/4baac86e-24d7-4827-81fa-f75ce01e940e/click {"id": "4baac86e-24d7-4827-81fa-f75ce01e940e"}
+2020-09-15 03:04:04,993 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element/4baac86e-24d7-4827-81fa-f75ce01e940e/click HTTP/1.1" 200 14
+2020-09-15 03:04:04,994 - Finished Request
+2020-09-15 03:04:04,997 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 03:04:05,308 - "GET /wp/12345 HTTP/1.1" 200 None
+2020-09-15 03:04:06,311 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/url {"url": "https://web.whatsapp.com/send?phone=905555555555&text=edeerdr"}
+2020-09-15 03:04:07,340 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/url HTTP/1.1" 200 14
+2020-09-15 03:04:07,340 - Finished Request
+2020-09-15 03:04:07,341 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:07,349 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:07,350 - Finished Request
+2020-09-15 03:04:07,851 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:07,860 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:07,860 - Finished Request
+2020-09-15 03:04:08,861 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:04:08,929 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:04:08,929 - Finished Request
+2020-09-15 03:04:08,929 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:09,252 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:09,253 - Finished Request
+2020-09-15 03:04:09,754 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:09,762 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:09,762 - Finished Request
+2020-09-15 03:04:10,763 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:04:10,771 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 200 88
+2020-09-15 03:04:10,771 - Finished Request
+2020-09-15 03:04:10,771 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element/0c221341-1408-42d5-8256-9e78534e9406/click {"id": "0c221341-1408-42d5-8256-9e78534e9406"}
+2020-09-15 03:04:10,805 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element/0c221341-1408-42d5-8256-9e78534e9406/click HTTP/1.1" 200 14
+2020-09-15 03:04:10,805 - Finished Request
+2020-09-15 03:04:10,806 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 03:04:11,123 - "GET /wp/12345 HTTP/1.1" 200 None
+2020-09-15 03:04:12,125 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/url {"url": "https://web.whatsapp.com/send?phone=905326045779&text=edeerdr"}
+2020-09-15 03:04:12,433 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/url HTTP/1.1" 200 14
+2020-09-15 03:04:12,434 - Finished Request
+2020-09-15 03:04:12,434 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:12,443 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:12,443 - Finished Request
+2020-09-15 03:04:12,944 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:12,954 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1075
+2020-09-15 03:04:12,954 - Finished Request
+2020-09-15 03:04:13,955 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='app']/div/span[2]/div/span/div/div/div/div/div/div[2]/div"}
+2020-09-15 03:04:14,187 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 404 1098
+2020-09-15 03:04:14,187 - Finished Request
+2020-09-15 03:04:14,187 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='main']/footer/div[1]/div[3]/button"}
+2020-09-15 03:04:14,402 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 200 88
+2020-09-15 03:04:14,402 - Finished Request
+2020-09-15 03:04:14,402 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element/3325ffa7-f762-49eb-8041-d58f40fef6f0/click {"id": "3325ffa7-f762-49eb-8041-d58f40fef6f0"}
+2020-09-15 03:04:14,655 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element/3325ffa7-f762-49eb-8041-d58f40fef6f0/click HTTP/1.1" 200 14
+2020-09-15 03:04:14,656 - Finished Request
+2020-09-15 03:04:14,657 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 03:04:14,953 - "GET /wp/12345 HTTP/1.1" 200 None
+2020-09-15 03:04:15,460 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='side']/header/div[2]/div/span/div[3]/div"}
+2020-09-15 03:04:15,479 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 200 88
+2020-09-15 03:04:15,480 - Finished Request
+2020-09-15 03:04:15,480 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element/eaa91bfa-cc38-45e5-bd2e-adc07b7bd4a2/click {"id": "eaa91bfa-cc38-45e5-bd2e-adc07b7bd4a2"}
+2020-09-15 03:04:15,582 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element/eaa91bfa-cc38-45e5-bd2e-adc07b7bd4a2/click HTTP/1.1" 200 14
+2020-09-15 03:04:15,583 - Finished Request
+2020-09-15 03:04:15,583 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element {"using": "xpath", "value": "//*[@id='side']/header/div[2]/div/span/div[3]/span/div/ul/li[7]/div"}
+2020-09-15 03:04:15,624 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element HTTP/1.1" 200 88
+2020-09-15 03:04:15,625 - Finished Request
+2020-09-15 03:04:15,625 - POST http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f/element/385bf85e-fb9c-4053-b9e6-e7d518083d36/click {"id": "385bf85e-fb9c-4053-b9e6-e7d518083d36"}
+2020-09-15 03:04:15,783 - http://127.0.0.1:52770 "POST /session/d31386c81cbb5064d16998456642cb8f/element/385bf85e-fb9c-4053-b9e6-e7d518083d36/click HTTP/1.1" 200 14
+2020-09-15 03:04:15,784 - Finished Request
+2020-09-15 03:04:16,294 - DELETE http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f {}
+2020-09-15 03:04:16,334 - http://127.0.0.1:52770 "DELETE /session/d31386c81cbb5064d16998456642cb8f HTTP/1.1" 200 14
+2020-09-15 03:04:16,335 - Finished Request
+2020-09-15 03:08:01,511 - DELETE http://127.0.0.1:52770/session/d31386c81cbb5064d16998456642cb8f {}
+2020-09-15 03:08:01,512 - Resetting dropped connection: 127.0.0.1
+2020-09-15 03:08:03,526 - Incremented Retry for (url='/session/d31386c81cbb5064d16998456642cb8f'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2020-09-15 03:08:03,526 - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C5D47ADF48>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/d31386c81cbb5064d16998456642cb8f
+2020-09-15 03:08:03,526 - Starting new HTTP connection (2): 127.0.0.1:52770
+2020-09-15 03:08:05,547 - Incremented Retry for (url='/session/d31386c81cbb5064d16998456642cb8f'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2020-09-15 03:08:05,547 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C5D66EE188>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/d31386c81cbb5064d16998456642cb8f
+2020-09-15 03:08:05,548 - Starting new HTTP connection (3): 127.0.0.1:52770
+2020-09-15 03:08:07,577 - Incremented Retry for (url='/session/d31386c81cbb5064d16998456642cb8f'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2020-09-15 03:08:07,577 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C5D66E9248>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/d31386c81cbb5064d16998456642cb8f
+2020-09-15 03:08:07,578 - Starting new HTTP connection (4): 127.0.0.1:52770
+2020-09-15 03:46:08,997 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:46:09,346 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 None
+2020-09-15 03:46:09,348 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:46:09,692 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:47:53,012 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:47:53,211 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:47:53,213 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:47:53,416 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:50:15,254 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:50:15,576 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:50:15,578 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:50:15,790 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:50:43,727 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:50:43,882 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:50:43,884 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:50:44,068 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:51:05,776 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:51:05,945 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:51:05,946 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:51:06,139 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:52:27,864 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:52:28,195 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:52:28,197 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:52:28,587 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 03:53:05,497 - Starting new HTTPS connection (1): github.com
+2020-09-15 03:53:05,645 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 03:53:05,648 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 03:53:05,842 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:46:09,538 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:46:10,112 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:46:10,114 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:46:10,527 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:46:25,282 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 18:46:25,808 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 18:48:50,921 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:48:51,281 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:48:51,283 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:48:51,498 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:50:10,166 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:50:10,333 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:50:10,335 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:50:10,539 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:52:32,548 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:52:32,873 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:52:32,875 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:52:33,248 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:52:39,501 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 18:52:39,943 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 18:52:39,952 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 18:52:40,263 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 18:52:42,222 - POST http://127.0.0.1:63745/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "unexpectedAlertBehaviour": "accept", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2020-09-15 18:52:42,223 - Starting new HTTP connection (1): 127.0.0.1:63745
+2020-09-15 18:52:51,473 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:52:51,640 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:52:51,642 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:52:51,835 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:52:58,530 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001F8783DBEC8> started on http://localhost:62515/
+2020-09-15 18:52:58,785 - Resolved / to C:\Users\mfurk\AppData\Local\Temp\tmp95bcrkrq\
+2020-09-15 18:52:58,786 - file not found: /
+2020-09-15 18:52:58,786 - Resolved  to C:\Users\mfurk\AppData\Local\Temp\tmp95bcrkrq
+2020-09-15 18:52:58,786 - permission error: 
+2020-09-15 18:52:58,786 - Resolved /index.html to C:\Users\mfurk\AppData\Local\Temp\tmp95bcrkrq\index.html
+2020-09-15 18:54:03,155 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:54:03,317 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:54:03,318 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:54:03,520 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:54:20,975 - HTTP server for <webview.wsgi.StaticFiles object at 0x00000188F16DDF08> started on http://localhost:26458/
+2020-09-15 18:54:21,013 - Resolved / to C:\Users\mfurk\AppData\Local\Temp\tmp_32fn70j\
+2020-09-15 18:54:21,013 - file not found: /
+2020-09-15 18:54:21,014 - Resolved  to C:\Users\mfurk\AppData\Local\Temp\tmp_32fn70j
+2020-09-15 18:54:21,014 - permission error: 
+2020-09-15 18:54:21,014 - Resolved /index.html to C:\Users\mfurk\AppData\Local\Temp\tmp_32fn70j\index.html
+2020-09-15 18:54:21,214 - Resolved /style.css to C:\Users\mfurk\AppData\Local\Temp\tmp_32fn70j\style.css
+2020-09-15 18:54:21,215 - file not found: /style.css
+2020-09-15 18:54:21,215 - Resolved /style.css/index.html to C:\Users\mfurk\AppData\Local\Temp\tmp_32fn70j\style.css/index.html
+2020-09-15 18:54:21,216 - file not found: /style.css/index.html
+2020-09-15 18:54:21,218 - Resolved /wp-profile.png to C:\Users\mfurk\AppData\Local\Temp\tmp_32fn70j\wp-profile.png
+2020-09-15 18:54:21,219 - file not found: /wp-profile.png
+2020-09-15 18:54:21,220 - Resolved /wp-profile.png/index.html to C:\Users\mfurk\AppData\Local\Temp\tmp_32fn70j\wp-profile.png/index.html
+2020-09-15 18:54:21,221 - file not found: /wp-profile.png/index.html
+2020-09-15 18:55:09,917 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:55:10,255 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:55:10,257 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:55:10,501 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:59:01,241 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:59:01,400 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:59:01,401 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:59:01,606 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:59:49,203 - Starting new HTTPS connection (1): github.com
+2020-09-15 18:59:49,369 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 18:59:49,370 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 18:59:49,560 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 18:59:56,845 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 18:59:57,253 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 18:59:57,258 - Starting new HTTP connection (1): myolal80.pythonanywhere.com
+2020-09-15 18:59:57,536 - "GET /wp/_12345_ HTTP/1.1" 200 None
+2020-09-15 18:59:59,905 - POST http://127.0.0.1:63916/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "unexpectedAlertBehaviour": "accept", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2020-09-15 18:59:59,905 - Starting new HTTP connection (1): 127.0.0.1:63916
+2020-09-15 19:00:06,644 - Starting new HTTPS connection (1): github.com
+2020-09-15 19:00:06,787 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 19:00:06,788 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 19:00:06,975 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 19:00:43,567 - Starting new HTTPS connection (1): github.com
+2020-09-15 19:00:43,740 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 19:00:43,742 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 19:00:43,939 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 19:00:52,743 - HTTP server for <webview.wsgi.StaticFiles object at 0x0000019E354DFA88> started on http://localhost:37891/
+2020-09-15 19:01:27,349 - Starting new HTTPS connection (1): github.com
+2020-09-15 19:01:27,499 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 19:01:27,501 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 19:01:27,698 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 19:01:50,021 - Starting new HTTPS connection (1): github.com
+2020-09-15 19:01:50,187 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-15 19:01:50,189 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-15 19:01:50,404 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 56
+2020-09-15 19:01:57,258 - HTTP server for <webview.wsgi.StaticFiles object at 0x000001665AD45BC8> started on http://localhost:60826/
+2020-09-15 19:01:57,824 - Resolved /index_8494.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index_8494.html
+2020-09-15 19:01:57,842 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
+2020-09-15 19:01:57,843 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png

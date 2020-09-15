@@ -25,6 +25,7 @@ from includes.funcs.getfirstframe import getFirstFrame
 from includes.forms.mainForm import *
 from includes.forms.updateForm import Ui_MainWindow as UpdateForm
 from includes.forms.subMenu import Ui_OtherWindow
+from includes.forms.acceptForm import Ui_MainWindow as acceptForm
     ## Other
 from appIcons import Icons
 from includes.other.thread import MesThread
@@ -33,7 +34,7 @@ from includes.other.thread import MesThread
 from requests.exceptions import ConnectionError
 import urllib.parse
 import urllib.request
-from webview import create_window, start
+import webview
 import webbrowser
 from openpyxl import Workbook
 
@@ -44,7 +45,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.9.4"
+VERSION = "1.9.5"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -74,16 +75,33 @@ class WPApp(Ui_MainWindow):
         self.pushButton_3.clicked.connect(self.getReport)
         self.pushButton_4.clicked.connect(self.stopBrowser)
 
+
         # Create Table and Model
         self.dbModel()
 
         # Look for Update and Driver
         self.update("warn")
         self.getDriver()
+        self.accept()
 
         # Common Variables
         self._translate = QtCore.QCoreApplication.translate
 
+    def accept(self):
+        if getTxtInfo()["accept"] == False:
+            self.acceptwindow = QtWidgets.QMainWindow()
+            self.ui = acceptForm()
+            self.ui.setupUi(self.acceptwindow)
+            self.ui.buttonSignal.connect(self.controlAccept)
+            self.acceptwindow.show()
+        elif getTxtInfo()["accept"] == True:
+            self.window.show()
+    
+    def controlAccept(self,val):
+        if val == True:
+            saveTxtInfo("accept",True)
+            self.acceptwindow.close()
+            self.window.show()
     def stopBrowser(self):
         try:
             self.browser.quit()
@@ -198,8 +216,8 @@ class WPApp(Ui_MainWindow):
             with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_"+ rast  +".html","w","utf-8") as file:
                 file.write(self.index_raw)
 
-            create_window("Mesaj Önizleme",url="WhatsAppGui\\index_"+ rast +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
-            start()
+            webview.create_window("Mesaj Önizleme",url = "WhatsAppGui/index_"+ rast +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
+            webview.start(debug=True)
             try:
                 os.remove(os.getcwd() + "\\WhatsAppGui\\fFrame.jpg")
             except FileNotFoundError:
@@ -226,13 +244,13 @@ class WPApp(Ui_MainWindow):
 
     def update(self,*warn):
         if self.controlVersion(list(warn)[0]) == True:
-            the_url = 'https://github.com/MFurkan41/WhatsCompRepo/raw/master/{}/WhatsMessageSender{}.exe'.format(list(parseVersion(self.othVERSION))[-1],list(parseVersion(self.othVERSION))[-1])
+            the_url = 'https://github.com/MFurkan42/WhatsCompRepo/raw/master/{}/WhatsMessageSender{}.exe'.format(list(parseVersion(self.othVERSION))[-1],list(parseVersion(self.othVERSION))[-1])
             webbrowser.open(the_url)
             sys.exit()
 
     def controlVersion(self,*warn):
         try:
-            self.othVERSION = requests.get("https://github.com/MFurkan41/WhatsCompRepo/raw/master/version.txt").text
+            self.othVERSION = requests.get("https://github.com/MFurkan42/WhatsCompRepo/raw/master/version.txt").text
         except ConnectionError:
             warnMessage("Uyarı!",QMessageBox.Warning,"Bilgisayarınız internete bağlı olmadığından bu programı kullanmazsınız.")
             sys.exit()
@@ -257,6 +275,18 @@ class WPApp(Ui_MainWindow):
         column = 0
         index = self.tableView.model().index(row, column)
         self.tableView.scrollTo(index)
+
+    def BarCalc(self,var):
+        text = "{}/{} - {}%"
+        if var[0] == "total":
+            text = text.format("0",str(var[1]),"0")
+            self.bar.setValue(0)
+        elif var[0] == "sent":
+            percent = round(100/len(self.numaralar)*int(var[1]),1)
+            text = text.format(str(var[1]),str(len(self.numaralar)),str(percent))
+            self.bar.setValue(percent)
+        self.label.setText(text)
+        
 
     # Open Setting Menu
     def settings(self):
@@ -304,11 +334,9 @@ class WPApp(Ui_MainWindow):
             self.numaralar = excel.getList()
             if(len(self.numaralar[0]) == len(self.headers)):
                 self.CreateTable(self.numaralar)
-                self.spinBox.setValue(len(self.numaralar))
-                self.spinBox_3.setValue(len(self.numaralar))
+                self.BarCalc(["total",len(self.numaralar)])
             else:
-                self.spinBox.setValue(0)
-                self.spinBox_3.setValue(0)
+                self.BarCalc(["total",0])
                 warnMessage("Uyarı",QMessageBox.Warning,"Açmaya çalıştığınız dosyadaki kolon sayısı programdaki ile eşit değildir!")
     
     def sendwp(self):
@@ -320,7 +348,7 @@ class WPApp(Ui_MainWindow):
                 self.apiKey = getTxtInfo()["key"]
             return
         self.apiKeyControl(self.apiKey)
-        if(self.spinBox.text() == "0"):
+        if(len(self.numaralar) == "0"):
             if(self.c == True):
                 pass
             else:
@@ -368,8 +396,8 @@ class WPApp(Ui_MainWindow):
             self.spinBox_4.setValue(values[1])
         elif(values[0] == "done"):
             warnMessage("Uyarı",QMessageBox.Information,"Listedeki tüm mesajlar atıldı.")
-        else:
-            exec("self.spinBox_"+str(values[0])+".setValue(int(self.spinBox_"+str(values[0])+".text()) "+str(values[1]+")"))
+        elif(values[0] == "2"):
+            self.BarCalc(["sent",values[1]])
 
     def changeTableItem(self, x, kind):
         self.dbModel()
@@ -439,14 +467,14 @@ class WPApp(Ui_MainWindow):
 def StartApp():
     MainWindow = QtWidgets.QMainWindow()
     m = WPApp(MainWindow)
-    MainWindow.show()
+    #MainWindow.show()
     return m
 
 if __name__ == "__main__":
-    if is_admin():
+    if not is_admin():
         import win32com.shell.shell as shell
         commands = 'powershell -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionPath "C:\WhatsMessageSender"'
-        shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
+        #shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
         # Icon Checker
         checkIcons()
 

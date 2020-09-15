@@ -13,7 +13,6 @@ from includes.funcs.htmlrequest import *
 from includes.funcs.warnmessage import warnMessage,QMessageBox
 from includes.funcs.improvedSends import clickButton,enterInput
 
-#@guiLoop
 class MesThread(QtCore.QThread):
     browserSignal = QtCore.pyqtSignal(object)
     pushButton_4 = QtCore.pyqtSignal(bool)
@@ -35,14 +34,6 @@ class MesThread(QtCore.QThread):
             self.pushButton_4.emit(True)
 
             browser.get("https://web.whatsapp.com")
-            
-            """
-            bekle(5)
-            save_qr(browser)
-            self.app.refreshimage()
-            QtGui.QGuiApplication.processEvents()
-            bekle(10)
-            """
 
             QtGui.QGuiApplication.processEvents()
             fList = []
@@ -94,9 +85,7 @@ class MesThread(QtCore.QThread):
                         bekle(1)
 
                 #self.app.spinBox_2.setValue(int(self.spinBox_2.text()) + 1)
-                self.spinBoxSignal.emit(["2","+1"])
-                #self.app.spinBox_3.setValue(int(self.spinBox_3.text()) - 1)
-                self.spinBoxSignal.emit(["3","-1"])
+                self.spinBoxSignal.emit(["2",str(i+1)])
                 res = HtmlRequest(self.apiKey, False)
                 self.spinBoxSignal.emit([10,int(i+1)])
                 if(res["message"] != "no_message_count"):
