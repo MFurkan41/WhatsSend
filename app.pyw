@@ -46,6 +46,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
+# cmdkey /delete:LegacyGeneric:target=git:https://github.com
 VERSION = "1.9.6"
 
 # Setup For Logging
@@ -82,7 +83,6 @@ class WPApp(Ui_MainWindow):
 
         # Look for Update and Driver
         self.update("warn")
-        self.getDriver()
         self.accept()
 
         # Common Variables
@@ -97,12 +97,14 @@ class WPApp(Ui_MainWindow):
             self.acceptwindow.show()
         elif getTxtInfo()["accept"] == True:
             self.window.show()
+            self.getDriver()
     
     def controlAccept(self,val):
         if val == True:
             saveTxtInfo("accept",True)
             self.acceptwindow.close()
             self.window.show()
+            self.getDriver()
     def stopBrowser(self):
         try:
             self.browser.quit()
@@ -469,10 +471,10 @@ def StartApp():
     return m
 
 if __name__ == "__main__":
-    if not is_admin():
+    if is_admin():
         import win32com.shell.shell as shell
         commands = 'powershell -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionPath "C:\WhatsMessageSender"'
-        #shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
+        shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
         # Icon Checker
 
         app = QtWidgets.QApplication(sys.argv)

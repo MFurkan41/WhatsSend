@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWebKitWidgets import QWebView
+from PyQt5.QtWebEngineWidgets import QWebEngineView as QWebView
 import os
 from appIcons import Icons
 
@@ -12,6 +12,8 @@ class WebViewBrowser(QtWidgets.QMainWindow):
         self.setMaximumSize(800,900)
         self.webView = QWebView()
         self.setCentralWidget(self.webView)
+        self.setWindowTitle("Mesaj Önizleme")
+        self.setWindowIcon(QtGui.QIcon(Icons["Standart"]))
         
         if(os.path.isfile("C:/WhatsMessageSender/WhatsAppGui/index_"+ str(self.rast) +".html")):
             self.webView.load(QtCore.QUrl.fromLocalFile("C:/WhatsMessageSender/WhatsAppGui/index_"+ str(self.rast) +".html"))
