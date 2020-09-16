@@ -19,22 +19,23 @@ from includes.funcs.isChrome import isChrome
 from includes.funcs.linkfile import linkFile
 from includes.funcs.warnmessage import warnMessage
 from includes.funcs.txtinfo import getTxtInfo,saveTxtInfo
-from includes.funcs.checkicons import checkIcons
 from includes.funcs.getfirstframe import getFirstFrame
     ## Forms
 from includes.forms.mainForm import *
 from includes.forms.updateForm import Ui_MainWindow as UpdateForm
 from includes.forms.subMenu import Ui_OtherWindow
 from includes.forms.acceptForm import Ui_MainWindow as acceptForm
+from includes.forms.webview import WebViewBrowser
+    ##Threads
+from includes.threads.sendmessage import MesThread
     ## Other
 from appIcons import Icons
-from includes.other.thread import MesThread
+
 
 # Other Necessary Imports
 from requests.exceptions import ConnectionError
 import urllib.parse
 import urllib.request
-import webview
 import webbrowser
 from openpyxl import Workbook
 
@@ -45,7 +46,7 @@ class SafeDict(dict):
         return '{' + key + '}'
 
 # Version Info
-VERSION = "1.9.5"
+VERSION = "1.9.6"
 
 # Setup For Logging
 logging.basicConfig(format='%(asctime)s - %(message)s',filename='wp.log',level=logging.DEBUG)
@@ -198,15 +199,16 @@ class WPApp(Ui_MainWindow):
                     a = linkFile('image',self.list_of_files[i-1][0])
                     code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
                     exec(code)
-                elif(self.list_of_files[i-1][0].split(".")[-1] in self.videoList):
-                    getFirstFrame(self.list_of_files[i-1][0])
-                    a = linkFile('image',os.getcwd() + "\\WhatsAppGui\\fFrame.jpg")
-                    code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
-                    exec(code)
                 else:
                     a = linkFile('file',self.list_of_files[i-1][0])
                     code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
                     exec(code)
+                """elif(self.list_of_files[i-1][0].split(".")[-1] in self.videoList):
+                    getFirstFrame(self.list_of_files[i-1][0])
+                    a = linkFile('image',os.getcwd() + "\\WhatsAppGui\\fFrame.jpg")
+                    code = "self.index_raw = self.index_raw.replace('{file"+ str(i) +"}','"+ a +"')"
+                    exec(code)"""
+                
                 
             for i in range(1+len(self.list_of_files),26):
                 self.index_raw = self.index_raw.replace("{file"+str(i)+"}","")
@@ -215,15 +217,11 @@ class WPApp(Ui_MainWindow):
 
             with codecs.open(os.getcwd()+"\\WhatsAppGui\\index_"+ rast  +".html","w","utf-8") as file:
                 file.write(self.index_raw)
+            
+            self.view = WebViewBrowser(rast)
+            self.view.setWindowModality(QtCore.Qt.ApplicationModal)
+            self.view.show()
 
-            webview.create_window("Mesaj Önizleme",url = "WhatsAppGui/index_"+ rast +".html",resizable=False,on_top=True,width=int(800*self.ScRate),height=int(750*self.ScRate))
-            webview.start(debug=True)
-            try:
-                os.remove(os.getcwd() + "\\WhatsAppGui\\fFrame.jpg")
-            except FileNotFoundError:
-                pass
-
-            os.remove("WhatsAppGui\\index_"+ rast  +".html")
         else:
             warnMessage("Uyarı!",QMessageBox.Warning,"Mesaj yazılmadığından önizlemesine bakamazsınız.")
         
@@ -476,7 +474,6 @@ if __name__ == "__main__":
         commands = 'powershell -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionPath "C:\WhatsMessageSender"'
         #shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
         # Icon Checker
-        checkIcons()
 
         app = QtWidgets.QApplication(sys.argv)
 

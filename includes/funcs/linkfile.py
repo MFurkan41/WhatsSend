@@ -23,11 +23,11 @@ def linkFile(kind,src):
             shortFileName = shortFileName[:-1*(len(shortFileName)-20)]
             shortFileName += "..."
         if(fileExtension == "xlsx"):
-            htmlCode = htmlCode.format(urllib.parse.quote_plus(Icons["Excel"].replace("\\","/")),shortFileName)
+            htmlCode = htmlCode.format("http://furkanyolal.com.tr/wpsend/icons/excel.png",shortFileName)
         elif(fileExtension == "doc" or fileExtension == "docx"):
-            htmlCode = htmlCode.format(urllib.parse.quote_plus(Icons["Word"].replace("\\","/")),shortFileName)
+            htmlCode = htmlCode.format("http://furkanyolal.com.tr/wpsend/icons/word.png",shortFileName)
         else:
-            htmlCode = htmlCode.format(urllib.parse.quote_plus(Icons["DefaultFile"].replace("\\","/")),shortFileName)
+            htmlCode = htmlCode.format("http://furkanyolal.com.tr/wpsend/icons/default.png",shortFileName)
 
     elif(kind == "message"):
         htmlCode = """

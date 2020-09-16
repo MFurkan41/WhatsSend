@@ -29352,3 +29352,135 @@
 2020-09-15 19:01:57,824 - Resolved /index_8494.html to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\index_8494.html
 2020-09-15 19:01:57,842 - Resolved /style.css to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\style.css
 2020-09-15 19:01:57,843 - Resolved /wp-profile.png to C:\Users\mfurk\Desktop\WhatsSend\WhatsAppGui\wp-profile.png
+2020-09-16 02:32:42,816 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:32:43,330 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:32:43,331 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:32:43,699 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:34:19,753 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:34:19,924 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:34:19,925 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:34:20,142 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:34:45,001 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:34:45,149 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:34:45,150 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:34:45,356 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:40:15,324 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:40:15,681 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:40:15,683 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:40:16,032 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:41:30,877 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:41:31,057 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:41:31,059 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:41:31,271 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:42:43,771 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:42:44,104 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 None
+2020-09-16 02:42:44,106 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:42:44,328 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:43:01,845 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:43:02,050 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:43:02,051 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:43:02,265 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:44:46,467 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:44:46,664 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:44:46,666 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:44:46,957 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:45:40,954 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:45:41,177 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:45:41,179 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:45:41,571 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:46:04,599 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:46:04,773 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:46:04,775 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:46:05,002 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:46:24,694 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:46:24,866 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:46:24,869 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:46:25,084 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:46:48,593 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:46:48,782 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:46:48,784 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:46:48,988 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:47:13,206 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:47:13,370 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:47:13,372 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:47:13,602 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:48:10,081 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:48:10,260 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:48:10,263 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:48:10,479 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:48:41,720 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:48:41,889 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:48:41,891 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:48:42,103 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:56:54,090 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:56:54,429 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:56:54,430 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:56:54,813 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:57:12,288 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:57:12,521 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:57:12,523 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:57:12,725 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:57:35,053 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:57:35,246 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:57:35,248 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:57:35,469 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 02:58:05,967 - Starting new HTTPS connection (1): github.com
+2020-09-16 02:58:06,129 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 02:58:06,131 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 02:58:06,338 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:00:48,725 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:00:49,042 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:00:49,043 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:00:49,258 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:08:02,201 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:08:02,522 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 None
+2020-09-16 03:08:02,524 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:08:02,967 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:08:16,263 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:08:16,412 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:08:16,414 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:08:16,614 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:08:35,262 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:08:35,407 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:08:35,408 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:08:35,610 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:23:22,911 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:23:23,264 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:23:23,266 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:23:23,647 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:23:47,945 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:23:48,122 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:23:48,123 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:23:48,326 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:24:50,559 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:24:50,723 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:24:50,725 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:24:50,928 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:26:31,562 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:26:31,884 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:26:31,886 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:26:32,087 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:32:27,445 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:32:27,753 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:32:27,755 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:32:28,120 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:39:01,613 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:39:02,043 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:39:02,045 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:39:02,406 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:41:03,734 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:41:03,896 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:41:03,898 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:41:04,098 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:42:13,748 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:42:13,912 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:42:13,914 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:42:14,151 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:49:29,471 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:49:29,785 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:49:29,787 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:49:30,205 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
+2020-09-16 03:50:30,695 - Starting new HTTPS connection (1): github.com
+2020-09-16 03:50:30,873 - "GET /MFurkan42/WhatsCompRepo/raw/master/version.txt HTTP/1.1" 302 142
+2020-09-16 03:50:30,874 - Starting new HTTPS connection (1): raw.githubusercontent.com
+2020-09-16 03:50:31,081 - "GET /MFurkan42/WhatsCompRepo/master/version.txt HTTP/1.1" 200 140
