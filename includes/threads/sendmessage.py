@@ -1,6 +1,7 @@
 from guiLoop import guiLoop
 import os
 from time import sleep as bekle
+from random import choice
 
 # Selenium Imports
 from selenium import webdriver
@@ -12,6 +13,11 @@ import urllib.parse
 from includes.funcs.htmlrequest import *
 from includes.funcs.warnmessage import warnMessage,QMessageBox
 from includes.funcs.improvedSends import clickButton,enterInput
+
+def get_random_string():
+    sample_letters = '0123456789abcdefghijklmnopqrstuvwxyz';
+    result_str = ''.join((choice(sample_letters) for i in range(10)))
+    return result_str
 
 class MesThread(QtCore.QThread):
     browserSignal = QtCore.pyqtSignal(object)
@@ -32,29 +38,36 @@ class MesThread(QtCore.QThread):
             self.browserSignal.emit(browser)
 
             self.pushButton_4.emit(True)
+            self.mesL = self.mesaj
 
             browser.get("https://web.whatsapp.com")
 
             QtGui.QGuiApplication.processEvents()
-            fList = []
-            for i in range(1,len(self.headers)):
-                if "{" + str(i) + "}" in self.mesaj:
-                    fList.append(i)
             
             for i in range(len(self.numaralar)):
                 QtGui.QGuiApplication.processEvents()
-                execM = "self.mesaj = self.mesaj.format("
-                for i in fList:
-                    execM += "str(self.numaralar[i][" + str(i-1) + "]),"
-                execM = execM[:-1] + ")"
-                if(len(fList) != 0):
-                    exec(execM)
                 self.imageList = ["tiff","pjp","pjpeg","jfif","tif","gif","svg","bmp","png","jpeg", \
                                     "svgz","jpg","webp","ico","xbm","dib","m4v","mp4","3gpp","mov"]
                 url = "https://web.whatsapp.com/send?phone="
                 url += str(self.numaralar[i][1])
                 #url += urllib.parse.quote_plus(self.mesaj)
-                
+
+                self.Rmesaj = choice(self.mesL)
+                self.mesaj = self.Rmesaj + "\n\nMSG:" + get_random_string()
+
+                fList = []
+                for j in range(1,len(self.headers)):
+                    if "{" + str(j) + "}" in self.mesaj:
+                        self.mesaj = self.mesaj.replace("{" + str(j) + "}","{d"+ str(j) +"}")
+                        fList.append(j)
+                        
+                if(len(fList) != 0):
+                    execM = "self.mesaj = self.mesaj.format("
+                    for x in fList:
+                        execM += "d" + str(x) + " = str(self.numaralar[" + str(i) + "][" + str(x-1) + "]),"
+                    execM = execM[:-1] + ")"
+                    exec(execM)
+
                 for j in self.list_of_files:
                     while True:
                         if(j[0] == "Mesaj"):

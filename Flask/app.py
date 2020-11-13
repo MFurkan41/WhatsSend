@@ -1,13 +1,54 @@
-from flask import Flask,render_template,redirect,logging,session,url_for
+from flask import Flask,render_template,redirect,logging,session,url_for,flash
 import sqlite3
 from createdict import CreateDict
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms.validators import DataRequired
+import random
+
+class LoginForm(FlaskForm):
+    email = StringField('E-Mail', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    submit = SubmitField('Get Key')
+
+def get_random_string():
+    sample_letters = ',/0123456789:;<>?@ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    result_str = ''.join((random.choice(sample_letters) for i in range(16)))
+    return result_str
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "you-will-never-guest:)"
 DB_PATH = "database.db"
 
 @app.route('/')
 def index():
     return render_template("index.html")
+
+@app.route('/newkey', methods = ["GET","POST"])
+def demokey():
+    form = LoginForm()
+    if form.validate_on_submit():
+        con = sqlite3.connect(DB_PATH)
+        cursor = con.cursor()
+
+        cursor.execute("SELECT * FROM allkeys")
+        data = cursor.fetchall()
+        firstT = True
+        for i in range(len(data)):
+            if(data[i][1] == form.email.data):
+                firstT = False
+                flash("Daha önceden demo anahtar aldınız.")
+                return redirect('/')
+        if(firstT):
+            key = get_random_string()
+            print(form.email.data, form.password.data, key)
+            exe = "INSERT INTO allkeys (email,password,key,mcount) VALUES ('{}','{}','{}',{})".format(form.email.data,form.password.data,key,15)
+            cursor.execute(exe)
+            con.commit()
+            flash("15 Mesaj Hakkı olan Anahtarınız : "+ str(key))
+            return redirect('/')
+
+    return render_template("demo.html", form = form)
 
 @app.route('/login')
 def login():

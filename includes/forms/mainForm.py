@@ -6,6 +6,7 @@ from includes.forms.subMenu import Ui_OtherWindow
 from includes.funcs.warnmessage import warnMessage
 import os,itertools
 from appIcons import Icons
+from includes.widgetclasses.dragDropTable import TableWidgetDragRows
 
 class Customer(object):
     def __init__(self,*args):
@@ -66,7 +67,6 @@ class CustomerTableModel(QtCore.QAbstractTableModel):
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, version):
-        
         self.version = version
         self.ScRate = GetSystemMetrics(0)/1920
         self.font = QtGui.QFont("Georgia", 8.8*self.ScRate,weight=-2)
@@ -305,21 +305,51 @@ class Ui_MainWindow(object):
         self.pushButton_3.setObjectName("pushButton_3")
         self.horizontalLayout_2.addWidget(self.pushButton_3)
 
+        space = QtWidgets.QSpacerItem(25, 0, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Maximum)
+        self.horizontalLayout_2.addItem(space)
+
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)                                
+        sizePolicy.setHeightForWidth(self.pushButton_5.sizePolicy().hasHeightForWidth())
+        self.pushButton_5.setSizePolicy(sizePolicy)
+        self.pushButton_5.setMinimumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
+        self.pushButton_5.setMaximumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.horizontalLayout_2.addWidget(self.pushButton_5)
+        
+        self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)                                
+        sizePolicy.setHeightForWidth(self.pushButton_6.sizePolicy().hasHeightForWidth())
+        self.pushButton_6.setSizePolicy(sizePolicy)
+        self.pushButton_6.setMinimumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
+        self.pushButton_6.setMaximumSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.horizontalLayout_2.addWidget(self.pushButton_6)
+
         #self.horizontalLayout_2.addStretch()
+        
         self.horizontalLayout_2.setAlignment(QtCore.Qt.AlignLeft)
 
         self.verticalLayout_7.addLayout(self.horizontalLayout_2)
 
-        self.plain = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.tab = QtWidgets.QTabWidget()
+        self.plain_1 = QtWidgets.QPlainTextEdit(self.centralwidget)
+        self.plain_1.setPlaceholderText("Mesajınız...")
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)                                
-        sizePolicy.setHeightForWidth(self.plain.sizePolicy().hasHeightForWidth())
-        self.plain.setSizePolicy(sizePolicy)
-        self.plain.setMinimumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))
-        self.plain.setMaximumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))                                                                    
-        self.plain.setObjectName("plain")
-        self.verticalLayout_7.addWidget(self.plain)
+        sizePolicy.setHeightForWidth(self.tab.sizePolicy().hasHeightForWidth())
+        self.tab.setSizePolicy(sizePolicy)
+        self.tab.setMinimumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))
+        self.tab.setMaximumSize(QtCore.QSize(240*self.ScRate, 380*self.ScRate))                                                                    
+        self.tab.setObjectName("tab")
+        self.tab.addTab(self.plain_1, "Mesaj 1")
+        
+        self.verticalLayout_7.addWidget(self.tab)
 
         self.horizontalLayout_7.addLayout(self.verticalLayout_7)
 
@@ -338,7 +368,7 @@ class Ui_MainWindow(object):
         self.label_5.setFont(self.font)
         self.verticalLayout_2.addWidget(self.label_5)
 
-        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget = TableWidgetDragRows(self.centralwidget)
         self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget.setColumnCount(2)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred,QtWidgets.QSizePolicy.Preferred)
@@ -352,7 +382,6 @@ class Ui_MainWindow(object):
         self.tableWidget.resizeColumnsToContents()
         self.tableWidget.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
         self.tableWidget.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
-
         self.tableWidget.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
         self.tableWidget.customContextMenuRequested.connect(self.on_context_menu)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
@@ -492,12 +521,19 @@ class Ui_MainWindow(object):
         self.pushButton_3.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
         self.pushButton_3.setStyleSheet('QPushButton{border: 0px solid;}')
 
-        #self.label.setText(_translate("MainWindow", "Listedeki Toplam Numara Sayısı :"))
-        #self.label_2.setText(_translate("MainWindow", "Toplam Mesaj Atılan :"))
+        self.pushButton_5.setIcon(QtGui.QIcon(Icons["Plus"]))
+        self.pushButton_5.setToolTip(_translate("MainWindow","    Mesaj kutusu oluşturmak için bu butonu kullanabilirsiniz."))
+        self.pushButton_5.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
+        self.pushButton_5.setStyleSheet('QPushButton{border: 0px solid;}')
+        
+        self.pushButton_6.setIcon(QtGui.QIcon(Icons["Minus"]))
+        self.pushButton_6.setToolTip(_translate("MainWindow","    Mesaj kutusu oluşturmak için bu butonu kullanabilirsiniz."))
+        self.pushButton_6.setIconSize(QtCore.QSize(30*self.ScRate, 30*self.ScRate))   
+        self.pushButton_6.setStyleSheet('QPushButton{border: 0px solid;}')
+
         self.label.setText(_translate("MainWindow", "0/0 - 0%"))
         self.bar.setValue(0)
         self.label_4.setText(_translate("MainWindow", "Kalan Mesaj Hakkınız :"))
-        self.plain.setPlaceholderText(_translate("MainWindow", "Mesajınız..."))
         self.label_5.setText(_translate("MainWindow", "  MESAJINIZI YAZARKEN\n"
 "  BUNA DİKKAT EDİNİZ.\n"
 "\n"
