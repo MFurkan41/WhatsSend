@@ -1,0 +1,64 @@
+2020-11-27 16:38:14,326 - Uncaught exception: name 'wind' is not defined
+NoneType: None
+2021-01-07 14:10:28,396 - Uncaught exception: name 'Qt' is not defined
+NoneType: None
+2021-01-07 14:12:46,923 - Uncaught exception: name 'Qt' is not defined
+NoneType: None
+2021-01-07 14:13:00,915 - Uncaught exception: name 'Qt' is not defined
+NoneType: None
+2021-01-07 14:13:45,538 - Uncaught exception: local variable 'file_path' referenced before assignment
+NoneType: None
+2021-01-07 14:13:51,244 - Uncaught exception: local variable 'file_path' referenced before assignment
+NoneType: None
+2021-01-07 14:13:52,293 - Uncaught exception: local variable 'file_path' referenced before assignment
+NoneType: None
+2021-01-07 14:13:53,579 - Uncaught exception: local variable 'file_path' referenced before assignment
+NoneType: None
+2021-01-07 14:13:54,762 - Uncaught exception: local variable 'file_path' referenced before assignment
+NoneType: None
+2021-01-07 14:19:26,024 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:21:41,682 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:22:48,907 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:23:38,239 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:24:57,383 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:25:27,865 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:26:32,394 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:27:13,490 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:27:50,631 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:28:28,360 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:29:47,408 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:29:55,185 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:30:40,863 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:33:56,473 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:36:29,789 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:37:43,966 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:40:16,987 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:41:49,584 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 14:42:55,646 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 15:03:51,776 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 15:06:02,395 - Uncaught exception: 'int' object has no attribute 'replace'
+NoneType: None
+2021-01-07 15:12:01,313 - Uncaught exception: name 'Qt' is not defined
+NoneType: None
+2021-01-07 15:12:07,405 - Uncaught exception: name 'Qt' is not defined
+NoneType: None

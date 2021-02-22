@@ -1,0 +1,6 @@
+{
+    "python.linting.enabled": false,
+    "python.autoComplete.addBrackets": true,
+    "editor.quickSuggestions": true,
+    
+}

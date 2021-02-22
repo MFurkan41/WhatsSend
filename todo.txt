@@ -1,0 +1,10 @@
+1- Dosya kısmı sürükle/bırak yapılacak.
+2- Ekran boyutu ayarlanacak.
+3- Numaralar ayarlanacak
+*4- Sürükle/bırak yöntemi ile Excel dosyası açılabiliyor.
+*5- Geri bildirim formu
+*6- Tablo Temizle
+*7- Veritabanının güvenli bir yere bağlanması
+*8- Excel 'Paylaşım İhlali' hatası düzeltildi
+*9- Splash Screen kapatılıp açılabiliyor
+*10- Hatalı numaraların hangi satırda olduğunun hatası

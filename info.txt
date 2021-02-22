@@ -1,0 +1,1 @@
+{'name': 'Furkan', 'mail': 'fyolal2006@gmail.com', 'key': '12345', 'headers': ['İsim', 'Telefon No', 'Mesaj Durumu'], 'accept': True, 'driverVer': '88.0.4324.96', 'splashOnStart': 'False'}
